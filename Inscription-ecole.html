@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotheque</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand">Club de Lecture</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="index.html">Acceuil</a></li>
+		  <li><a href="#">À propos</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">Galerie</a></li>
+		  <li><a href="#">Nous joindre</a></li>
+		</ul>
+		<form class="navbar-form navbar-left">
+		  <div class="input-group">
+		  <input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
+		  <div class="input-group-btn">
+			<button class="btn btn-default b-recherche" type="submit">
+			<i class="glyphicon glyphicon-search"></i>
+			</button>
+		  </div>
+		  </div>
+		  <a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Detaillée</a>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+		  <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+          S'inscrire</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
+          <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+          Connexion</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+        </ul>
+      </li>
+		</ul>
+		</div>
+	  </nav>
+
+	  <div class="page-titre">
+		  <h1>Créer un compte ecole</h1>
+	  </div>
+
+	  <div class="form-sign"><form>
+		  <fieldset>
+			  <div class="titre-form">
+				  <h4>Détails du compte</h4>
+				  <div class="hii">
+					  Tous les champs sont requis
+				  </div>
+			  </div>
+		<div class="form-group">
+		  <label for="formGroupExampleInput">Nom de l'ecole</label>
+		  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+		</div>
+		<div class="form-group">
+		  <label for="formGroupExampleInput2">Adresse</label>
+		  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+		</div>
+		  <div class="form-group">
+			<label for="formGroupExampleInput2">Code</label>
+			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+		  </div>
+		  <div class="form-group">
+			<label for="formGroupExampleInput2">Courriel</label>
+			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+		  </div>
+		  <div class="form-group">
+			<label for="formGroupExampleInput2">Mot de passe</label>
+			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+		  </div>
+		  <div class="form-group">
+			<label for="formGroupExampleInput2">Confirmer le mot de passe</label>
+			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+		  </div>
+		  <div class="form-group final" >
+			  <h4>
+				  Lisez avec plaisir
+			  </h4>
+		  </div>
+
+		  <div>
+			  <div >
+				<button type="button" class="btn button-creer">Créer un compte</button>
+			  </div>
+			  <div class="but-retour">
+				  <a href="index.html">Retour</a>
+			  </div>
+		  </div>
+		</fieldset>
+	  </form>
+	</div>
+	  
+	  
+    
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Bibliotheque</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body id="biblio">
+	<div id="nav-placeholder" style="background-color:blue;"></div>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand">Club de Lecture</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="index.html">Acceuil</a></li>
+		  <li><a href="#">À propos</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">Galerie</a></li>
+		  <li><a href="#">Nous joindre</a></li>
+		</ul>
+		<form class="navbar-form navbar-left">
+		  <div class="input-group">
+		  <input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
+		  <div class="input-group-btn">
+			<button class="btn btn-default b-recherche" type="submit">
+			<i class="glyphicon glyphicon-search"></i>
+			</button>
+		  </div>
+		  </div>
+		  <a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Detaillée</a>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+		  <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+          S'inscrire</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
+          <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+          Connexion</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+        </ul>
+      </li>
+		</ul>
+		</div>
+	  </nav>
+	  
+    <header>
+    <div class="jumbotron entete text-center text-primary">
+        <h1>Notre Bibliotheque:</h1>
+        <p>"Un bon livre est comme un bon ami"</p> 
+        </div>
+    </header>
+
+	<div class="container">
+		<div class="accordion" id="Leslivres">
+		  <div class="card">
+			<div class="card-header" id="tete1">
+			  <h2 class="mb-0">
+				<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Livre1" aria-expanded="true" aria-controls="Livre1">
+				  Le Petit Prince
+				</button>
+			  </h2>
+			</div>
+
+			<div id="Livre1" class="collapse" aria-labelledby="tete1" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/le-petit-prince-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Petit Prince'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9783140464079</p>
+						<p><b>Auteur:</b> Antoine de Saint-Exupéry</p>
+						<p><b>Titre:</b> Le Petit Prince</p>
+						<p><b>Prix:</b> 13,25$</p>
+						<p><strong>Rabais:</strong> 10%</p>
+						<p><b>Description:</b> Le récit des aventures poétiques et symboliques d'un petit garçon venu d'une autre planète, et de sa rencontre avec un aviateur échoué dans le désert. Avec les dessins de la première édition.</p>
+						<p><b>Niveau scolaire:</b> maternelle - 6eme année (5-12 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>	
+				
+			  </div>
+		    </div>
+	      </div>
+		  
+
+		  <div class="card">
+			<div class="card-header" id="tete2">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre2" aria-expanded="false" aria-controls="livre2">
+				  The Very Hungry Caterpillar 
+				</button>
+			  </h2>
+			</div>
+			<div id="livre2" class="collapse" aria-labelledby="tete2" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/the-very-hungry-caterpillar-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'The Very Hungry Caterpillar'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9783806741360</p>
+						<p><b>Auteur:</b> Eric Carle</p>
+						<p><b>Titre:</b> The Very Hungry Caterpillar</p>
+						<p><b>Prix:</b> 7,99$</p>
+						<p><b>Rabais:</b> 10%</p>
+						<p><b>Description:</b> The all-time classic picture book, from generation to generation, sold somewhere in the world every 30 seconds! Have you shared it with a child or grandchild in your life?For the first time, Eric Carle’s The Very Hungry Caterpillar is now available in e-book format, perfect for storytime anywhere. As an added bonus, it includes read-aloud audio of Eric Carle reading his classic story. This fine audio production pairs perfectly with the classic story, and it makes for a fantastic new way to encounter this famous, famished caterpillar. </p>
+						<p><b>Niveau scolaire:</b> maternelle - 2eme année (5-7 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		  <div class="card">
+			<div class="card-header" id="tete3">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre3" aria-expanded="false" aria-controls="livre3">
+				  The Mushroom Fan Club
+				</button>
+			  </h2>
+			</div>
+			<div id="livre3" class="collapse" aria-labelledby="tete3" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/mushroom-fun-club-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'The Mushroom Fan Club'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9781770463226</p>
+						<p><b>Auteur:</b> Elise Gravel</p>
+						<p><b>Titre:</b> The Mushroom Fan Club </p>
+						<p><b>Prix:</b> 9,99$</p>
+						<p><b>Rabais:</b> 15%</p>
+						<p><b>Description:</b> Join Elise Gravel as she explores the science of some of nature's weirdest and wildest characters—mushrooms!Elise Gravel is back with a whimsical look at one of her family’s most beloved pastimes: mushroom hunting! Combining her love of getting out into nature with her talent for anthropomorphizing everything, Gravel takes us on a magical tour of the forest floor and examines a handful of her favorite alien specimens up close. While the beautiful coral mushroom looks like it belongs under the sea, the peculiar lactarius indigo may be better suited for outer space! From the fun-to-stomp puffballs to the prince of the stinkers—the stinkhorn mushroom—and the musically inclined chanterelles, Gravel shares her knowledge of this fascinating kingdom by bringing each species to life in full felt-tip marker glory.</p>
+						<p><b>Niveau scolaire:</b> maternelle - 2eme année (5-7 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete4">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre4" aria-expanded="false" aria-controls="livre4">
+				  Zoélie l'Allumette, Tome 13 : 'Le Sacrifice Inattendu' 
+				</button>
+			  </h2>
+			</div>
+			<div id="livre4" class="collapse" aria-labelledby="tete4" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/zoelie-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Zoélie l'Allumette, Tome 13 : Le Sacrifice Inattendu' ">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9782898103568</p>
+						<p><b>Auteur:</b> Marie Potvin</p>
+						<p><b>Titre:</b> Zoélie l'Allumette, Tome 13 : 'Le Sacrifice Inattendu' </p>
+						<p><b>Prix:</b> 12,95$</p>
+						<p><b>Rabais:</b> 15%</p>
+						<p><b>Description:</b> En plongeant dans le grand livre pour me sauver, Malvina m’a transmis certains de ses traits en plus de sa substance ! Nous ne devons pas pour autant perdre une seule minute : il faut repartir immédiatement dans le futur avant que les anomalies temporelles s’aggravent. Nous avons déjà trop tardé.Mais dès notre retour au 21e siècle, de nouvelles complications surgissent. Qu’arrive-t-il avec le grand livre ? Pourquoi Baptiste oublie-t-il notre amitié? Et qu’est-ce que cette entité noire qui le suit partout ? Nous aurons à faire la lumière sur tout ça, coûte que coûte !</p>
+						<p><b>Niveau scolaire:</b> 4eme année - 1er secondaire (9-12 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete5">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre5" aria-expanded="false" aria-controls="livre5">
+				  Mon Encyclopédie Junior du Québec
+				</button>
+			  </h2>
+			</div>
+			<div id="livre5" class="collapse" aria-labelledby="tete5" data-parent="#Leslivres">
+			  <div class="card-body">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						  <img src="./images-livres/encyclopedie-quebec-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Mon Encyclopédie Junior du Québec'">
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+							<p><b>Code produit:</b> 9781773881720</p>
+							<p><b>Auteur:</b> de COLLECTIF</p>
+							<p><b>Titre:</b> Mon Encyclopédie Junior du Québec</p>
+							<p><b>Prix:</b> 24,95$</p>
+							<p><b>Rabais:</b> 20%</p>
+							<p><b>Description:</b> Encyclopédie junior du Québec - C4 Dans cet ouvrage, l'enfant trouvera des informations aussi surprenantes que passionnantes sur des thèmes abordant les richesses et les prouesses du Québec. Grâce à de magnifiques photos, des cartes précises et des textes bien documentés, l'encyclopédie permettra d'explorer 7 grands thèmes : les régions, la nature, les animaux, la culture, les nations autochtones, les sports et les transports. Il pourra ensuite tester ses connaissances grâce au quiz à la fin du livre.</p>
+							<p><b>Niveau scolaire:</b> 3eme année - 6eme année (8-12 ans+)</p>
+							<button type="button" class="btn btn-info ajouter">Ajouter</button>
+							<button type="button" class="btn btn-warning enlever">Enlever</button>
+						</div>
+					</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete6">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre6" aria-expanded="false" aria-controls="livre6">
+				  Percy Jackson, Tome 1 : 'Le Voleur de Foudre'
+				</button>
+			  </h2>
+			</div>
+			<div id="livre6" class="collapse" aria-labelledby="tete6" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/percy-jackson-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Percy Jackson, Tome 1 : Le Voleur de Foudre'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9781423121701</p>
+						<p><b>Auteur:</b> Rick Riordan</p>
+						<p><b>Titre:</b> Percy Jackson, Tome 1 : 'Le Voleur de Foudre'</p>
+						<p><b>Prix:</b> 13,95$</p>
+						<p><b>Rabais:</b> 15%</p>
+						<p><b>Description:</b> Percy Jackson est un adolescent perturbé qui découvre un jour le secret de sa naissance : son père n'est autre que le dieu de la mer, Poséidon. Placé dans un camp de vacances pour enfants sang-mêlé, il est injustement accusé d'avoir volé l'éclair de Zeus.</p>
+						<p><b>Niveau scolaire:</b> 3eme année - 6eme année (8-12 ans+)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete7">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre7" aria-expanded="false" aria-controls="livre7">
+				  National Geographic Kids : Mon grand livre de l'espace
+				</button>
+			  </h2>
+			</div>
+			<div id="livre7" class="collapse" aria-labelledby="tete7" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/national-geographics-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'National Geographic Kids : Mon grand livre de l'espace'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9781426337604</p>
+						<p><b>Auteur:</b> Catherine D. Hughes</p>
+						<p><b>Titre:</b> National Geographic Kids : 'Mon grand livre de l'espace' </p>
+						<p><b>Prix:</b> 12,69$</p>
+						<p><b>Rabais:</b> 25%</p>
+						<p><b>Description:</b> Ces pages colorées initieront les jeunes enfants aux merveilles de l'espace avec les illustrations de David Aguilar et des textes simples parfaits pour les lecteurs débutants et la lecture à voix haute. Ce livre débute en explorant les concepts de base de l'espace pour ensuite aborder des notions plus complexes sur l'univers et ses mystères. Quelques exemples de chapitres :La Terre, la Lune et le SoleilD'autres planètes de notre système solaireLes planètes naines, les comètes et la ceinture d'astéroïdesL'Univers, la Voie lactée, les galaxies et les trous noirsLes humains sur la Lune, les vaisseaux spatiaux, la Station spatiale internationale, etc.</p>
+						<p><b>Niveau scolaire:</b> maternelle - 3eme année (5-8 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete8">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre8e" aria-expanded="false" aria-controls="livre8e">
+				  Harry Potter T.1 : Harry Potter à l'école des sorciers
+				</button>
+			  </h2>
+			</div>
+			<div id="livre8e" class="collapse" aria-labelledby="tete8" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/harry-potter-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Harry Potter T.1 : Harry Potter à l'école des sorciers'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9780747532743</p>
+						<p><b>Auteur:</b> J.K. Rowling</p>
+						<p><b>Titre:</b> Harry Potter Tome 1 : 'Harry Potter à l'école des sorciers'</p>
+						<p><b>Prix:</b> 16,95$</p>
+						<p><b>Rabais:</b> 15%</p>
+						<p><b>Description:</b> Amitié, surprises, dangers, humour, Harry découvre ses pouvoirs et la vie à Poudlard. Le premier tome des aventures du jeune héros vous ensorcelle aussitôt !Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener à Poudlard, une école de sorcellerie ! Voler en balai, jeter des sorts, combattre les trolls : Harry se révèle un sorcier doué. Mais un mystère entoure sa naissance et l'effroyable V., le mage dont personne n'ose prononcer le nom.</p>
+						<p><b>Niveau scolaire:</b> 3eme année - 6eme année (8-11 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete9">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre9" aria-expanded="false" aria-controls="livre9">
+				  Les méchants T.1
+				</button>
+			  </h2>
+			</div>
+			<div id="livre9" class="collapse" aria-labelledby="tete9" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/les-mechants-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Les méchants T.1'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9781443154857</p>
+						<p><b>Auteur:</b> Aaron Blabey</p>
+						<p><b>Titre:</b> Les méchants, Tome 1</p>
+						<p><b>Prix:</b> 11,99$</p>
+						<p><b>Rabais:</b> 20%</p>
+						<p><b>Description:</b> Ils ressemblent à de méchants garnements, ils parlent comme eux et ont aussi la même odeur qu'eux. Mais M. Loup, M. Piranha, M. Serpent et M. Requin vont changer tout cela bientôt! M. Loup a un plan audacieux pour la première mission honorable des méchants. Le quatuor veut libérer les deux cents chiens enfermés à la fourrière municipale à sécurité maximale. L'opération fourrière se déroulera-t-elle sans pépins? Les méchants deviendront-ils des gentils? Et M. Serpent, s.v.p. recrachez M. Piranha! Une nouvelle série hilarante pour les lecteurs débutants.</p>
+						<p><b>Niveau scolaire:</b> 1er année - 4eme année (6-10 ans) </p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete10">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre10" aria-expanded="false" aria-controls="livre10">
+				  Le Sous-marin magique
+				</button>
+			  </h2>
+			</div>
+			<div id="livre10" class="collapse" aria-labelledby="tete10" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/sous-marin-magique-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Sous-marin magique'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9782749947044</p>
+						<p><b>Auteur:</b> Paul Mccartney</p>
+						<p><b>Titre:</b> Le Sous-marin magique</p>
+						<p><b>Prix:</b> 19.95$</p>
+						<p><b>Rabais:</b> 15%</p>
+						<p><b>Description:</b> Une nouvelle aventure de Papy et les canailles sublimée par de superbes illustrations de Kathryn Durst.Papy et les canailles sont de retours pour de nouvelles aventures !Cela fait bien longtemps que Lucy, Tom, Em et Bob n'ont pas vu leur grand-mère. Alors Papy a une idée : partir à l'aventure sur les traces de Mamy ! À bord du sous-marin magique, Papy et les enfants vont traverser l'océan et les déserts, guidés par les notes du bateau-accordéon de Mamy et des Beatles." Je voulais écrire un livre pour les grands-parents du monde entier afin qu'ils aient une histoire du soir pour leurs petits-enfants. " Paul McCartney</p>
+						<p><b>Niveau scolaire:</b> meternelle (5 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		   <div class="card">
+			<div class="card-header" id="tete11">
+			  <h2 class="mb-0">
+				<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre11" aria-expanded="false" aria-controls="livre11">
+				  Le Voleur de feuilles
+				</button>
+			  </h2>
+			</div>
+			<div id="livre11" class="collapse" aria-labelledby="tete11" data-parent="#Leslivres">
+			  <div class="card-body">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+					  <img src="./images-livres/voleur-des-feuilles-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Voleur de feuilles'">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+						<p><b>Code produit:</b> 9781443190053</p>
+						<p><b>Auteur:</b> Alice Hemming | Nicola Slater</p>
+						<p><b>Titre:</b> Le Voleur de feuilles</p>
+						<p><b>Prix:</b> 11,99$</p>
+						<p><b>Rabais:</b> 25%</p>
+						<p><b>Description:</b> Éric, un petit écureuil, adore l’automne. Mais alors qu’il profite de toutes les activités que cette saison offre, il se rend compte que l’une des feuilles de son arbre a… disparu! Elle est introuvable. Il pense comprendre ce qui se passe : un voleur de feuilles rôde dans les parages. Ses amis de la forêt seront-ils capables de l’aider à trouver le coupable? Un album sur le changement des saisons et la magie de la nature qui vous fera rire aux éclats.</p>
+						<p><b>Niveau scolaire:</b> maternelle (5 ans)</p>
+						<button type="button" class="btn btn-info ajouter">Ajouter</button>
+						<button type="button" class="btn btn-warning enlever">Enlever</button>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<script>
+	
+  /*$( "#nav-placeholder" ).load( "nav.html" );*/
+		
+		$(document).ready(function(){
+			var numero = 0; 
+			$(".card-body button").on("click", function(){
+			    if($(this).hasClass("ajouter")){
+				numero++;
+				}else{
+				if(numero > 0){
+					numero--;
+				}else{
+					alert("Pannier est vide");
+				}
+				}
+				$("#pannier").text(numero);
+				
+			});
+			//queryString
+			var urlParam = getParamParNom("livre", window.location.search);
+			
+			if(urlParam !== ""){
+				$("#"+urlParam).addClass('in');
+			}
+		});
+	</script>
+</body>
+
+</html>

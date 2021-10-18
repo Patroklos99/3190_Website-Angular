@@ -1,0 +1,339 @@
+
+body {
+    background-color: f1f1f1;
+}
+
+.big-banner {
+    height: 400px;
+    padding-top: 150px;
+    /*background-image: url('../images/nuevo.jpg');*/
+	background: linear-gradient( rgba(255, 255, 255, 0.61), rgba(0, 0, 0, 0.65) ), url('../images/nuevo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.big-banner h1, .big-banner h1+p{
+	color:#fff; 
+}
+.b-recherche{
+    height: 34px;
+}
+
+.bouton {
+    position:absolute;
+    top:60px;
+    right:10px;
+    
+}
+
+.Choix {
+	margin-top:30px; 
+}
+
+.entete{
+    background-color: #f0ad4e;
+}
+
+header li {
+    display: inline;
+    padding-left: 60px;
+}
+
+header li a{
+    color:rgb(93, 111, 134);
+    padding: 7px;
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: blue;
+}
+
+.contenant{
+    float: right;
+}
+
+.recherche_input {
+    background: #333;
+    display: block;
+    padding: 5px;
+    width: 175px;    
+    border: 1;
+    border-radius: 60px;
+    color: white;
+}
+
+.recherche_avancee {
+    background: rgb(93, 111, 134);
+    float: right;
+    padding: 1px;
+    margin-left: 80%;
+    width: 155px;  
+    border: 1;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    
+}
+/*debut admin connexion*/
+#admin h1{
+	text-align:center; 
+}
+#admin .card-body form .row {
+	text-align:left; 
+}
+#compte{
+	display:none;
+}
+#compte h3{
+	text-align:center; 
+	font-size: 32px;
+    font-weight: 600;
+}
+/*fin admin connexion*/
+/*debut bibliotheque*/
+.card-body p{
+	text-align: left; 
+}
+.glyphicon-shopping-cart{
+    position:relative;
+    top: 10px;
+    margin: 8px;
+    color: #afafaf;
+}
+#Leslivres{
+	text-align: center; 
+}
+#pannier{
+    position: relative;
+    top:9px;
+    right: 1px;
+	color: #afafaf;
+}
+#biblio .navbar{
+	position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+#biblio header{
+	margin-top: 50px;
+}
+/*fin bibliotheque*/
+/*index_carousel*/
+#carouselImagesLivres .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    margin: 0 auto;
+}
+#carouselImagesLivres .carousel-caption{
+	color: #000; 
+	text-shadow: none; 
+	position: initial; 
+}
+#carouselImagesLivres .carousel-indicators li{
+	border-color: blue; 
+	background-color: pink; 
+}
+#carouselImagesLivres .carousel-indicators {
+    bottom: 0;
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none; 
+	color: #000;
+	text-shadow:none; 
+	
+} 
+/*fin index_carousel*/
+
+.detaillee {
+    position: relative;
+    text-align: center;
+    top: 40px;
+}
+.contenido{
+    background-color: #f1f1f1;
+    position: relative;
+    top: 50px;
+    margin:0px;
+    padding:0;
+    text-align:center
+}
+
+div.contenant-contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+div.contenant-contenu>ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    width:100%
+}
+div.contenant-contenu>ul>li {
+    margin:0;
+    padding:0;
+}
+dl.formulaire {
+    width: 350px;
+    margin:0 auto;
+    padding:0;
+    text-align:left;
+    clear:both
+}
+dl.formulaire input[type=text],
+dl.formulaire input[type=email],
+dl.formulaire input[type=password] {
+ width:100%
+}
+dl.formulaire>dt {
+    top:100px;
+    clear:left;
+    margin: 0px;
+    padding:0px;
+    white-space:nowrap;
+    font-family:"Georgia", serif;
+    font-size:14px;
+    font-style:italic;
+    font-weight:normal
+   }
+.page-titre h1{
+    font-style: italic;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 40px;
+    
+}
+.form-sign{
+    
+    padding: 40px;
+    margin-left: 30%;
+    margin-right:30%;
+    width: 40%;
+    background-color: #f1f1f1;
+    
+
+}
+.titre-form{
+    width: auto;
+    position: relative;
+    top: -20px;
+    border-bottom: .12rem solid #c6cacc;
+    
+}
+.hii{
+    position: relative;
+    float:right;
+    top: -28px;
+    font-size: 0.8em;
+    font-style:italic
+}
+
+.final{
+    
+    border-bottom: .12rem solid #c6cacc;
+    padding: 0 0 .8em;
+}
+.button-creer{
+    margin-top: 10px;
+    padding: .75em 1.5em;
+    border-radius: 1px;
+    background-color: #494f57;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: .5px;
+    float: left;
+
+}
+.but-retour{
+    float:right;
+    width: 210px; 
+    margin-top: 20px; 
+    font-size: 120%
+}
+
+.login-container{
+    max-width: 600px;
+    background-color: #17a2b8;
+    margin: auto;
+    margin-top: 80px;
+    justify-content: center;
+    height: 380px;
+}
+.Usager{
+    margin-top: -5px;
+    text-align: left;
+    color: rgb(245, 245, 245);
+    width: 80%;
+    margin-left: 54px;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba;
+}
+.login-form-1 h3{
+    text-align: left;
+    color: rgb(245, 245, 245);
+    border-bottom: .12rem solid #c6cacc;
+    width: 80%;
+    margin-left: 54px;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 40%;
+    border-radius: 3px;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: royalblue;
+    background-color: #fff;
+}
+
+.login-form-1 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.ho{
+    position: relative;
+    float:right;
+    top: -28px;
+    margin-right: 60px;
+    font-size: 0.8em;
+    font-style:italic;
+    color: #fff;
+}
+.login-container2{
+    max-width: 600px;
+    background-color: #6e7172;
+    margin: auto;
+    margin-top: 80px;
+    justify-content: center;
+    height: 380px;
+}
+.form2{
+    padding: 10%;
+}
+
+
+
+
+
+
+
+
+
