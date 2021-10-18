@@ -80,9 +80,10 @@ header li a:hover {
 #admin h1{
 	text-align:center; 
 }
-#admin .card-body form .row {
+#admin .card-body .col-lg-8{
 	text-align:left; 
 }
+
 #compte{
 	display:none;
 }
