@@ -76,6 +76,26 @@ header li a:hover {
     color: white;
     
 }
+/*debut footer*/
+footer{
+    height: 100px; 
+    background-color: #494f57;
+    padding: 30px;
+}
+footer p{
+    color:aliceblue;
+}
+footer p span{
+    float:right; 
+}
+footer p a {
+    color: #ffbc00;
+}
+footer p a:hover{
+    color: rgb(251, 255, 0);
+    text-decoration: underline;
+}
+/*fin footer*/
 /*debut admin connexion*/
 #admin h1{
 	text-align:center; 
