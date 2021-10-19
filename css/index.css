@@ -92,6 +92,22 @@ header li a:hover {
 	font-size: 32px;
     font-weight: 600;
 }
+#admin .card-body textarea{
+    width:100%; 
+}
+#nouveauLivre{
+    text-align:center; 
+}
+#admin .card-body .sauvegarder {
+    display: none; 
+}
+#admin .image {
+    visibility:hidden; 
+    height: 10px; 
+}
+#admin .card-body img +form {
+    margin-top: 13px; 
+} 
 /*fin admin connexion*/
 /*debut bibliotheque*/
 .card-body p{
