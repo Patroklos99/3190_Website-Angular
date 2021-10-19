@@ -1,6 +1,6 @@
 
 body {
-    background-color: f1f1f1;
+    background-color: #f1f1f1;
 }
 
 .big-banner {
@@ -81,6 +81,7 @@ footer{
     height: 100px; 
     background-color: #494f57;
     padding: 30px;
+    margin-top: 40px;
 }
 footer p{
     color:aliceblue;
@@ -97,7 +98,7 @@ footer p a:hover{
 }
 /*fin footer*/
 /*debut admin connexion*/
-#admin h1{
+#admin h1, #usager h1{
 	text-align:center; 
 }
 #admin .card-body .col-lg-8{
@@ -297,12 +298,9 @@ dl.formulaire>dt {
 }
 
 .login-container{
-    max-width: 600px;
-    background-color: #17a2b8;
     margin: auto;
     margin-top: 80px;
     justify-content: center;
-    height: 380px;
 }
 .Usager{
     margin-top: -5px;
@@ -313,7 +311,9 @@ dl.formulaire>dt {
 }
 .login-form-1{
     padding: 5%;
-    box-shadow: 0 5px 8px 0 rgba;
+    -webkit-box-shadow: 0px 5px 8px 0px #000000; 
+    box-shadow: 0px 5px 8px 0px #000000;
+    background-color: #17a2b8; 
 }
 .login-form-1 h3{
     text-align: left;
@@ -355,12 +355,9 @@ dl.formulaire>dt {
     color: #fff;
 }
 .login-container2{
-    max-width: 600px;
-    background-color: #6e7172;
     margin: auto;
     margin-top: 80px;
     justify-content: center;
-    height: 380px;
 }
 .form2{
     padding: 10%;
