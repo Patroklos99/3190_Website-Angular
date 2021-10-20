@@ -32,6 +32,7 @@ body {
 }
 
 .entete{
+    text-align: center; 
     background-color: #f0ad4e;
 }
 
@@ -140,7 +141,9 @@ footer p a:hover{
     font-style: italic;
     text-align: center;
     font-weight: 600;
-    margin-top: 40px;
+}
+header.page-titre{
+	padding-top: 48px;
 }
 /*fin recherche detaille*/
 /*debut bibliotheque*/
@@ -162,13 +165,13 @@ footer p a:hover{
     right: 1px;
 	color: #afafaf;
 }
-#biblio .navbar{
+.navbar{
 	position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
 }
-#biblio header{
+header{
 	margin-top: 50px;
 }
 /*fin bibliotheque*/
@@ -182,8 +185,12 @@ footer p a:hover{
 	position: initial; 
 }
 #carouselImagesLivres .carousel-indicators li{
-	border-color: blue; 
-	background-color: pink; 
+	border-color: #000; 
+	background-color: #000; 
+    opacity:0.6; 
+}
+#carouselImagesLivres .carousel-indicators li:hover, #carouselImagesLivres .carousel-indicators li.active{
+    opacity:0.8; 
 }
 #carouselImagesLivres .carousel-indicators {
     bottom: 0;
@@ -329,15 +336,8 @@ dl.formulaire>dt {
 .login-container form{
     padding: 10%;
 }
-.btnSubmit
-{
-    width: 40%;
-    border-radius: 3px;
-    padding: 1.5%;
-    border: none;
-    cursor: pointer;
-}
-.login-form-1 .btnSubmit{
+
+.login-form-1 .btnSubmit, #connexion{
     font-weight: 600;
     color: royalblue;
     background-color: #fff;
