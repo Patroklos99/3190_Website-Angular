@@ -482,7 +482,7 @@
 							</div>
 						  </div>
 						  
-						   <div class="card">
+						 <div class="card">
 							<div class="card-header" id="tete11">
 							  <h2 class="mb-0">
 								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre11" aria-expanded="false" aria-controls="livre11">
@@ -524,15 +524,224 @@
 					</div> 
 				</div>
 
-				  <div id="valider" class="tab-pane fade">
+				<div id="valider" class="tab-pane fade">
 					<h3>Valider les comptes de l'ecole</h3>
-				  </div>
+						<div class="accordion" id="lesEcoles">
+
+							<div class="card">
+								<div class="card-header" id="tete1">
+									<h2 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole1" aria-expanded="true" aria-controls="	Ecole1">
+										École primaire Académie Saint-Clément
+									</button>
+									</h2>
+								</div>
+
+								<div id="Ecole1" class="collapse" aria-labelledby="tete1" data-parent="#LesEcoles">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+												<img src="./images/ecole-stClement.jpg" class="img-thumbnail img-responsive" alt="ecole Saint-Clément">
+												<form>
+												<div>
+													<label for="image1" class="btn btn-primary">Choisir Image</label>
+													<input id="image1" class="image" type="file">
+												</div>
+												<input type="submit" value="Sauvegarder">
+												</form>
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+												<form>
+													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="AC" disabled></div>
+													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Académie Saint-Clément" disabled></div>
+													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="hajer.baghouli3@csmb.qc.ca" disabled></div>
+													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 739-5004" disabled></div>
+													<div class="row"><label><b>Adresse:</b></label><input type="text" value="1345 ch. Régent Mont-Royal, QC H3P 2K8" disabled></div>
+													<button type="button" class="btn btn-info modifier">Modifier</button>
+													<button type="button" class="btn btn-info valider">Valider</button>
+													<button type="button" class="btn btn-warning enlever">Enlever</button>
+												</form>
+											</div>
+										</div>	
+									
+									</div>
+								</div>
+
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="tete2">
+									<h2 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole2" aria-expanded="true" aria-controls="Ecole2">
+										École primaire Beau-Séjour | Zone grise
+									</button>
+									</h2>
+								</div>
+
+								<div id="Ecole2" class="collapse" aria-labelledby="tete2" data-parent="#LesEcoles">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+												<img src="./images/ecole-beauSejour.jpg" class="img-thumbnail img-responsive" alt="ecole Beau-Séjour | Zone grise">
+												<form>
+													<div>
+														<label for="image1" class="btn btn-primary">Choisir Image</label>
+														<input id="image1" class="image" type="file">
+													</div>
+													<input type="submit" value="Sauvegarder">
+												</form>
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+												<form>
+													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="BS" disabled></div>
+													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Beau-Séjour | Zone grise" disabled></div>
+													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="Direction.EcoleBeau-Sejour@csmb.qc.ca" disabled></div>
+													<div class="row"><label><b>Telephone:</b></label> <input type="text" value=" 514 334-7350" disabled></div>
+													<div class="row"><label><b>Adresse:</b></label><input type="text" value="3600, rue Beauséjour Saint-Laurent (Québec) H4K 1W7" disabled></div>
+													<button type="button" class="btn btn-info modifier">Modifier</button>
+													<button type="button" class="btn btn-info valider">Valider</button>
+													<button type="button" class="btn btn-warning enlever">Enlever</button>
+												</form>
+											</div>
+										</div>	
+									
+									</div>
+								</div>
+
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="tete3">
+									<h2 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole3" aria-expanded="true" aria-controls="Ecole3">
+										École primaire Bois-Franc-Aquarelle
+									</button>
+									</h2>
+								</div>
+
+								<div id="Ecole3" class="collapse" aria-labelledby="tete3" data-parent="#LesEcoles">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+												<img src="./images/ecole-bfAquarelle.jpg" class="img-thumbnail img-responsive" alt="ecole Bois-Franc-Aquarelle">
+												<form>
+													<div>
+														<label for="image1" class="btn btn-primary">Choisir Image</label>
+														<input id="image1" class="image" type="file">
+													</div>
+													<input type="submit" value="Sauvegarder">
+												</form>
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+												<form>
+													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="BF" disabled></div>
+													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Bois-Franc-Aquarelle" disabled></div>
+													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolebois-franc-aquarelle@csmb.qc.ca" disabled></div>
+													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 332-5944" disabled></div>
+													<div class="row"><label><b>Adresse:</b></label><input type="text" value="2085 Rue de Londres, Saint-Laurent, QC H4L 3A5" disabled></div>
+													<button type="button" class="btn btn-info modifier">Modifier</button>
+													<button type="button" class="btn btn-info valider">Valider</button>
+													<button type="button" class="btn btn-warning enlever">Enlever</button>
+												</form>
+											</div>
+										</div>	
+									
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="tete4">
+									<h2 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole4" aria-expanded="true" aria-controls="Ecole4">
+										École primaire Cardinal-Léger
+									</button>
+									</h2>
+								</div>
+
+								<div id="Ecole4" class="collapse" aria-labelledby="tete4" data-parent="#LesEcoles">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+												<img src="./images/ecole-cardinalLeger.jpg" class="img-thumbnail img-responsive" alt="ecole Cardinal-Léger">
+												<form>
+												<div>
+													<label for="image1" class="btn btn-primary">Choisir Image</label>
+													<input id="image1" class="image" type="file">
+												</div>
+												<input type="submit" value="Sauvegarder">
+												</form>
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+												<form>
+													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="CL" disabled></div>
+													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Cardinal-Léger" disabled></div>
+													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolecardinal-leger@csmb.qc.ca" disabled></div>
+													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 744-0763" disabled></div>
+													<div class="row"><label><b>Adresse:</b></label><input type="text" value="2000 Rue Decelles, Saint-Laurent, QC H4M 1B3" disabled></div>
+													<button type="button" class="btn btn-info modifier">Modifier</button>
+													<button type="button" class="btn btn-info valider">Valider</button>
+													<button type="button" class="btn btn-warning enlever">Enlever</button>
+												</form>
+											</div>
+										</div>	
+										
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header" id="tete5">
+									<h2 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole5" aria-expanded="true" aria-controls="Ecole5">
+										École primaire de l’Odyssée
+									</button>
+									</h2>
+								</div>
+
+								<div id="Ecole5" class="collapse" aria-labelledby="tete5" data-parent="#LesEcoles">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+												<img src="./images/ecole-lOdysse.jpg" class="img-thumbnail img-responsive" alt="ecole de l’Odyssée">
+												<form>
+												<div>
+													<label for="image1" class="btn btn-primary">Choisir Image</label>
+													<input id="image1" class="image" type="file">
+												</div>
+												<input type="submit" value="Sauvegarder">
+												</form>
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+												<form>
+													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="OD" disabled></div>
+													<div class="row"><label><b>Nom:</b></label> <input type="text" value="l’Odyssée" disabled></div>
+													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolede-lodyssee@csmb.qc.ca" disabled></div>
+													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 748-4607" disabled></div>
+													<div class="row"><label><b>Adresse:</b></label><input type="text" value="4348 Rue Alain, Pierrefonds, QC H9H 2T7" disabled></div>
+													<button type="button" class="btn btn-info modifier">Modifier</button>
+													<button type="button" class="btn btn-info valider">Valider</button>
+													<button type="button" class="btn btn-warning enlever">Enlever</button>
+												</form>
+											</div>
+										</div>	
+									
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="nouvelleEcole" class="row">
+							<button  type="button" class="btn btn-info ajouter">Ajouter une nouvelle école</button>
+						</div> 
+
+				</div>			    
 				  
-				  <div id="modifier" class="tab-pane fade">
+				<div id="modifier" class="tab-pane fade">
 					<h3>Modifier images marketing</h3>
-				  </div>
+				</div>
 				  
-				  <div id="ajouter" class="tab-pane fade">
+				<div id="ajouter" class="tab-pane fade">
 					<h3>Ajouter rabais</h3>
 
 						<div class="row">
@@ -730,7 +939,7 @@
 				var courrielEntree = $("#courriel").val();
 				var motPass = $("#motpass").val();
 				
-				if (courrielEntree === "" || motPass === "") {
+				/*if (courrielEntree === "" || motPass === "") {
 					if(courrielEntree === "" && motPass === ""){
 						alert("Veillez entrer le courriel et le mot de pass");
 					}else if(motPass === ""){
@@ -741,10 +950,10 @@
     				
 				}else{
 
-					if(courrielEntree === "admin@biblio.qc" &&  motPass === "Admin"){
+					if(courrielEntree === "admin@biblio.qc" &&  motPass === "Admin"){*/
 						$( ".login-container2" ).hide();
 						$( "#compte" ).show();
-					}else{
+					/*}else{
 						if(courrielEntree !== "admin@biblio.qc" && motPass !== "Admin"){
 							alert("Courriel entré et mot de pass entré sont invalides");
 						}else if(motPass !== "Admin"){
@@ -754,7 +963,7 @@
 						}
 						
 					}	
-				}
+				}*/
 				
 				
 

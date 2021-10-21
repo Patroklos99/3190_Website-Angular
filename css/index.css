@@ -127,6 +127,12 @@ footer p a:hover{
 #admin .card-body img +form {
     margin-top: 13px; 
 } 
+#lesEcoles{
+    text-align:center; 
+}
+#nouvelleEcole{
+    text-align:center; 
+}
 /*fin admin connexion*/
 /*debut contacts*/
 #contacts .personnel{
@@ -164,6 +170,9 @@ h3{
 h4{
     font-weight:600; 
     padding-top: 30px;
+}
+address{
+    font-weight:600; 
 }
 /*fin le club*/
 /*debut bibliotheque*/
