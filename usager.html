@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body id="biblio">
+  <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand">Club de Lecture</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="index.html">Acceuil</a></li>
+		  <li><a href="contacts.html">Contacts</a></li>
+		  <li><a href="leclub.html">Le club</a></li>
+		  <li><a href="#">Galerie</a></li>
+		  <li><a href="#">Nous joindre</a></li>
+		</ul>
+		<form class="navbar-form navbar-left">
+		  <div class="input-group">
+		  <input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
+		  <div class="input-group-btn">
+			<button class="btn btn-default b-recherche" type="submit">
+			<i class="glyphicon glyphicon-search"></i>
+			</button>
+		  </div>
+		  </div>
+		  <a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Detaillée</a>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+		  <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+          S'inscrire</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
+          <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+          Connexion</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+        </ul>
+      </li>
+		</ul>
+		</div>
+	  </nav>
+
+        <aside class="menu">
+        <nav><ul><li class="my-account-nav__item "><a href="" qaid="AccountProfileLink" title="Profile" class="">
+            Profil
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Address book" class=" ">
+            Mes commandes
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Payment details" class=" ">
+            Paiements
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Order history" class=" ">
+            Historique
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Option" class=" ">
+            Option
+            </a></li> </ul></nav>
+        </aside>
+        
+        <div class="menu-texte">
+            <h1>Profil</h1>
+          </div>
+      <div class="usagerr">
+      <form>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Prénom:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="John Michael" disabled>
+            </div>
+          </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nom:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Wegner" disabled>
+            </div>
+          </div>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="John@gmail.com" disabled>
+          </div>
+        </div>
+      </form>  
+
+      <hr>
+      
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Pays:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Canada" disabled>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="listechangements">
+        <ul>
+            <li><a href="#">Actualiser vos informations</a></li>
+            <li><a href="#">Changer votre mot de passe</a></li>
+            <li><a href="#">Changer votre adresse email</a></li>
+        </ul>
+
+        <!--<div class="form-group row">
+        <div class="col-sm-8">
+          <button type="submit" class="btn btn-primary">TODO </button>
+        </div>
+      </div>-->
+        
+    </div>
+
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    
+
+    <footer>
+        <p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190">INF3190</a> à l’université de <a href="http://www.uqam.ca">l'UQAM</a></p>
+        <p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo ()</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
+       </footer>
+    
+    
+
+    </body>
+    </html>
+    

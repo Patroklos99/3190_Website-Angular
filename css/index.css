@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f1f1f1;
+    background-color: #FFFFFF;
 }
 
 .big-banner {
@@ -365,6 +365,62 @@ dl.formulaire>dt {
 }
 .form2{
     padding: 10%;
+}
+.usagerr{
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 500px;
+}
+.usaggerr form-control{
+    padding: 50px;
+    align-items: right;
+    
+}
+.usagerr input{
+    margin-top: -8px;
+    float: right;
+    width: 350px;
+    padding: 20px;
+    border: 0.5px solid grey;
+    
+}
+.menu-texte{
+    position: relative;
+    margin-top: -380px;
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+    text-align: left; 
+    margin-left: 300px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+    
+}
+.menu{
+    position: relative;
+    margin-top: 280px;
+    margin-left: 20px;
+    width: 280px;
+}
+.menu li {
+    padding: 10px;
+    border-top: 1px solid rgb(224, 221, 221);
+    width: 200px;
+    
+}
+.listechangements li{
+    float: left;
+    
+    text-decoration: underline;
+    list-style-type: none;
+
+}
+.listechangements{
+    float: right;
+    clear:right;
+    position: relative;
+    margin-top: -220px;
+    width: 320px;
 }
 
 
