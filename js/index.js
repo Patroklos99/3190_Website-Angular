@@ -6,3 +6,4 @@ function getParamParNom(nom, url = window.location.href) {
     if (!resultat[2]) return '';
     return decodeURIComponent(resultat[2].replace(/\+/g, ' '));
 }
+

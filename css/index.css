@@ -146,6 +146,17 @@ header.page-titre{
 	padding-top: 48px;
 }
 /*fin recherche detaille*/
+/*debut le club*/
+#video, #video+.row{
+    text-align:center; 
+}
+#carte{
+    height: 300px;
+    width: 50%;
+    margin:0 auto;
+}
+
+/*fin le club*/
 /*debut bibliotheque*/
 .card-body p{
 	text-align: left; 
