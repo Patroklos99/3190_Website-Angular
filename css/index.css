@@ -155,7 +155,16 @@ header.page-titre{
     width: 50%;
     margin:0 auto;
 }
-
+h2{
+    font-weight:600; 
+}
+h3{
+    font-style:italic;
+}
+h4{
+    font-weight:600; 
+    padding-top: 30px;
+}
 /*fin le club*/
 /*debut bibliotheque*/
 .card-body p{
