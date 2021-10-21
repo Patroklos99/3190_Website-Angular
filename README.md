@@ -1,4 +1,12 @@
 # inf3190-a21-tp
-sdfsdfds
+Connexion Administrateur : 
+courriel : admin@biblio.qc 
+mot de pass: Admin 
 
-hdsfdsfgdfgd
+Connexion Usager: 
+courriel : usager@gmail.com 
+mot de pass: Usager 
+
+Connexion Ecole: 
+courriel: ecole@ecole.qc
+mot de pass: Ecole 
