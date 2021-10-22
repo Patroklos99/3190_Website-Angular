@@ -22,10 +22,10 @@ function verifierEntrees() {
     const codeVal = code.value.trim();
 
     if(nomVal === '') {
-        msgErreur(nom1, 'Prenom ne peut pas être vide.')
+        msgErreur(nom1, 'Nom ne peut pas être vide.')
         
     } else if(nomVal.length < 1 || nomVal.length >25 || !/^[a-zA-Z]*$/g.test(nomVal)) {
-        msgErreur(nom1, 'Votre prenom doit être composé de 1 à 25 lettres uniquement.')
+        msgErreur(nom1, 'Le nom de votre école doit être composé de 1 à 25 lettres uniquement.')
     }
     else {
         msgReussi(nom1);
