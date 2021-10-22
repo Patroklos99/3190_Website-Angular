@@ -533,7 +533,7 @@ dl.formulaire>dt {
     position: relative;
     float: left;
     right: 2px;
-    left: -190px;
+    left: -180px;
     margin-left: 0;    
 }
 .form-check-label{
@@ -541,6 +541,16 @@ dl.formulaire>dt {
     top: -17px; 
     left: 25px; 
     
+}
+.fieldsetradio {
+    margin:0;
+    padding:0;
+    border:solid;
+    width: 96%;
+    margin-bottom: 10px;
+}
+.form-check-inline input{
+    left: -190px;
 }
 
 
