@@ -11,6 +11,8 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+	<script defer src="./js/index.js"></script> 
 </head>
 
 <body>
@@ -63,7 +65,7 @@
 		  <h1>Créer un compte personnel</h1>
 	  </header>
 
-	  <div class="form-sign"><form>
+	  <div class="form-sign"><form class="form" id="form">
 		  <fieldset>
 			  <div class="titre-form">
 				  <h4>Détails du compte</h4>
@@ -72,36 +74,60 @@
 				  </div>
 			  </div>
 		<div class="form-group">
-		  <label for="formGroupExampleInput">Prénom</label>
-		  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+		  <label for="prenom">Prénom</label>
+		  <input type="text" class="form-control" id="prenom" placeholder="">
+		  <i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		</div>
 		<div class="form-group">
-		  <label for="formGroupExampleInput2">Nom</label>
-		  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+		  <label for="nom">Nom&nbsp</label>
+		  <input type="text" class="form-control" id="nom" placeholder="">
+		  <i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		</div>
 		  <div class="form-group">
-			<label for="formGroupExampleInput2">Téléphone</label>
-			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+			<label for="telephone">Téléphone</label>
+			<input type="text" class="form-control" id="telephone" placeholder="">
+			<i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		  </div>
 		  <div class="form-group">
-			<label for="formGroupExampleInput2">Adresse de livraison</label>
-			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+			<label for="adresse">Adresse de livraison</label>
+			<input type="text" class="form-control" id="adresse" placeholder="">
+			<i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		  </div>
 		  <div class="form-group">
-			<label for="formGroupExampleInput2">Courriel</label>
-			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+			<label for="courriel">Courriel</label>
+			<input type="text" class="form-control" id="courriel" placeholder="">
+			<i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		  </div>
 		  <div class="form-group">
-			<label for="formGroupExampleInput2">Mot de passe</label>
-			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+			<label for="pass">Mot de passe</label>
+			<input type="password" class="form-control" id="pass" placeholder="">
+			<i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		  </div>
 		  <div class="form-group">
-			<label for="formGroupExampleInput2">Confirmer le mot de passe</label>
-			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+			<label for="pass2">Confirmer le mot de passe</label>
+			<input type="password" class="form-control" id="pass2" placeholder="">
+			<i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		  </div>
 		  <div class="form-group">
-			<label for="formGroupExampleInput2">Code</label>
-			<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+			<label for="code">Code</label>
+			<input type="text" class="form-control" id="code" placeholder="">
+			<i class="fas fa-check-circle"></i>
+		  <i class="fas fa-exclamation-circle"></i>
+		  <small>Msg d'erreur</small>
 		  </div>
 		  <div class="form-group final" >
 			  <h4>
@@ -111,12 +137,14 @@
 
 		  <div>
 			  <div >
-				<button type="button" class="btn button-creer">Créer un compte</button>
+				<button type="submit" class="btn button-creer">Créer un compte</button>
+
 			  </div>
 			  <div class="but-retour">
 				  <a href="index.html">Retour</a>
 			  </div>
 		  </div>
+		  
 		</fieldset>
 	  </form>
 	</div>
@@ -125,6 +153,6 @@
 		<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190">INF3190</a> à l’université de <a href="http://www.uqam.ca">l'UQAM</a></p>
 		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo ()</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
 	</footer>  
-    
+     
 </body>
 </html>
