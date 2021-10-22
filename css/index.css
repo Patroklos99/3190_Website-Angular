@@ -325,7 +325,16 @@ dl.formulaire>dt {
 .form-group{
     margin-bottom: 5px;
 }
+.form-group-usager{
+    margin-bottom: 12px;
+}
+.form2 .form-group{
+    margin-bottom: 12px;
 
+}
+.separe{
+    margin-bottom: 20px;
+}
 .form-group i {
     position: relative;
     right: 45px;
