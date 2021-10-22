@@ -520,7 +520,28 @@ dl.formulaire>dt {
     margin-top: -412px;
     width: 320px;
 }
-
+.form-check{
+    align-content: left;
+    height: 20px;
+    margin-left: 0;
+    margin: 5px;
+}
+.b2{
+    margin-bottom: 20px;   
+}
+.form-check-input{
+    position: relative;
+    float: left;
+    right: 2px;
+    left: -190px;
+    margin-left: 0;    
+}
+.form-check-label{
+    position: relative;
+    top: -17px; 
+    left: 25px; 
+    
+}
 
 
 
