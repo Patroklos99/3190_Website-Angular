@@ -1,6 +1,3 @@
-*{
-    font-family: 'Open Sans', sans-serif;}
-
 body {
     background-color: #FFFFFF;
 }
@@ -295,14 +292,12 @@ dl.formulaire>dt {
     width: 40%;
     background-color: #f1f1f1;
 }
-.form.sing label {
+.form.sign label {
     display: block;
-
 }
 .form-sign input{
     display: inline-block;
     width: 91%;
-
 }
 .form-group.reussi input {
     border-color: #2ecc71;
@@ -324,6 +319,9 @@ dl.formulaire>dt {
     color: #e74c35;
     visibility: visible;
 }
+.form-group{
+    margin-bottom: 5px;
+}
 
 .form-group i {
     position: relative;
@@ -331,8 +329,12 @@ dl.formulaire>dt {
     visibility: hidden;
 }
 .form-group small {
+    position: relative;
     bottom: 0;
     left: 0;
+    margin: 0;
+    padding: 0;
+    
     visibility: hidden;
 }
 .titre-form{
