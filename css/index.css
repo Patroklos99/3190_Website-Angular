@@ -552,6 +552,13 @@ dl.formulaire>dt {
 .form-check-inline input{
     left: -190px;
 }
+.case1{
+    margin-bottom: 10px;
+}
+.case{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
 
 
 
