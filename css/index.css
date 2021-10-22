@@ -292,9 +292,6 @@ dl.formulaire>dt {
     width: 40%;
     background-color: #f1f1f1;
 }
-.form.sign label {
-    display: block;
-}
 .form-sign input{
     display: inline-block;
     width: 91%;
@@ -334,7 +331,6 @@ dl.formulaire>dt {
     left: 0;
     margin: 0;
     padding: 0;
-    
     visibility: hidden;
 }
 .titre-form{
