@@ -10,6 +10,7 @@
 formulaire.addEventListener('submit', (e) => {
     e.preventDefault();
     verifierEntrees();
+    
 }
 )
 

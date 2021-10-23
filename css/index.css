@@ -559,6 +559,41 @@ dl.formulaire>dt {
     margin-top: -10px;
     margin-bottom: 10px;
 }
+.form-group.reussii i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-group.echouee i.fa-exclamation-circle {
+    color: #e74c35;
+    visibility: visible;
+}
+.form-group.echouee small {
+    color: #e74c35;
+    visibility: visible;
+}
+.formRecherche i {
+    position: absolute;
+    right: 450px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+.formRecherche small {
+    position: relative;
+    bottom: 10px;
+    text-align: left;
+    visibility: hidden;    
+}
+.form-sign-profil {
+    padding: 20px;
+    margin: 0 auto;
+    width: 500px;
+    appearance: none;
+    border-radius: none;
+}
+.form-sign-profil input {
+    border:1px solid #000;
+}
+
 
 
 

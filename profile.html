@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil</title>
+  <title>profile</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -62,7 +62,7 @@
 	  </nav>
 
         <aside class="menu-usager">
-        <nav><ul><li class="my-account-nav__item "><a href="" qaid="AccountProfileLink" title="Profile" class="">
+        <nav><ul><li class="my-account-nav__item "><a href="usager.html" qaid="AccountProfileLink" title="Profile" class="">
             Profil
             <i class="far fa-arrow-alt-circle-right fa-lg"></i>
             </a></li> <li class="my-account-nav__item "><a href="#" title="Address book" class=" ">
@@ -81,55 +81,28 @@
         </aside>
         
         <div class="menu-texte">
-            <h1>Profil</h1>
+            <h1>Modifier le profil</h1>
           </div>
-      <div class="usagerr">
-      <form class="form-usager">
-        <div class="form-group-test row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Prénom:</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="John Michael" disabled>
+
+          <div class="form-sign-profil"><form class="form" id="form">
+                
+            <div class="form-group">
+            <label for="prenom">Prénom *</label>
+            <input type="text" class="form-control" id="prenom" placeholder="">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Msg d'erreur</small>
             </div>
+            <div class="form-group">
+                <label for="prenom">Nom *</label>
+                <input type="text" class="form-control" id="prenom" placeholder="">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Msg d'erreur</small>
+                </div>
+            </form>
           </div>
-        <div class="form-group-test row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Nom:</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Wegner" disabled>
-            </div>
-          </div>
-        <div class="form-group-test row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="John@gmail.com" disabled>
-          </div>
-        </div>
-      </form>  
 
-      <hr>
-      
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Pays:</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Canada" disabled>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="listechangements">
-        <ul>
-            <li><a href="profile.html">Actualiser vos informations</a></li>
-            <li><a href="password.html">Changer votre mot de passe</a></li>
-            <li><a href="email.html">Changer votre adresse email</a></li>
-        </ul>
-
-        <!--<div class="form-group row">
-        <div class="col-sm-8">
-          <button type="submit" class="btn btn-primary">TODO </button>
-        </div>
-      </div>-->
-        
-    </div>
 
     <p>.</p><br><br>
     <p>.</p><br><br>
