@@ -87,18 +87,27 @@
           <div class="form-sign-profil"><form class="form" id="form">
                 
             <div class="form-group">
-            <label for="prenom">Nouveau e-mail *</label>
-            <input type="text" class="form-control" id="prenom" placeholder="">
+            <label for="email">Nouveau e-mail *</label>
+            <input type="text" class="form-control" id="email" placeholder="john@gmail.com" disabled>
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Msg d'erreur</small>
             </div>
             <div class="form-group">
-                <label for="prenom">Confirmez le nouveau e-mail *</label>
-                <input type="text" class="form-control" id="prenom" placeholder="">
+                <label for="email2">Confirmez le nouveau e-mail *</label>
+                <input type="text" class="form-control" id="email2" placeholder="">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Msg d'erreur</small>
+                </div>
+
+                <div class="buttons-profil">
+                  <div class="helloooo">
+                  <button type="submit" class="btn button-creer">Actualiser</button>
+                  </div>
+                  <div class="but-retourr">
+                    <a href="index.html">Annuler</a>
+                  </div>
                 </div>
             </form>
           </div>
@@ -116,7 +125,52 @@
       <p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
     </footer>
     
+    <script>
+      const email2 = document.getElementById('email2');
+
+      form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      verifierEntrees();
+}
+)
+
+function verifierEntrees() {
+  
+      const courrielVal = email2.value.trim();
     
+      if(courrielVal === '') {
+        msgErreur(email2, 'Courriel ne peut pas être vide.')
+        
+    } else if(!cEmail(courrielVal)) {
+        msgErreur(email2, 'Votre courriel nest pas valide, reessayez.')
+    }
+    else {
+        msgReussi(email2)
+    }
+
+
+}
+
+    function msgErreur(input, message){
+        const formGroup = input.parentElement;
+        const small = formGroup.querySelector('small');
+
+        small.innerText = message;
+
+        formGroup.className = 'form-groupp echoue';
+    }
+
+      function msgReussi(input) {
+        const formGroup = input.parentElement;
+        formGroup.className = 'form-groupp reussi';
+    }
+
+    function cEmail(email){
+    return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g.test(email);
+}
+
+</script>
 
     </body>
     </html>
