@@ -11,6 +11,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body id="recherche">
@@ -63,51 +64,157 @@
 		  <h1>Recherche Detaillée</h1>
 	  </header>
 
-	  <div class="form-sign"><form>
-		  <fieldset>
-				
-				<div class="form-group">
-				<label for="formGroupExampleInput">Titre</label>
+	  <div class="form-sign"><form id="formRecherche" class="formRecherche">
+		
+				<div class="form-group-1">
+				<label for="formGroupExampleInput">Titre&nbsp&nbsp</label>
 				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
 				</div>
-				<div class="form-group">
+				<fieldset class="fieldsetradio">
+				
+					<input class="form-check-input" type="radio" id="bRadio1">
+					<label class="form-check-label" for="bRadio1">
+					  Titre exact
+					</label>
+				  
+				  <div class="form-check b2">
+					<input class="form-check-input" type="radio" id="bRadio2">
+					<label class="form-check-label" for="bRadio2">
+						Mots du titre
+					</label>
+				  </div>
+				  	<i class="fas fa-check-circle"></i>
+		  			<i class="fas fa-exclamation-circle"></i>
+		  			<small>Msg d'erreur</small>
+				</fieldset>
+				
+				<div class="form-group-1">
 				<label for="formGroupExampleInput2">Catégorie</label>
 				<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
 				</div>
-				<div class="form-group">
+				<div class="form-group-1">
 					<label for="formGroupExampleInput2">Auteur</label>
 					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
 				</div>
-				<div class="form-group">
+				<div class="form-group-1">
 					<label for="formGroupExampleInput2">Mot Clé</label>
 					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
 				</div>
-				<div class="form-group">
+				<div class="form-group-1">
 					<label for="formGroupExampleInput2">Éditeur</label>
 					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+					
 				</div>
-				<div class="form-group">
+				<div class="form-group-1">
 					<label for="formGroupExampleInput2">Collection</label>
 					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
 				</div>
+				<div class="form-check form-check-inline case">
+					<input class="form-check-input" type="checkbox" id="bCheck1" value="option1">
+					<label class="form-check-label" for="bCheck1">Penguin Coccinelle</label>
+				  </div>
+				  <div class="form-check form-check-inline case1">
+					<input class="form-check-input" type="checkbox" id="bCheck2" value="option2">
+					<label class="form-check-label" for="bCheck2">Penguin Classics</label>
+				  </div>
+				  <i class="fas fa-check-circle"></i>
+		  			<i class="fas fa-exclamation-circle"></i>
+		  			<small>Msg d'erreur</small>
 			
 
 				<div>
 					<div >
-						<button type="button" class="btn button-creer">Chercher</button>
+						<button type="submit" class="btn button-creer">Chercher</button>
 					</div>
 					<div class="but-retour">
 						<a href="index.html">Retour</a>
 					</div>
 				</div>
-			</fieldset>
 	  </form>
 	</div>
 	  
 	<footer>
 		<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190">INF3190</a> à l’université de <a href="http://www.uqam.ca">l'UQAM</a></p>
-		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo ()</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
-	</footer>  
+		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
+	</footer> 
+
+	<script>
+		
+		const form = document.getElementById('formRecherche');
+		const bRadio1 = document.getElementById('bRadio1');
+		const bRadio2 = document.getElementById('bRadio2');
+		const bCheck1 = document.getElementById('bCheck1');
+		const bCheck2 = document.getElementById('bCheck2');
+
+	formRecherche.addEventListener('submit', (e) => {
+    e.preventDefault();
+    verifierEntrees();
+}
+)
+
+function verifierEntrees() {
+    const bRadio1Val= bRadio1.value.trim();
+
+	
+    if(!form.elements["bRadio1"].checked) {
+		alert(form.elements["bRadio1"].checked);
+        msgErreur(bRadio1, 'vous devez choisir une option.')
+		
+    } else {
+        msgReussi(bRadio1);
+    }
+    
+    if(adresseVal === '') {
+        msgErreur(adresse, 'Adresse ne peut pas être vide.')
+        
+    } else if(!cAdresse(adresseVal)) {
+        msgErreur(adresse, 'Votre adresse nest pas valide.')
+    }
+    else {
+        msgReussi(adresse)
+    }
+ 
+
+
+
+}
+
+function msgErreur(input, message){
+    const formGroup = input.parentElement;
+    const small = formGroup.querySelector('small');
+
+    small.innerText = message;
+
+    formGroup.className = 'form-group echouee';
+}
+
+function msgReussi(input) {
+    
+    const formGroup = input.parentElement;
+    formGroup.className = 'form-group reussii';
+}
+
+function cEmail(email){
+    return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g.test(email);
+}
+
+function cCode(code){
+    return /^[A-Z]{2}$/g.test(code);}
+
+function cTelephone(telephone){
+    return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im.test(telephone);
+} //(?=0(?!0)|[0-9])
+
+function cAdresse(adresse){
+    return /^(\d+) ?([A-Za-z](?= ))? (.*?) ([^ ]+?) ?((?<= )APT)? ?((?<= )\d*)?$/g.test(adresse);
+
+}
+
+function cPass(){
+
+}
+
+	</script>
     
 </body>
 </html>

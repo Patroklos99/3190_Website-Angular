@@ -1,71 +1,37 @@
-function getParamParNom(nom, url = window.location.href) {
-    nom = nom.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + nom + '(=([^&#]*)|&|#|$)'),
-        resultat = regex.exec(url);
-    if (!resultat) return null;
-    if (!resultat[2]) return '';
-    return decodeURIComponent(resultat[2].replace(/\+/g, ' '));
-}
+		const form = document.getElementById('formulaire');
+		const nom1 = document.getElementById('nom1');
+		const adresse = document.getElementById('adresse');
+		const courriel = document.getElementById('courriel');
+		const pass = document.getElementById('pass');
+		const pass2 = document.getElementById('pass2');
+		
 
-const form = document.getElementById('form');
-const prenom = document.getElementById('prenom');
-const nom = document.getElementById('nom');
-const telephone = document.getElementById('telephone'); 
-const adresse = document.getElementById('adresse');
-const courriel = document.getElementById('courriel');
-const pass = document.getElementById('pass');
-const pass2 = document.getElementById('pass2');
-const code = document.getElementById('code');
 
-form.addEventListener('submit', (e) => {
+formulaire.addEventListener('submit', (e) => {
     e.preventDefault();
-
-
     verifierEntrees();
+    
 }
 )
 
 function verifierEntrees() {
-    const prenomVal= prenom.value.trim();
-    const nomVal = nom.value.trim();
-    const telephoneVal = telephone.value.trim();
+    const nomVal= nom1.value.trim();
     const adresseVal = adresse.value.trim();
     const courrielVal = courriel.value.trim();
     const passVal = pass.value.trim();
     const pass2Val = pass2.value.trim();
     const codeVal = code.value.trim();
-    
-    if(prenomVal === '') {
-        msgErreur(prenom, 'Prenom ne peut pas être vide.')
-        
-    } else if(prenomVal.length < 1 || prenomVal.length >25 || !/^[a-zA-Z]*$/g.test(prenomVal)) {
-        msgErreur(prenom, 'Votre prenom doit être composé de 1 à 25 lettres uniquement.')
-    }
-    else {
-        msgReussi(prenom)
-    }
-
 
     if(nomVal === '') {
-        msgErreur(nom, 'Nom ne peut pas être vide.')
+        msgErreur(nom1, 'Nom ne peut pas être vide.')
         
     } else if(nomVal.length < 1 || nomVal.length >25 || !/^[a-zA-Z]*$/g.test(nomVal)) {
-        msgErreur(nom, 'Votre nom doit être composé de 1 à 25 lettres uniquement.')
+        msgErreur(nom1, 'Le nom de votre école doit être composé de 1 à 25 lettres uniquement.')
     }
     else {
-        msgReussi(nom)
+        msgReussi(nom1);
     }
-
-    if(telephoneVal === '') {
-        msgErreur(telephone, 'Telephone ne peut pas être vide.')
-        
-    } else if(!cTelephone(telephoneVal)) {
-        msgErreur(telephone, 'Votre telephone doit être composé de 10 chiffres.')
-    }
-    else {
-        msgReussi(telephone)
-    }
-
+    
     if(adresseVal === '') {
         msgErreur(adresse, 'Adresse ne peut pas être vide.')
         
@@ -75,6 +41,7 @@ function verifierEntrees() {
     else {
         msgReussi(adresse)
     }
+ 
 
     if(courrielVal === '') {
         msgErreur(courriel, 'Courriel ne peut pas être vide.')
@@ -134,6 +101,7 @@ function msgErreur(input, message){
 }
 
 function msgReussi(input) {
+    
     const formGroup = input.parentElement;
     formGroup.className = 'form-group reussi';
 }
@@ -143,9 +111,7 @@ function cEmail(email){
 }
 
 function cCode(code){
-    
-    
-}
+    return /^[A-Z]{2}$/g.test(code);}
 
 function cTelephone(telephone){
     return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im.test(telephone);
@@ -156,7 +122,6 @@ function cAdresse(adresse){
 
 }
 
+function cPass(){
 
-//////////
-
-
+}
