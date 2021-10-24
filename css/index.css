@@ -504,8 +504,6 @@ dl.formulaire>dt {
     left: -10px;
     size: 1;
     color: #f57c00;
-
-    
 }
 .listechangements li{
     float: left;
@@ -543,6 +541,14 @@ dl.formulaire>dt {
     
 }
 .fieldsetradio {
+    margin:0;
+    padding:0;
+    border:solid;
+    width: 96%;
+    margin-bottom: 10px;
+}
+.fieldsetradio input{
+    position: absolute;
     margin:0;
     padding:0;
     border:solid;
@@ -592,6 +598,53 @@ dl.formulaire>dt {
 }
 .form-sign-profil input {
     border:1px solid #000;
+}
+.buttons-profil {
+    display: flex;
+    justify-content: space-between;
+}
+.but-retourr{
+    position: absolute;
+    width: 110px; 
+    margin-top: 18px; 
+    margin-left: 170px;
+    font-size: 120%;
+}
+
+.form-groupp i {
+    position: absolute;
+    right: 410px;
+    margin-top: -24px;
+    visibility: hidden;
+}
+.form-groupp small {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    visibility: hidden;    
+}
+.form-groupp.echoue input{
+    border-color: #e74c35;
+    box-shadow: 0 0 2px #e74c35;
+}
+.form-groupp.echoue i.fa-exclamation-circle {
+    color: #e74c35;
+    visibility: visible;
+}
+.form-groupp.echoue small {
+    color: #e74c35;
+    visibility: visible;
+}
+.form-groupp.reussi input {
+    border-color: #2ecc71;
+    box-shadow: 0 0 2px #2ecc71;
+}
+.form-groupp.reussi i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
 }
 
 

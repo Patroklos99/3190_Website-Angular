@@ -86,19 +86,28 @@
 
           <div class="form-sign-profil"><form class="form" id="form">
                 
-            <div class="form-group">
-            <label for="prenom">Prénom *</label>
-            <input type="text" class="form-control" id="prenom" placeholder="">
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
-            <small>Msg d'erreur</small>
+            <div class="form-groupp">
+              <label for="prenom">Prénom</label>
+              <input type="text" class="form-control" id="prenom" placeholder="">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Msg d'erreur</small>
             </div>
-            <div class="form-group">
-                <label for="prenom">Nom *</label>
-                <input type="text" class="form-control" id="prenom" placeholder="">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Msg d'erreur</small>
+            <div class="form-groupp">
+              <label for="nom">Nom&nbsp</label>
+              <input type="text" class="form-control" id="nom" placeholder="">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Msg d'erreur</small>
+            </div>
+
+                <div class="buttons-profil">
+                  <div class="helloooo">
+                  <button type="submit" class="btn button-creer">Actualiser</button>
+                  </div>
+                  <div class="but-retourr">
+                    <a href="index.html">Annuler</a>
+                  </div>
                 </div>
             </form>
           </div>
@@ -116,6 +125,75 @@
       <p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
     </footer>
     
+    <script>
+      const form = document.getElementById('form');
+      const prenom = document.getElementById('prenom');
+      const nom = document.getElementById('nom');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    verifierEntrees();
+}
+)
+
+function verifierEntrees() {
+  
+    const prenomVal= prenom.value.trim();
+    const nomVal = nom.value.trim();
+    
+    
+    if(prenomVal === '') {
+      
+        msgErreur(prenom, 'Prenom ne peut pas être vide.')
+        
+    } else if(prenomVal.length < 1 || prenomVal.length >25 || !/^[a-zA-Z]*$/g.test(prenomVal)) {
+        msgErreur(prenom, 'Votre prenom doit être composé de 1 à 25 lettres uniquement.')
+    }
+    else {
+        msgReussi(prenom)
+    }
+
+
+    if(nomVal === '') {
+        msgErreur(nom, 'Nom ne peut pas être vide.')
+        
+    } else if(nomVal.length < 1 || nomVal.length >25 || !/^[a-zA-Z]*$/g.test(nomVal)) {
+        msgErreur(nom, 'Votre nom doit être composé de 1 à 25 lettres uniquement.')
+    }
+    else {
+        msgReussi(nom)
+    }
+
+
+
+}
+
+function msgErreur(input, message){
+    const formGroup = input.parentElement;
+    const small = formGroup.querySelector('small');
+
+    small.innerText = message;
+
+    formGroup.className = 'form-groupp echoue';
+}
+
+function msgReussi(input) {
+    const formGroup = input.parentElement;
+    formGroup.className = 'form-groupp reussi';
+}
+
+
+function cTelephone(telephone){
+    return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im.test(telephone);
+} //(?=0(?!0)|[0-9])
+
+function cAdresse(adresse){
+    return /^(\d+) ?([A-Za-z](?= ))? (.*?) ([^ ]+?) ?((?<= )APT)? ?((?<= )\d*)?$/g.test(adresse);
+
+}
+
+</script>
     
 
     </body>
