@@ -738,6 +738,8 @@
 				  
 				<div id="modifier" class="tab-pane fade">
 					<h3>Modifier images marketing</h3>
+					
+
 				</div>
 				  
 				<div id="ajouter" class="tab-pane fade">
@@ -930,6 +932,8 @@
 		<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190">INF3190</a> à l’université de <a href="http://www.uqam.ca">l'UQAM</a></p>
 		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo ()</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
 	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
 	  
 	<script>
 		$(document).ready(function(){
@@ -978,8 +982,12 @@
 					$(this).siblings().find("input, textarea").prop("disabled", true);
 			});*/
 
-			
 		}); 
+
+		baguetteBox.run(".gallery", {
+      		animation: "slideIn"
+    		});
+
 	</script>  
     
 </body>
