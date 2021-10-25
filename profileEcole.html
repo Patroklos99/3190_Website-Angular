@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil</title>
+  <title>profile</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -62,7 +62,7 @@
 	  </nav>
 
         <aside class="menu-usager">
-        <nav><ul><li class="my-account-nav__item "><a href="" qaid="AccountProfileLink" title="Profile" class="">
+        <nav><ul><li class="my-account-nav__item "><a href="usager.html" qaid="AccountProfileLink" title="Profile" class="">
             Profil
             <i class="far fa-arrow-alt-circle-right fa-lg"></i>
             </a></li> <li class="my-account-nav__item "><a href="#" title="Address book" class=" ">
@@ -81,73 +81,31 @@
         </aside>
         
         <div class="menu-texte">
-            <h1>Profil</h1>
+            <h1>Modifier le profil</h1>
           </div>
-      <div class="usagerr">
-      <form class="form-usager">
-        <div class="form-group-test row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Prénom:</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="John Michael" disabled>
+
+          <div class="form-sign-profil"><form class="form" id="form">
+                
+            
+            <div class="form-groupp">
+              <label for="nom">Nom de l'école&nbsp</label>
+              <input type="text" class="form-control" id="nom" placeholder="">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Msg d'erreur</small>
             </div>
-          </div>
-        <div class="form-group-test row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Nom:</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Wegner" disabled>
-            </div>
-          </div>
-        <div class="form-group-test row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Courriel:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="John@gmail.com" disabled>
-          </div>
-        </div>
-        <div class="form-group-test row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Telephone:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="5147906882" disabled>
-          </div>
-        </div>
-        <div class="form-group-test row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Adresse:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="4688 rue Roglic" disabled>
-          </div>
-        </div>
-        <div class="form-group-test row">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">Code:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" placeholder="ACKM27391692ML" disabled>
-          </div>
-        </div>
-      </form>  
 
-      <hr>
-      
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Pays:</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Canada" disabled>
-        </div>
-      </div>
+                <div class="buttons-profil">
+                  <div class="helloooo">
+                  <button type="submit" class="btn button-creer">Actualiser</button>
+                  </div>
+                  <div class="but-retourr">
+                    <a href="index.html">Annuler</a>
+                  </div>
+                </div>
+            </form>
+          </div>
 
-    </div>
-
-    <div class="listechangements">
-        <ul>
-            <li><a href="profile.html">Actualiser vos informations</a></li>
-            <li><a href="password.html">Changer votre mot de passe</a></li>
-            <li><a href="email.html">Changer votre adresse email</a></li>
-        </ul>
-
-        <!--<div class="form-group row">
-        <div class="col-sm-8">
-          <button type="submit" class="btn btn-primary">TODO </button>
-        </div>
-      </div>-->
-        
-    </div>
 
     <p>.</p><br><br>
     <p>.</p><br><br>
@@ -161,6 +119,64 @@
       <p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
     </footer>
     
+    <script>
+      const form = document.getElementById('form');
+      const nom = document.getElementById('nom');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    verifierEntrees();
+}
+)
+
+function verifierEntrees() {
+  
+    const nomVal = nom.value.trim();
+    
+    
+   
+
+
+    if(nomVal === '') {
+        msgErreur(nom, 'Le nom de lécole ne peut pas être vide.')
+        
+    } else if(nomVal.length < 1 || nomVal.length >25 || !/^[a-zA-Z]*$/g.test(nomVal)) {
+        msgErreur(nom, 'Le nom de votre école doit être composé de 1 à 25 lettres uniquement.')
+    }
+    else {
+        msgReussi(nom)
+    }
+
+
+
+}
+
+function msgErreur(input, message){
+    const formGroup = input.parentElement;
+    const small = formGroup.querySelector('small');
+
+    small.innerText = message;
+
+    formGroup.className = 'form-groupp echoue';
+}
+
+function msgReussi(input) {
+    const formGroup = input.parentElement;
+    formGroup.className = 'form-groupp reussi';
+}
+
+
+function cTelephone(telephone){
+    return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im.test(telephone);
+} //(?=0(?!0)|[0-9])
+
+function cAdresse(adresse){
+    return /^(\d+) ?([A-Za-z](?= ))? (.*?) ([^ ]+?) ?((?<= )APT)? ?((?<= )\d*)?$/g.test(adresse);
+
+}
+
+</script>
     
 
     </body>
