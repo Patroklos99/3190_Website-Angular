@@ -647,7 +647,7 @@ dl.formulaire>dt {
 }
 #bCheck1{
     display: inline-block;
-    margin-left: -10px;
+    margin-left: 5px;
     margin-bottom: -50px;
 }
 #bCheck1Label{
