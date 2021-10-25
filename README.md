@@ -5,8 +5,8 @@ mot de pass: Admin
 
 Connexion Usager: 
 courriel : usager@gmail.com 
-mot de pass: Usager 
+mot de pass: usager 
 
 Connexion Ecole: 
 courriel: ecole@ecole.qc
-mot de pass: Ecole 
+mot de pass: ecole 
