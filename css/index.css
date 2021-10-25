@@ -116,7 +116,7 @@ footer p a:hover{
 #nouveauLivre{
     text-align:center; 
 }
-#admin .card-body .sauvegarder {
+#admin .card-body .sauvegarder, #admin .card-body .valider {
     display: none; 
 }
 #admin .image {
@@ -231,6 +231,20 @@ header{
 	
 } 
 /*fin index_carousel*/
+/*debut nouveaute*/
+#nouveautés #carouselImagesLivres .col-md-4{
+    text-align:center; 
+}
+#nouveautés #carouselImagesLivres .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 0%;
+}
+#nouveautés #carouselImagesLivres .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 0%;
+}
+#nouveautés #carouselImagesLivres img{
+    max-height: 200px;
+}
+/*fin nouveaute*/
 
 .detaillee {
     position: relative;

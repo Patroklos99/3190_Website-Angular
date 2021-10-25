@@ -22,7 +22,7 @@
 		  <li class="active"><a href="index.html">Acceuil</a></li>
 		  <li><a href="contacts.html">Contacts</a></li>
 		  <li><a href="leclub.html">Le club</a></li>
-		  <li><a href="#">Galerie</a></li>
+		  <li><a href="nouveautés.html">Nouveautés</a></li>
 		</ul>
 		<form class="navbar-form navbar-left">
 		  <div class="input-group">
@@ -93,27 +93,26 @@
 	<div class="container" id="compte">
 		  <div class="row">
 				<ul class="nav nav-tabs">
-				  <li class="active"><a data-toggle="tab" href="#gerer">Gérer l’inventaire des livres</a></li>
+				  <li class="active"><a data-toggle="tab" href="#gerer">Gérer l’inventaire des livres/Modifier images marketing</a></li>
 				  <li><a data-toggle="tab" href="#valider">Valider les comptes de l'ecole</a></li>
-				  <li><a data-toggle="tab" href="#modifier">Modifier images marketing</a></li>
 				  <li><a data-toggle="tab" href="#ajouter">Ajouter rabais</a></li>
 				</ul>
 
 				<div class="tab-content">
 				  <div id="gerer" class="tab-pane fade in active">
-					<h3>Gérer l’inventaire des livres</h3>
+					<h3>Gérer l’inventaire des livres/Modifier images marketing</h3>
 					
 						<div class="accordion" id="Leslivres">
 						  <div class="card">
 							<div class="card-header" id="tete1">
 							  <h2 class="mb-0">
-								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Livre1" aria-expanded="true" aria-controls="Livre1">
+								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#livre1" aria-expanded="true" aria-controls="livre1">
 								  Le Petit Prince
 								</button>
 							  </h2>
 							</div>
 
-							<div id="Livre1" class="collapse" aria-labelledby="tete1" data-parent="#Leslivres">
+							<div id="livre1" class="collapse" aria-labelledby="tete1" data-parent="#Leslivres">
 							  <div class="card-body">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -132,7 +131,7 @@
 										<div class="row"><label><b>Auteur:</b></label> <input type="text" value="Antoine de Saint-Exupéry" disabled></div>
 										<div class="row"><label><b>Titre:</b></label> <input type="text" value="Le Petit Prince" disabled></div>
 										<div class="row"><label><b>Prix:</b></label> <input type="text" value="13,25$" disabled></div>
-										<div class="row"><p><strong>Rabais:</strong> 10%</p></div>
+										<div class="row"><p><strong>Rabais:</strong> <span class="rabais">10%</span></p></div>
 										<div class="row"><label><b>Description:</b></label> <textarea disabled>Le récit des aventures poétiques et symboliques d'un petit garçon venu d'une autre planète, et de sa rencontre avec un aviateur échoué dans le désert. Avec les dessins de la première édition.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 6eme année (5-12 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
@@ -174,10 +173,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Eric Carle" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="The Very Hungry Caterpillar" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="7,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 10%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">10%</span></p></div>
 										<div class="row"><label><b>Description:</b></label> <textarea disabled>The all-time classic picture book, from generation to generation, sold somewhere in the world every 30 seconds! Have you shared it with a child or grandchild in your life?For the first time, Eric Carle’s The Very Hungry Caterpillar is now available in e-book format, perfect for storytime anywhere. As an added bonus, it includes read-aloud audio of Eric Carle reading his classic story. This fine audio production pairs perfectly with the classic story, and it makes for a fantastic new way to encounter this famous, famished caterpillar. </textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 2eme année (5-7 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -211,10 +211,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Elise Gravel" disabled></div>
 										<div class="row"><label><b>Titre:</b></label> <input type="text" value="The Mushroom Fan Club" disabled></div>
 										<div class="row"><label><b>Prix:</b></label> <input type="text" value="9,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 15%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>Join Elise Gravel as she explores the science of some of nature's weirdest and wildest characters—mushrooms!Elise Gravel is back with a whimsical look at one of her family’s most beloved pastimes: mushroom hunting! Combining her love of getting out into nature with her talent for anthropomorphizing everything, Gravel takes us on a magical tour of the forest floor and examines a handful of her favorite alien specimens up close. While the beautiful coral mushroom looks like it belongs under the sea, the peculiar lactarius indigo may be better suited for outer space! From the fun-to-stomp puffballs to the prince of the stinkers—the stinkhorn mushroom—and the musically inclined chanterelles, Gravel shares her knowledge of this fascinating kingdom by bringing each species to life in full felt-tip marker glory.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 2eme année (5-7 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -248,10 +249,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Marie Potvin" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="Zoélie l'Allumette, Tome 13 : 'Le Sacrifice Inattendu'" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="12,95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 15%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>En plongeant dans le grand livre pour me sauver, Malvina m’a transmis certains de ses traits en plus de sa substance ! Nous ne devons pas pour autant perdre une seule minute : il faut repartir immédiatement dans le futur avant que les anomalies temporelles s’aggravent. Nous avons déjà trop tardé.Mais dès notre retour au 21e siècle, de nouvelles complications surgissent. Qu’arrive-t-il avec le grand livre ? Pourquoi Baptiste oublie-t-il notre amitié? Et qu’est-ce que cette entité noire qui le suit partout ? Nous aurons à faire la lumière sur tout ça, coûte que coûte !</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="4eme année - 1er secondaire (9-12 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -285,10 +287,11 @@
 											<div class="row"><label><b>Auteur:</b></label><input type="text" value="de COLLECTIF" disabled></div>
 											<div class="row"><label><b>Titre:</b></label><input type="text" value="Mon Encyclopédie Junior du Québec" disabled></div>
 											<div class="row"><label><b>Prix:</b></label><input type="text" value="24,95$" disabled></div>
-											<div class="row"><p><b>Rabais:</b> 20%</p></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">20%</span></p></div>
 											<div class="row"><label><b>Description:</b></label><textarea disabled>Encyclopédie junior du Québec - C4 Dans cet ouvrage, l'enfant trouvera des informations aussi surprenantes que passionnantes sur des thèmes abordant les richesses et les prouesses du Québec. Grâce à de magnifiques photos, des cartes précises et des textes bien documentés, l'encyclopédie permettra d'explorer 7 grands thèmes : les régions, la nature, les animaux, la culture, les nations autochtones, les sports et les transports. Il pourra ensuite tester ses connaissances grâce au quiz à la fin du livre.</textarea></div>
 											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-12 ans+)" disabled></div>
 											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 											<button type="button" class="btn btn-warning enlever">Enlever</button>
 										</div>
 									</div>
@@ -322,10 +325,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Rick Riordan" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="Percy Jackson, Tome 1 : 'Le Voleur de Foudre'" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="13,95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 15%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>Percy Jackson est un adolescent perturbé qui découvre un jour le secret de sa naissance : son père n'est autre que le dieu de la mer, Poséidon. Placé dans un camp de vacances pour enfants sang-mêlé, il est injustement accusé d'avoir volé l'éclair de Zeus.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-12 ans+)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -359,10 +363,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Catherine D. Hughes" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="National Geographic Kids : 'Mon grand livre de l'espace'" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="12,69$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 25%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">25%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>Ces pages colorées initieront les jeunes enfants aux merveilles de l'espace avec les illustrations de David Aguilar et des textes simples parfaits pour les lecteurs débutants et la lecture à voix haute. Ce livre débute en explorant les concepts de base de l'espace pour ensuite aborder des notions plus complexes sur l'univers et ses mystères. Quelques exemples de chapitres :La Terre, la Lune et le SoleilD'autres planètes de notre système solaireLes planètes naines, les comètes et la ceinture d'astéroïdesL'Univers, la Voie lactée, les galaxies et les trous noirsLes humains sur la Lune, les vaisseaux spatiaux, la Station spatiale internationale, etc.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 3eme année (5-8 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -373,12 +378,12 @@
 						   <div class="card">
 							<div class="card-header" id="tete8">
 							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre8e" aria-expanded="false" aria-controls="livre8e">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre8" aria-expanded="false" aria-controls="livre8">
 								  Harry Potter T.1 : Harry Potter à l'école des sorciers
 								</button>
 							  </h2>
 							</div>
-							<div id="livre8e" class="collapse" aria-labelledby="tete8" data-parent="#Leslivres">
+							<div id="livre8" class="collapse" aria-labelledby="tete8" data-parent="#Leslivres">
 							  <div class="card-body">
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -396,10 +401,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="J.K. Rowling" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="Harry Potter Tome 1 : 'Harry Potter à l'école des sorciers'" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="16,95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 15%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>Amitié, surprises, dangers, humour, Harry découvre ses pouvoirs et la vie à Poudlard. Le premier tome des aventures du jeune héros vous ensorcelle aussitôt !Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener à Poudlard, une école de sorcellerie ! Voler en balai, jeter des sorts, combattre les trolls : Harry se révèle un sorcier doué. Mais un mystère entoure sa naissance et l'effroyable V., le mage dont personne n'ose prononcer le nom.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-11 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -433,10 +439,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Aaron Blabey" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="Les méchants, Tome 1" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="11,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 20%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">20%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>Ils ressemblent à de méchants garnements, ils parlent comme eux et ont aussi la même odeur qu'eux. Mais M. Loup, M. Piranha, M. Serpent et M. Requin vont changer tout cela bientôt! M. Loup a un plan audacieux pour la première mission honorable des méchants. Le quatuor veut libérer les deux cents chiens enfermés à la fourrière municipale à sécurité maximale. L'opération fourrière se déroulera-t-elle sans pépins? Les méchants deviendront-ils des gentils? Et M. Serpent, s.v.p. recrachez M. Piranha! Une nouvelle série hilarante pour les lecteurs débutants.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="1er année - 4eme année (6-10 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -470,10 +477,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Paul Mccartney" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="Le Sous-marin magique" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="19.95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 15%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>Une nouvelle aventure de Papy et les canailles sublimée par de superbes illustrations de Kathryn Durst.Papy et les canailles sont de retours pour de nouvelles aventures !Cela fait bien longtemps que Lucy, Tom, Em et Bob n'ont pas vu leur grand-mère. Alors Papy a une idée : partir à l'aventure sur les traces de Mamy ! À bord du sous-marin magique, Papy et les enfants vont traverser l'océan et les déserts, guidés par les notes du bateau-accordéon de Mamy et des Beatles." Je voulais écrire un livre pour les grands-parents du monde entier afin qu'ils aient une histoire du soir pour leurs petits-enfants. " Paul McCartney.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="meternelle (5 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -507,10 +515,11 @@
 										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Alice Hemming | Nicola Slater" disabled></div>
 										<div class="row"><label><b>Titre:</b></label><input type="text" value="Le Voleur de feuilles" disabled></div>
 										<div class="row"><label><b>Prix:</b></label><input type="text" value="11,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> 25%</p></div>
+										<div class="row"><p><b>Rabais:</b> <span class="rabais">25%</span></p></div>
 										<div class="row"><label><b>Description:</b></label><textarea disabled>Éric, un petit écureuil, adore l’automne. Mais alors qu’il profite de toutes les activités que cette saison offre, il se rend compte que l’une des feuilles de son arbre a… disparu! Elle est introuvable. Il pense comprendre ce qui se passe : un voleur de feuilles rôde dans les parages. Ses amis de la forêt seront-ils capables de l’aider à trouver le coupable? Un album sur le changement des saisons et la magie de la nature qui vous fera rire aux éclats.</textarea></div>
 										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle (5 ans)" disabled></div>
 										<button type="button" class="btn btn-info modifier">Modifier</button>
+										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 										<button type="button" class="btn btn-warning enlever">Enlever</button>
 									</div>
 								</div>
@@ -736,18 +745,14 @@
 
 				</div>			    
 				  
-				<div id="modifier" class="tab-pane fade">
-					<h3>Modifier images marketing</h3>
-				</div>
-				  
 				<div id="ajouter" class="tab-pane fade">
 					<h3>Ajouter rabais</h3>
 
 						<div class="row">
 						   <div class="dropdown">
-							<h4>Le Petit Prince - <span>rabais courant:</span> <span>10%</span></h4>    
-							<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							<h4>Le Petit Prince - rabais courant: <span>10%</span></h4>    
+							<button class="btn btn-default dropdown-toggle" type="button" id="rabais1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="rabais1">
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -761,9 +766,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>The Very Hungry Caterpillar - <span>rabais courant:</span> <span>10%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>The Very Hungry Caterpillar - rabais courant: <span>10%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais2" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais2">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -777,9 +782,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>The Mushroom Fun Club - <span>rabais courant:</span> <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>The Mushroom Fun Club - rabais courant: <span>15%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais3" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais3">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -793,9 +798,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>Zoelie l'Alumette, Tome 13: 'Le sacrifice Inattendu' - <span>rabais courant:</span> <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>Zoelie l'Alumette, Tome 13: 'Le sacrifice Inattendu' - rabais courant: <span>15%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais4" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais4">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -809,9 +814,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>Mon Encyclopedie Junior du Quebec - <span>rabais courant:</span> <span>20%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>Mon Encyclopedie Junior du Quebec - rabais courant: <span>20%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais5" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais5">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -825,9 +830,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>Percy Jackson, Tome 1: 'Le Voleur de Foudre' - <span>rabais courant:</span> <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>Percy Jackson, Tome 1: 'Le Voleur de Foudre' - rabais courant: <span>15%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais6" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais6">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -841,9 +846,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>National Geographic Kids: Mon grand livre de l'espace - <span>rabais courant:</span> <span>25%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>National Geographic Kids: Mon grand livre de l'espace - rabais courant: <span>25%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais7" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais7">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -857,9 +862,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>Harry Potter, Tome 1: 'Harry Potter a l'ecole des sorciers - <span>rabais courant:</span> <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>Harry Potter, Tome 1: 'Harry Potter a l'ecole des sorciers - rabais courant: <span>15%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais8" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais8">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -873,9 +878,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>Les Mechants, Tome 1 - <span>rabais courant:</span> <span>20%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>Les Mechants, Tome 1 - rabais courant: <span>20%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais9" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais9">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -889,9 +894,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>Le Sous-marin magique - <span>rabais courant:</span> <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>Le Sous-marin magique - rabais courant: <span>15%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais10" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais10">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -905,9 +910,9 @@
 
 						<div class="row">
 							<div class="dropdown">
-								<h4>Le Voleur des feuilles - <span>rabais courant:</span> <span>25%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+								<h4>Le Voleur des feuilles - rabais courant: <span>25%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais11" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais11">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -938,7 +943,7 @@
 				var courrielEntree = $("#courriel").val();
 				var motPass = $("#motpass").val();
 				
-				/*if (courrielEntree === "" || motPass === "") {
+				if (courrielEntree === "" || motPass === "") {
 					if(courrielEntree === "" && motPass === ""){
 						alert("Veillez entrer le courriel et le mot de pass");
 					}else if(motPass === ""){
@@ -949,10 +954,10 @@
     				
 				}else{
 
-					if(courrielEntree === "admin@biblio.qc" &&  motPass === "Admin"){*/
+					if(courrielEntree === "admin@biblio.qc" &&  motPass === "Admin"){
 						$( ".login-container2" ).hide();
 						$( "#compte" ).show();
-					/*}else{
+					}else{
 						if(courrielEntree !== "admin@biblio.qc" && motPass !== "Admin"){
 							alert("Courriel entré et mot de pass entré sont invalides");
 						}else if(motPass !== "Admin"){
@@ -962,24 +967,44 @@
 						}
 						
 					}	
-				}*/
+				}
 				
 				
 
 			});
+
+			$("#ajouter .dropdown-menu li a").on("click", function(){
+				var rabais = $(this).text(); 
+				var idRabais=$(this).parents(".dropdown-menu").siblings(".btn").attr("id");
+				var idLivre=idRabais.replace("rabais", "livre");
+    		$(this).parents(".dropdown-menu").siblings(".btn").html(rabais+'<span class="caret"></span>');
+				console.log("!!! "+ idLivre);
+			$(this).parents(".dropdown-menu").siblings("h4").children("span").text(rabais);
+			$("#"+idLivre).find(".rabais").text(rabais);
+			   rabais = ""; 
+  			});
 
 			$(".modifier").on("click", function(){
 				$(this).hide(); 
-				$(this).next(".sauvegarder").show(); 
+				$(this).next(".sauvegarder, .valider").show(); 
 				$(this).siblings().find("input, textarea").prop("disabled", false); 
+			}); 
+
+			$(".sauvegarder, .valider").on("click", function(){
+				$(this).siblings().find("input, textarea").prop("disabled", true); 
+				$(this).hide();
+				$(this).prev(".modifier").show();
+			}); 
+
+			$("input, textarea").on("change", function() {
+			var nouvelleVal=$(this).val();
+			$(this).attr( "value", nouvelleVal);
 			});
 
-			/*$(".sauvegarder").on("click", function(){
-					$(this).siblings().find("input, textarea").prop("disabled", true);
-			});*/
-
-			
 		}); 
+
+
+
 	</script>  
     
 </body>
