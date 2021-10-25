@@ -559,16 +559,19 @@ dl.formulaire>dt {
     padding:0;
     border:solid;
     width: 96%;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
+}
+.fieldsetradio label{
+    margin-left: 19px;
+    margin-top: 1px;
 }
 .fieldsetradio input{
     position: absolute;
-    margin:0;
-    padding:0;
-    border:solid;
+    margin-left: 4px;
     width: 96%;
     margin-bottom: 10px;
 }
+
 .form-check-inline input{
     left: -190px;
 }
@@ -594,7 +597,7 @@ dl.formulaire>dt {
 .formRecherche i {
     position: absolute;
     right: 450px;
-    margin-top: 10px;
+    margin-top: -5px;
     visibility: hidden;
 }
 .formRecherche small {
@@ -660,6 +663,19 @@ dl.formulaire>dt {
     color: #2ecc71;
     visibility: visible;
 }
+.formRecherche.echoue i.fa-exclamation-circle {
+    color: #e74c35;
+    visibility: visible;
+}
+.formRecherche.echoue small {
+    color: #e74c35;
+    visibility: visible;
+}
+.formRecherche.reussi i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
 
 
 

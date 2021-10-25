@@ -71,17 +71,15 @@
                 Tous les champs sont requis
             </div>
             <div class="Usager"><h4>Usager</h4></div>
-      <form>
+      <form id="form">
           <div class="form-group-usager">
-              <input type="text" class="form-control" placeholder="Courriel" value="" />
+              <input type="text" id="courriel" class="form-control" placeholder="Courriel" value="" />
           </div>
           <div class="form-group-usager">
-              <input type="password" class="form-control" placeholder="Mot de passe" value="" />
+              <input type="password" id="password" class="form-control" placeholder="Mot de passe" value="" />
           </div>
           <div class="form-group-usager">
               <input type="submit" class="btn btnSubmit separe" value="Se connecter">
-
-              <a href="usager.html" class="btn btn-default active" role="button" aria-pressed="true">Page-usager-ToFix</a>   
           </div>
           <div class="form-group">
               <a href="#" class="ForgetPwd">Reinitialiser mot de passe</a>
@@ -94,6 +92,40 @@
   <p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190">INF3190</a> à l’université de <a href="http://www.uqam.ca">l'UQAM</a></p>
   <p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
 </footer>
+
+    <script>
+
+    const form = document.getElementById('form');
+		const courriel = document.getElementById('courriel');
+		const password = document.getElementById('password');
+
+
+      form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      verifierEntrees();
+      
+
+    }
+    )
+
+    function verifierEntrees() {
+    const courrielVal= courriel.value.trim();
+	  const passwordVal= password.value.trim();
+
+    if(courrielVal === 'usager@gmail.com' && passwordVal === 'usager'){
+      window.location.href="usager.html";
+
+    }
+    
+
+    if(courrielVal === 'ecole@ecole.qc' && passwordVal === 'ecole'){
+      window.location.href="ecole.html";
+        }
+
+
+    }
+  
+    </script>
     
 </body>
 </html>
