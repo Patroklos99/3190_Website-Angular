@@ -156,12 +156,13 @@ function verifierEntrees() {
     const bRadio1Val= bRadio1.value.trim();
 
 	
-    if(!form.elements["bRadio1"].checked) {
+    if(!form.elements["bRadio1"].checked && !form.elements["bRadio2"].checked) {
         msgErreur(bRadio1, 'vous devez choisir une option.')
 		
     } else {
         msgReussi(bRadio1);
     }
+	
 
 
 }
