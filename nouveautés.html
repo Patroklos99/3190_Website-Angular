@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nouveautés</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body id="nouveautés">
+  <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand">Club de Lecture</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="index.html">Acceuil</a></li>
+		  <li><a href="contacts.html">Contacts</a></li>
+		  <li><a href="leclub.html">Le club</a></li>
+		  <li><a href="nouveautés.html">Nouveautés</a></li>
+		</ul>
+		<form class="navbar-form navbar-left">
+		  <div class="input-group">
+		  <input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
+		  <div class="input-group-btn">
+			<button class="btn btn-default b-recherche" type="submit">
+			<i class="glyphicon glyphicon-search"></i>
+			</button>
+		  </div>
+		  </div>
+		  <a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Detaillée</a>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+		  <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+          S'inscrire</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
+          <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+          Connexion</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+        </ul>
+      </li>
+		</ul>
+		</div>
+	  </nav>
+    
+          
+        <header>
+        <div class="jumbotron entete">
+        <h1>Nouveautés</h1>
+        <p>En attante pour le mois prochain!</p> 
+        </div>
+		</header>
+		<div class="container">
+			<div class="imagesLivres">
+			  <div id="carouselImagesLivres" class="carousel slide" data-ride="carousel" data-interval="false">
+				<ol class="carousel-indicators">
+				  <li data-target="#carouselImagesLivres" data-slide-to="0" class="active"></li>
+				  <li data-target="#carouselImagesLivres" data-slide-to="1"></li>
+				  <li data-target="#carouselImagesLivres" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+				  <div class="item active">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-zafon.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le labyrinthe des esprits'">
+							<div class="carousel-caption ">
+							<h5>Le Labyrinthe des Esprits</h5>
+							
+							</div>
+						
+						</div>
+
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-tout-differents.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Tous différents mais tous égaux'">
+							<div class="carousel-caption ">
+							<h5>Tous Différents mais tous Égaux</h5>
+							
+							</div>
+						
+						</div>
+
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-creatures-fantastiques.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Grand Livre des Créatures Fantastiques'">
+							<div class="carousel-caption ">
+							<h5>Le Grand Livre des Créatures Fantastiques</h5>
+							
+							</div>
+						
+						</div>
+
+					</div>
+
+				  </div>
+
+
+				  <div class="item">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-HarryPotter.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série Harry Potter'">
+							<div class="carousel-caption ">
+							<h5>La série Harry Potter</h5>
+							
+							</div>
+						
+						</div>
+
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-tete-dans-les-livres.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La tête dans les livres'">
+							<div class="carousel-caption ">
+							<h5>La Tête dans les Livres</h5>
+							
+							</div>
+						
+						</div>
+
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-quebecois.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Livres québécois à offrir à Noel'">
+							<div class="carousel-caption ">
+							<h5>Livres Québécois à Offrir à Noel</h5>
+							
+							</div>
+						
+						</div>
+
+					</div>
+				  </div>
+
+				  <div class="item">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-background1.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série des livre pour 'Les Plus Petits''">
+							<div class="carousel-caption ">
+							<h5>La série des livre pour 'Les Plus Petits'</h5>
+							
+							</div>
+						
+						</div>
+
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-background2.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série des romans pour 'Les les Ados''">
+							<div class="carousel-caption ">
+							<h5>La série des romans pour 'Les les Ados'</h5>
+							
+							</div>
+						
+						</div>
+
+						<div class="col-md-4">
+							<img src="./images/livre-marketing-CJ.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le série des livres pour 'La Classe de Lecture''">
+							<div class="carousel-caption ">
+							<h5>Le série des livres pour 'La Classe de Lecture'</h5>
+							
+							</div>
+						
+						</div>
+
+					</div>
+				  </div>
+				  
+				</div>
+				<a class="carousel-control left" href="#carouselImagesLivres" data-slide="prev">
+				  <span class="glyphicon glyphicon-chevron-left"></span>
+				  <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control right" href="#carouselImagesLivres" data-slide="next">
+				  <span class="glyphicon glyphicon-chevron-right"></span>
+				  <span class="sr-only">Next</span>
+				</a>
+			  </div>
+			</div>
+		</div>
+		
+		
+    </div>
+
+	<footer>
+		<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190">INF3190</a> à l’université de <a href="http://www.uqam.ca">l'UQAM</a></p>
+		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
+	</footer>
+
+   <script type="text/javascript" src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
