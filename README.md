@@ -3,7 +3,7 @@ TP 1 du cours INF3190 <br>
 groupe: 20 <br>
 session automne 2021 <br>
 
-Bonjour nous sommes l'equipe de deux personnes : 
+Bonjour nous sommes l'equipe de deux personnes : <br>
 Renzo Salcedo, code permanant : SALR2089408<br>
 et <br>
 Elizaveta Kovalenko, code permanant : KOVE14549906 <br>
