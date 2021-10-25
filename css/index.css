@@ -291,6 +291,7 @@ dl.formulaire>dt {
     margin-right:30%;
     width: 40%;
     background-color: #f1f1f1;
+    height: 115%;
 }
 .form-sign input{
     display: inline-block;
@@ -660,6 +661,14 @@ dl.formulaire>dt {
 .formRecherche.reussi i.fa-check-circle {
     color: #2ecc71;
     visibility: visible;
+}
+#bCheck1{
+    display: inline-block;
+    margin-left: -10px;
+    margin-bottom: -50px;
+}
+#bCheck1Label{
+    margin-top: 18px;
 }
 
 
