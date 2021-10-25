@@ -109,15 +109,15 @@
 					<label for="formGroupExampleInput2">Collection</label>
 					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
 				</div>
-				<div class="form-check form-check-inline case">
+				
 					<input class="form-check-input" type="checkbox" id="bCheck1" value="option1">
 					<label class="form-check-label" for="bCheck1">Penguin Coccinelle</label>
-				  </div>
+				  	
 				  <div class="form-check form-check-inline case1">
 					<input class="form-check-input" type="checkbox" id="bCheck2" value="option2">
 					<label class="form-check-label" for="bCheck2">Penguin Classics</label>
 				  </div>
-				  <i class="fas fa-check-circle"></i>
+				  	<i class="fas fa-check-circle"></i>
 		  			<i class="fas fa-exclamation-circle"></i>
 		  			<small>Msg d'erreur</small>
 			
@@ -154,6 +154,7 @@
 
 function verifierEntrees() {
     const bRadio1Val= bRadio1.value.trim();
+	const bCheck1Val= bCheck1.value.trim();
 
 	
     if(!form.elements["bRadio1"].checked && !form.elements["bRadio2"].checked) {
@@ -162,8 +163,14 @@ function verifierEntrees() {
     } else {
         msgReussi(bRadio1);
     }
-	
 
+	if(!form.elements["bCheck1"].checked && !form.elements["bCheck2"].checked) {
+        msgErreur(bCheck1, 'vous devez choisir une option.')
+		
+    } else {
+        msgReussi(bCheck1);
+    }
+	
 
 }
 
