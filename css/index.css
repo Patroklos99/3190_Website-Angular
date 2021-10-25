@@ -306,7 +306,7 @@ dl.formulaire>dt {
     width: 40%;
     background-color: #f1f1f1;
 }
-.form-sign input{
+.form-sign input:not(.form-check-input){
     display: inline-block;
     width: 96%;
 }
@@ -397,7 +397,7 @@ dl.formulaire>dt {
     line-height: 1.2;
     letter-spacing: .5px;
     float: left;
-    
+    margin-left: 20px;
 }
 .but-retour{
     float:right;
@@ -541,36 +541,36 @@ dl.formulaire>dt {
 .b2{
     margin-bottom: 20px;   
 }
-.form-check-input{
+/*.form-check-input{
     position: relative;
     float: left;
     right: 2px;
     left: -180px;
     margin-left: 0;    
-}
-.form-check-label{
+}*/
+/*.form-check-label{
     position: relative;
     top: -17px; 
     left: 25px; 
     
 }
-.fieldsetradio {
+/*.fieldsetradio {
     margin:0;
     padding:0;
     border:solid;
     width: 96%;
     margin-bottom: 11px;
-}
-.fieldsetradio label{
+}*/
+/*.fieldsetradio label{
     margin-left: 19px;
     margin-top: 1px;
 }
-.fieldsetradio input{
+/*.fieldsetradio input{
     position: absolute;
     margin-left: 4px;
     width: 96%;
     margin-bottom: 10px;
-}
+}*/
 
 .form-check-inline input{
     left: -190px;
