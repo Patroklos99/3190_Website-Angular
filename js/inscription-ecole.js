@@ -82,7 +82,9 @@ function verifierEntrees() {
     }
     
     if(!cCode(codeVal) && !(codeVal === "")){
-        msgErreur(code, 'Votre code nest pas valide, reessayez.')
+        msgErreur(code, "Votre code n'est pas valide, reessayez.")
+    }else if(codeVal === ""){
+        msgErreur(code, 'Votre code ne peut pas être vide.')
     }
     else {
         msgReussi(code)

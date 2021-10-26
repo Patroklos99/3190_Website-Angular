@@ -116,6 +116,8 @@ function verifierEntrees() {
     
     if(!cCode(codeVal) && !(codeVal === "")){
         msgErreur(code, 'Votre code nest pas valide, reessayez.')
+    }else if(codeVal === ""){
+        msgErreur(code, 'Votre code ne peut pas être vide.')
     }
     else {
         msgReussi(code)
@@ -143,7 +145,7 @@ function cEmail(email){
 }
 
 function cCode(code){
-    
+    return /^([A-Z]{4}\d{8}[A-Z]{2})$/.test(code); 
     
 }
 

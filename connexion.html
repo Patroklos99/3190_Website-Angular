@@ -105,37 +105,21 @@
       verifierEntrees();
       
 
-    }
-    )
+    });
 
     function verifierEntrees() {
     const courrielVal= courriel.value.trim();
 	  const passwordVal= password.value.trim();
-
+  
     if(courrielVal === 'usager@gmail.com' && passwordVal === 'usager'){
       window.location.href="usager.html";
-
-    }
-    
-
-    if(courrielVal === 'ecole@ecole.qc' && passwordVal === 'ecole'){
+    }else if(courrielVal === 'ecole@ecole.qc' && passwordVal === 'ecole'){
       window.location.href="ecole.html";
+    }else{
+      alert("Mot de passe ou courriel entré est invalide!");
+    }
+  }
     
-    }
-
-    if(passwordVal !== "usager" | passwordVal !== "ecole" | courrielVal !==
-    'ecole@ecole.qc' | courrielVal !== 'usager@gmail.com'){
-      alert("Mot de passe ou courriel entré invalide");
-							
-		}
-
-
-						
-		
-
-
-    }
-  
     </script>
     
 </body>
