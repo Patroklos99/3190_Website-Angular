@@ -563,14 +563,12 @@ dl.formulaire>dt {
     visibility: visible;
 }
 .formRecherche i {
-    position: absolute;
     right: 450px;
     margin-top: -5px;
     visibility: hidden;
 }
 .formRecherche small {
-    position: relative;
-    bottom: 10px;
+    bottom: 20px;
     text-align: left;
     visibility: hidden;    
 }
