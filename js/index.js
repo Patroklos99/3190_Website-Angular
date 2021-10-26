@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) => {
 
     verifierEntrees();
 }
-)
+); 
 
 function verifierEntrees() {
     const prenomVal= prenom.value.trim();
