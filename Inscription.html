@@ -19,140 +19,140 @@
 	<div>
     <nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-		<div class="navbar-header">
-		  <a class="navbar-brand">Club de Lecture</a>
-		</div>
-		<ul class="nav navbar-nav">
-		  <li class="active"><a href="index.html">Accueil</a></li>
-		  <li><a href="contacts.html">Contacts</a></li>
-		  <li><a href="leclub.html">Le club</a></li>
-		  <li><a href="nouveautés.html">Nouveautés</a></li>
-		</ul>
-		<form class="navbar-form navbar-left">
-		  <div class="input-group">
-		  <input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
-		  <div class="input-group-btn">
-			<button class="btn btn-default b-recherche" type="submit">
-			<i class="glyphicon glyphicon-search"></i>
-			</button>
-		  </div>
-		  </div>
-		  <a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Détaillée</a>
+			<div class="navbar-header">
+				<span class="navbar-brand">Club de Lecture</span>
+			</div>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="leclub.html">Le club</a></li>
+					<li><a href="nouveautés.html">Nouveautés</a></li>
+				</ul>
+			<form class="navbar-form navbar-left">
+			<div class="input-group">
+			<input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
+			<div class="input-group-btn">
+				<button class="btn btn-default b-recherche" type="submit">
+				<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+			</div>
+			<a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Détaillée</a>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+			<li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+			<li class="nav-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+			S'inscrire</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
+			<li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+			Connexion</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+			<li><hr class="dropdown-divider"></li>
+			<li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+			</ul>
+		</li>
+			</ul>
+			</div>
+		</nav>
+
+		<header class="page-titre">
+			<h1>Créer un compte personnel</h1>
+		</header>
+
+		<div class="form-sign"><form class="form" id="form">
+			<fieldset>
+				<div class="titre-form">
+					<h4>Détails du compte</h4>
+					<div class="hii">
+						Tous les champs sont requis
+					</div>
+				</div>
+			<div class="form-group">
+			<label for="prenom">Prénom</label>
+			<input type="text" class="form-control" id="prenom" placeholder="">
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group">
+			<label for="nom">Nom&nbsp</label>
+			<input type="text" class="form-control" id="nom" placeholder="">
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group">
+				<label for="telephone">Téléphone</label>
+				<input type="text" class="form-control" id="telephone" placeholder="">
+				<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group">
+				<label for="adresse">Adresse de livraison</label>
+				<input type="text" class="form-control" id="adresse" placeholder="">
+				<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group">
+				<label for="courriel">Courriel</label>
+				<input type="text" class="form-control" id="courriel" placeholder="">
+				<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group">
+				<label for="pass">Mot de passe</label>
+				<input type="password" class="form-control" id="pass" placeholder="">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group">
+				<label for="pass2">Confirmer le mot de passe</label>
+				<input type="password" class="form-control" id="pass2" placeholder="">
+				<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group">
+				<label for="code">Code</label>
+				<input type="text" class="form-control" id="code" placeholder="">
+				<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Msg d'erreur</small>
+			</div>
+			<div class="form-group final" >
+				<h4>
+					Lisez avec plaisir
+				</h4>
+			</div>
+
+			<div>
+				<div >
+					<button type="submit" class="btn button-creer">Créer un compte</button>
+				</div>
+				<div class="but-retour">
+					<a href="index.html">Retour</a>
+				</div>
+			</div>
+			
+			</fieldset>
 		</form>
-		<ul class="nav navbar-nav navbar-right">
-		  <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
-		  <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
-          S'inscrire</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
-          <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
-          Connexion</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
-        </ul>
-      </li>
-		</ul>
 		</div>
-	  </nav>
-
-	  <header class="page-titre">
-		  <h1>Créer un compte personnel</h1>
-	  </header>
-
-	  <div class="form-sign"><form class="form" id="form">
-		  <fieldset>
-			  <div class="titre-form">
-				  <h4>Détails du compte</h4>
-				  <div class="hii">
-					  Tous les champs sont requis
-				  </div>
-			  </div>
-		<div class="form-group">
-		  <label for="prenom">Prénom</label>
-		  <input type="text" class="form-control" id="prenom" placeholder="">
-		  <i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		</div>
-		<div class="form-group">
-		  <label for="nom">Nom&nbsp</label>
-		  <input type="text" class="form-control" id="nom" placeholder="">
-		  <i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		</div>
-		  <div class="form-group">
-			<label for="telephone">Téléphone</label>
-			<input type="text" class="form-control" id="telephone" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="adresse">Adresse de livraison</label>
-			<input type="text" class="form-control" id="adresse" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="courriel">Courriel</label>
-			<input type="text" class="form-control" id="courriel" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="pass">Mot de passe</label>
-			<input type="password" class="form-control" id="pass" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		    <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="pass2">Confirmer le mot de passe</label>
-			<input type="password" class="form-control" id="pass2" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="code">Code</label>
-			<input type="text" class="form-control" id="code" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group final" >
-			  <h4>
-				  Lisez avec plaisir
-			  </h4>
-		  </div>
-
-		  <div>
-			  <div >
-				<button type="submit" class="btn button-creer">Créer un compte</button>
-			  </div>
-			  <div class="but-retour">
-				  <a href="index.html">Retour</a>
-			  </div>
-		  </div>
-		  
-		</fieldset>
-	  </form>
-	</div>
-	  
-	<footer>
-		<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190" target="_blank">INF3190</a> à l’université de <a href="http://www.uqam.ca" target="_blank">l'UQAM</a></p>
-		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
-	</footer> 
-     
+		
+		<footer>
+			<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190" target="_blank">INF3190</a> à l’université de <a href="http://www.uqam.ca" target="_blank">l'UQAM</a></p>
+			<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
+		</footer> 
+		
 </body>
 </html>

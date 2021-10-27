@@ -71,8 +71,11 @@ header li a:hover {
     color: white;    
 }
 /*debut navbar*/
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a{
     color: #ccc;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
 }
 /*fin navbar*/
 /*debut footer*/
@@ -182,7 +185,7 @@ address{
     position:relative;
     top: 10px;
     margin: 8px;
-    color: #afafaf;
+    color: #fff;
 }
 #Leslivres{
 	text-align: center; 
@@ -191,7 +194,7 @@ address{
     position: relative;
     top:9px;
     right: 1px;
-	color: #afafaf;
+	color: #fff;
 }
 .navbar{
 	position: fixed;

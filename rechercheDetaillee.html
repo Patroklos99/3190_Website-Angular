@@ -17,175 +17,175 @@
 <body id="recherche">
     <nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-		<div class="navbar-header">
-		  <a class="navbar-brand">Club de Lecture</a>
-		</div>
-		<ul class="nav navbar-nav">
-		  <li class="active"><a href="index.html">Accueil</a></li>
-		  <li><a href="contacts.html">Contacts</a></li>
-		  <li><a href="leclub.html">Le club</a></li>
-		  <li><a href="nouveautés.html">Nouveautés</a></li>
-		</ul>
-		<form class="navbar-form navbar-left">
-		  <div class="input-group">
-		  <input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
-		  <div class="input-group-btn">
-			<button class="btn btn-default b-recherche" type="submit">
-			<i class="glyphicon glyphicon-search"></i>
-			</button>
-		  </div>
-		  </div>
-		  <a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Détaillée</a>
-		</form>
-		<ul class="nav navbar-nav navbar-right">
-		  <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
-		  <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
-          S'inscrire</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
-          <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
-          Connexion</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
-        </ul>
-      </li>
-		</ul>
-		</div>
-	  </nav>
+			<div class="navbar-header">
+				<span class="navbar-brand">Club de Lecture</span>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+				<li><a href="leclub.html">Le club</a></li>
+				<li><a href="nouveautés.html">Nouveautés</a></li>
+			</ul>
+			<form class="navbar-form navbar-left">
+			<div class="input-group">
+			<input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
+			<div class="input-group-btn">
+				<button class="btn btn-default b-recherche" type="submit">
+				<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+			</div>
+			<a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Détaillée</a>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+			<li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+			<li class="nav-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+			S'inscrire</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
+			<li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+			Connexion</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+			<li><hr class="dropdown-divider"></li>
+			<li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+			</ul>
+		</li>
+			</ul>
+			</div>
+		</nav>
 
-	  <header class="page-titre">
-		  <h1>Recherche Detaillée</h1>
-	  </header>
+		<header class="page-titre">
+			<h1>Recherche Detaillée</h1>
+		</header>
 
-	  <div class="form-sign row">
-		  <form id="formRecherche" class="formRecherche">
-		
-				<div class="form-group-1">
-				<label for="formGroupExampleInput">Titre&nbsp&nbsp</label>
-				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
-				</div>
-				<fieldset class="fieldsetradio">
-					<div>
-						<input class="form-check-input" type="radio" name="flexRadioDisabled" id="bRadio1">
-						<label class="form-check-label1" for="bRadio1">Titre exact</label>
-					</div>	
-					<div>
-							<input class="form-check-input" type="radio" name="flexRadioDisabled" id="bRadio2">
-							<label class="form-check-label1" for="bRadio2">Mots du titre</label>
+		<div class="form-sign row">
+			<form id="formRecherche" class="formRecherche">
+			
+					<div class="form-group-1">
+					<label for="formGroupExampleInput">Titre&nbsp&nbsp</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
 					</div>
-				  	<i class="fas fa-check-circle"></i>
-		  			<i class="fas fa-exclamation-circle"></i>
-		  			<small>Msg d'erreur</small>
-				</fieldset>
-				
-				<div class="form-group-1">
-				<label for="formGroupExampleInput2">Catégorie</label>
-				<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-				</div>
-				<div class="form-group-1">
-					<label for="formGroupExampleInput2">Auteur</label>
-					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-				</div>
-				<div class="form-group-1">
-					<label for="formGroupExampleInput2">Mot Clé</label>
-					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-				</div>
-				<div class="form-group-1">
-					<label for="formGroupExampleInput2">Éditeur</label>
-					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+					<fieldset class="fieldsetradio">
+						<div>
+							<input class="form-check-input" type="radio" name="flexRadioDisabled" id="bRadio1">
+							<label class="form-check-label1" for="bRadio1">Titre exact</label>
+						</div>	
+						<div>
+								<input class="form-check-input" type="radio" name="flexRadioDisabled" id="bRadio2">
+								<label class="form-check-label1" for="bRadio2">Mots du titre</label>
+						</div>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Msg d'erreur</small>
+					</fieldset>
 					
-				</div>
-				<div class="form-group-1">
-					<label for="formGroupExampleInput2">Collection</label>
+					<div class="form-group-1">
+					<label for="formGroupExampleInput2">Catégorie</label>
 					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
-				</div>
-				
-				<fieldset class="fieldsetradio">
-					<div class="form-check">
-						<input class="form-check-input caseA" type="checkbox" id="bCheck1" value="option1">
-						<label class="form-check-label" id="bCheck1Label" for="bCheck1">Penguin Coccinelle</label>
 					</div>
-
-				    <div class="form-check">
-						<input class="form-check-input" type="checkbox" id="bCheck2" value="option2">
-						<label class="form-check-label" for="bCheck2">Penguin Classics</label>
+					<div class="form-group-1">
+						<label for="formGroupExampleInput2">Auteur</label>
+						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
 					</div>
-
-				  	<i class="fas fa-check-circle"></i>
-		  			<i class="fas fa-exclamation-circle"></i>
-		  			<small>Msg d'erreur</small>
-
-				</fieldset>
-
-				<div>
-					<div >
-						<button type="submit" class="btn button-creer">Chercher</button>
+					<div class="form-group-1">
+						<label for="formGroupExampleInput2">Mot Clé</label>
+						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
 					</div>
-					<div class="but-retour">
-						<a href="index.html">Retour</a>
+					<div class="form-group-1">
+						<label for="formGroupExampleInput2">Éditeur</label>
+						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+						
 					</div>
-				</div>
-	  </form>
-	</div>
-	  
-	<footer>
-		<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190" target="_blank">INF3190</a> à l’université de <a href="http://www.uqam.ca" target="_blank">l'UQAM</a></p>
-		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
-	</footer> 
+					<div class="form-group-1">
+						<label for="formGroupExampleInput2">Collection</label>
+						<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+					</div>
+					
+					<fieldset class="fieldsetradio">
+						<div class="form-check">
+							<input class="form-check-input caseA" type="checkbox" id="bCheck1" value="option1">
+							<label class="form-check-label" id="bCheck1Label" for="bCheck1">Penguin Coccinelle</label>
+						</div>
 
-	<script>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="bCheck2" value="option2">
+							<label class="form-check-label" for="bCheck2">Penguin Classics</label>
+						</div>
+
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Msg d'erreur</small>
+
+					</fieldset>
+
+					<div>
+						<div >
+							<button type="submit" class="btn button-creer">Chercher</button>
+						</div>
+						<div class="but-retour">
+							<a href="index.html">Retour</a>
+						</div>
+					</div>
+		</form>
+		</div>
 		
-		const form = document.getElementById('formRecherche');
-		const bRadio1 = document.getElementById('bRadio1');
-		const bRadio2 = document.getElementById('bRadio2');
-		const bCheck1 = document.getElementById('bCheck1');
-		const bCheck2 = document.getElementById('bCheck2');
+		<footer>
+			<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190" target="_blank">INF3190</a> à l’université de <a href="http://www.uqam.ca" target="_blank">l'UQAM</a></p>
+			<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
+		</footer> 
 
-		formRecherche.addEventListener('submit', (e) => {
-			e.preventDefault();
-			verifierEntrees();
-		});
+		<script>
+			
+			const form = document.getElementById('formRecherche');
+			const bRadio1 = document.getElementById('bRadio1');
+			const bRadio2 = document.getElementById('bRadio2');
+			const bCheck1 = document.getElementById('bCheck1');
+			const bCheck2 = document.getElementById('bCheck2');
 
-		function verifierEntrees() {
-			const bRadio1Val= bRadio1.value.trim();
-			const bCheck1Val= bCheck1.value.trim();
+			formRecherche.addEventListener('submit', (e) => {
+				e.preventDefault();
+				verifierEntrees();
+			});
 
-		
-			if(!form.elements["bRadio1"].checked && !form.elements["bRadio2"].checked) {
-				msgErreur(bRadio1, 'Vous devez choisir une option.')
-			} else {
-				msgReussi(bRadio1);
+			function verifierEntrees() {
+				const bRadio1Val= bRadio1.value.trim();
+				const bCheck1Val= bCheck1.value.trim();
+
+			
+				if(!form.elements["bRadio1"].checked && !form.elements["bRadio2"].checked) {
+					msgErreur(bRadio1, 'Vous devez choisir une option.')
+				} else {
+					msgReussi(bRadio1);
+				}
+
+				if(!form.elements["bCheck1"].checked && !form.elements["bCheck2"].checked) {
+					msgErreur(bCheck1, 'Vous devez choisir une option.')
+				} else {
+					msgReussi(bCheck1);
+				}
 			}
 
-			if(!form.elements["bCheck1"].checked && !form.elements["bCheck2"].checked) {
-				msgErreur(bCheck1, 'Vous devez choisir une option.')
-			} else {
-				msgReussi(bCheck1);
-			}
-		}
+			function msgErreur(input, message){
+				const formGroup = input.parentElement.parentElement;
+				const small = formGroup.querySelector('small');
 
-		function msgErreur(input, message){
+				small.innerText = message;
+
+				formGroup.className = 'formRecherche echoue';
+			}
+
+		function msgReussi(input) {
 			const formGroup = input.parentElement.parentElement;
-			const small = formGroup.querySelector('small');
-
-			small.innerText = message;
-
-			formGroup.className = 'formRecherche echoue';
+			formGroup.className = 'formRecherche reussi';
 		}
 
-	function msgReussi(input) {
-		const formGroup = input.parentElement.parentElement;
-		formGroup.className = 'formRecherche reussi';
-	}
-
-	</script>
+		</script>
     
 </body>
 </html>

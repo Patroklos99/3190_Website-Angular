@@ -15,760 +15,744 @@
 <body id="admin">
     <nav class="navbar navbar-inverse">
 		<div class="container-fluid">
-		<div class="navbar-header">
-		  <a class="navbar-brand">Club de Lecture</a>
+		   <div class="navbar-header">
+				<span class="navbar-brand">Club de Lecture</span>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="contacts.html">Contacts</a></li>
+				<li><a href="leclub.html">Le club</a></li>
+				<li><a href="nouveautés.html">Nouveautés</a></li>
+			</ul>
+			<form class="navbar-form navbar-left">
+			<div class="input-group">
+			<input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
+			<div class="input-group-btn">
+				<button class="btn btn-default b-recherche" type="submit">
+				<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+			</div>
+			<a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Détaillée</a>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+			<li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+			<li class="nav-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+			S'inscrire</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
+			<li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+			Connexion</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+			<li><hr class="dropdown-divider"></li>
+			<li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+			</ul>
+		</li>
+			</ul>
+			</div>
+		</nav>
+		<header class="container page-titre">
+			<h1>Page Administrateur</h1>
+		</header>
+		<div class="container">
+			<div class="row login-container2">
+				<div class="login-form-1 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+					<h3>Connexion</h3>
+					<div class="ho">
+						Tous les champs sont requis
+					</div>
+					<div class="Usager"><h4>Administrateur</h4></div>
+					<div class="form2">
+						<form>
+						<div class="form-group">
+							<input id="courriel" type="text" class="form-control" placeholder="Courriel" value=""/>
+						</div>
+						<div class="form-group">
+							<input id="motpass" type="password" class="form-control" placeholder="Mot de passe" value="" />
+						</div>
+						<div class="form-group">
+							<!--<input type="submit" class="btnSubmit" value="Se connecter" />-->
+							<!--<button id="connexion" type="submit" class="btn btn-default">Se connecter</button>-->
+							<a id="connexion" class="btn btn-default separe">Se connecter</a>
+						</div>
+						<div class="form-group">
+							<a href="#" class="ForgetPwd">Reinitialiser mot de passe</a>
+						</div>
+						</form>
+					</div>
+			</div>
+			
+			</div>
 		</div>
-		<ul class="nav navbar-nav">
-		  <li class="active"><a href="index.html">Accueil</a></li>
-		  <li><a href="contacts.html">Contacts</a></li>
-		  <li><a href="leclub.html">Le club</a></li>
-		  <li><a href="nouveautés.html">Nouveautés</a></li>
-		</ul>
-		<form class="navbar-form navbar-left">
-		  <div class="input-group">
-		  <input type="text" class="form-control" placeholder="Rechercher" name="rechercher">
-		  <div class="input-group-btn">
-			<button class="btn btn-default b-recherche" type="submit">
-			<i class="glyphicon glyphicon-search"></i>
-			</button>
-		  </div>
-		  </div>
-		  <a href="rechercheDetaillee.html" class="btn btn-default active" role="button" aria-pressed="true">Recherche Détaillée</a>
-		</form>
-		<ul class="nav navbar-nav navbar-right">
-		  <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
-		  <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
-          S'inscrire</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
-          <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
-          Connexion</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
-        </ul>
-      </li>
-		</ul>
-		</div>
-	  </nav>
-	<header class="container page-titre">
-		<h1>Page Administrateur</h1>
-	</header>
-	<div class="container">
-		<div class="row login-container2">
-			<div class="login-form-1 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-				<h3>Connexion</h3>
-				<div class="ho">
-					Tous les champs sont requis
-				</div>
-				<div class="Usager"><h4>Administrateur</h4></div>
-				<div class="form2">
-					<form>
-					  <div class="form-group">
-						  <input id="courriel" type="text" class="form-control" placeholder="Courriel" value=""/>
-					  </div>
-					  <div class="form-group">
-						  <input id="motpass" type="password" class="form-control" placeholder="Mot de passe" value="" />
-					  </div>
-					  <div class="form-group">
-						  <!--<input type="submit" class="btnSubmit" value="Se connecter" />-->
-						  <!--<button id="connexion" type="submit" class="btn btn-default">Se connecter</button>-->
-						  <a id="connexion" class="btn btn-default separe">Se connecter</a>
-					  </div>
-					  <div class="form-group">
-						  <a href="#" class="ForgetPwd">Reinitialiser mot de passe</a>
-					  </div>
-					</form>
-				</div>
-		   </div>
-		 
-		</div>
-	</div>
-	<div class="container" id="compte">
-		  <div class="row">
-				<ul class="nav nav-tabs">
-				  <li class="active"><a data-toggle="tab" href="#gerer">Gérer l’inventaire des livres/Modifier images marketing</a></li>
-				  <li><a data-toggle="tab" href="#valider">Valider les comptes de l'ecole</a></li>
-				  <li><a data-toggle="tab" href="#ajouter">Ajouter rabais</a></li>
-				</ul>
+		<div class="container" id="compte">
+			<div class="row">
+					<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#gerer">Gérer l’inventaire des livres/Modifier images marketing</a></li>
+					<li><a data-toggle="tab" href="#valider">Valider les comptes de l'ecole</a></li>
+					<li><a data-toggle="tab" href="#ajouter">Ajouter rabais</a></li>
+					</ul>
 
-				<div class="tab-content">
-				  <div id="gerer" class="tab-pane fade in active">
-					<h3>Gérer l’inventaire des livres/Modifier images marketing</h3>
-					
-						<div class="accordion" id="Leslivres">
-						  <div class="card">
-							<div class="card-header" id="tete1">
-							  <h2 class="mb-0">
-								<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#livre1" aria-expanded="true" aria-controls="livre1">
-								  Le Petit Prince
-								</button>
-							  </h2>
-							</div>
-
-							<div id="livre1" class="collapse" aria-labelledby="tete1" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/le-petit-prince-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Petit Prince'">
-									  <form>
-										<div>
-											<label for="image1" class="btn btn-primary">Choisir Image</label>
-											<input id="image1" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-									  <form>
-										<div class="row"><label><b>Code produit:</b></label> <input type="text" value="9783140464079" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label> <input type="text" value="Antoine de Saint-Exupéry" disabled></div>
-										<div class="row"><label><b>Titre:</b></label> <input type="text" value="Le Petit Prince" disabled></div>
-										<div class="row"><label><b>Prix:</b></label> <input type="text" value="13,25$" disabled></div>
-										<div class="row"><p><strong>Rabais:</strong> <span class="rabais">10%</span></p></div>
-										<div class="row"><label><b>Description:</b></label> <textarea disabled>Le récit des aventures poétiques et symboliques d'un petit garçon venu d'une autre planète, et de sa rencontre avec un aviateur échoué dans le désert. Avec les dessins de la première édition.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 6eme année (5-12 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-
-									</form>
-									</div>
-								</div>	
-								
-							  </div>
-							</div>
-						  </div>
-						  
-
-						  <div class="card">
-							<div class="card-header" id="tete2">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre2" aria-expanded="false" aria-controls="livre2">
-								  The Very Hungry Caterpillar 
-								</button>
-							  </h2>
-							</div>
-							<div id="livre2" class="collapse" aria-labelledby="tete2" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/the-very-hungry-caterpillar-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'The Very Hungry Caterpillar'">
-									  <form>
-										<div>
-											<label for="image2" class="btn btn-primary">Choisir Image</label>
-											<input id="image2" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9783806741360" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Eric Carle" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="The Very Hungry Caterpillar" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="7,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">10%</span></p></div>
-										<div class="row"><label><b>Description:</b></label> <textarea disabled>The all-time classic picture book, from generation to generation, sold somewhere in the world every 30 seconds! Have you shared it with a child or grandchild in your life?For the first time, Eric Carle’s The Very Hungry Caterpillar is now available in e-book format, perfect for storytime anywhere. As an added bonus, it includes read-aloud audio of Eric Carle reading his classic story. This fine audio production pairs perfectly with the classic story, and it makes for a fantastic new way to encounter this famous, famished caterpillar. </textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 2eme année (5-7 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
+					<div class="tab-content">
+					<div id="gerer" class="tab-pane fade in active">
+						<h3>Gérer l’inventaire des livres/Modifier images marketing</h3>
+						
+							<div class="accordion" id="Leslivres">
+							<div class="card">
+								<div class="card-header" id="tete1">
+								<h2 class="mb-0">
+									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#livre1" aria-expanded="true" aria-controls="livre1">
+									Le Petit Prince
+									</button>
+								</h2>
 								</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						  <div class="card">
-							<div class="card-header" id="tete3">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre3" aria-expanded="false" aria-controls="livre3">
-								  The Mushroom Fan Club
-								</button>
-							  </h2>
-							</div>
-							<div id="livre3" class="collapse" aria-labelledby="tete3" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/mushroom-fun-club-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'The Mushroom Fan Club'">
-									  <form>
-										<div>
-											<label for="image3" class="btn btn-primary">Choisir Image</label>
-											<input id="image3" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781770463226" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Elise Gravel" disabled></div>
-										<div class="row"><label><b>Titre:</b></label> <input type="text" value="The Mushroom Fan Club" disabled></div>
-										<div class="row"><label><b>Prix:</b></label> <input type="text" value="9,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>Join Elise Gravel as she explores the science of some of nature's weirdest and wildest characters—mushrooms!Elise Gravel is back with a whimsical look at one of her family’s most beloved pastimes: mushroom hunting! Combining her love of getting out into nature with her talent for anthropomorphizing everything, Gravel takes us on a magical tour of the forest floor and examines a handful of her favorite alien specimens up close. While the beautiful coral mushroom looks like it belongs under the sea, the peculiar lactarius indigo may be better suited for outer space! From the fun-to-stomp puffballs to the prince of the stinkers—the stinkhorn mushroom—and the musically inclined chanterelles, Gravel shares her knowledge of this fascinating kingdom by bringing each species to life in full felt-tip marker glory.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 2eme année (5-7 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						   <div class="card">
-							<div class="card-header" id="tete4">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre4" aria-expanded="false" aria-controls="livre4">
-								  Zoélie l'Allumette, Tome 13 : 'Le Sacrifice Inattendu' 
-								</button>
-							  </h2>
-							</div>
-							<div id="livre4" class="collapse" aria-labelledby="tete4" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/zoelie-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Zoélie l'Allumette, Tome 13 : Le Sacrifice Inattendu' ">
-									  <form>
-										<div>
-											<label for="image4" class="btn btn-primary">Choisir Image</label>
-											<input id="image4" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9782898103568" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Marie Potvin" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="Zoélie l'Allumette, Tome 13 : 'Le Sacrifice Inattendu'" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="12,95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>En plongeant dans le grand livre pour me sauver, Malvina m’a transmis certains de ses traits en plus de sa substance ! Nous ne devons pas pour autant perdre une seule minute : il faut repartir immédiatement dans le futur avant que les anomalies temporelles s’aggravent. Nous avons déjà trop tardé.Mais dès notre retour au 21e siècle, de nouvelles complications surgissent. Qu’arrive-t-il avec le grand livre ? Pourquoi Baptiste oublie-t-il notre amitié? Et qu’est-ce que cette entité noire qui le suit partout ? Nous aurons à faire la lumière sur tout ça, coûte que coûte !</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="4eme année - 1er secondaire (9-12 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						   <div class="card">
-							<div class="card-header" id="tete5">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre5" aria-expanded="false" aria-controls="livre5">
-								  Mon Encyclopédie Junior du Québec
-								</button>
-							  </h2>
-							</div>
-							<div id="livre5" class="collapse" aria-labelledby="tete5" data-parent="#Leslivres">
-							  <div class="card-body">
+
+								<div id="livre1" class="collapse" aria-labelledby="tete1" data-parent="#Leslivres">
+								<div class="card-body">
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-										  <img src="./images-livres/encyclopedie-quebec-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Mon Encyclopédie Junior du Québec'">
-										  <form>
+										<img src="./images-livres/le-petit-prince-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Petit Prince'">
+										<form>
 											<div>
-												<label for="image5" class="btn btn-primary">Choisir Image</label>
-												<input id="image5" class="image" type="file">
+												<label for="image1" class="btn btn-primary">Choisir Image</label>
+												<input id="image1" class="image" type="file">
 											</div>
 											<input type="submit" value="Sauvegarder">
-										  </form>
+										</form>
 										</div>
 										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781773881720" disabled></div>
-											<div class="row"><label><b>Auteur:</b></label><input type="text" value="de COLLECTIF" disabled></div>
-											<div class="row"><label><b>Titre:</b></label><input type="text" value="Mon Encyclopédie Junior du Québec" disabled></div>
-											<div class="row"><label><b>Prix:</b></label><input type="text" value="24,95$" disabled></div>
-											<div class="row"><p><b>Rabais:</b> <span class="rabais">20%</span></p></div>
-											<div class="row"><label><b>Description:</b></label><textarea disabled>Encyclopédie junior du Québec - C4 Dans cet ouvrage, l'enfant trouvera des informations aussi surprenantes que passionnantes sur des thèmes abordant les richesses et les prouesses du Québec. Grâce à de magnifiques photos, des cartes précises et des textes bien documentés, l'encyclopédie permettra d'explorer 7 grands thèmes : les régions, la nature, les animaux, la culture, les nations autochtones, les sports et les transports. Il pourra ensuite tester ses connaissances grâce au quiz à la fin du livre.</textarea></div>
+										<form>
+											<div class="row"><label><b>Code produit:</b></label> <input type="text" value="9783140464079" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label> <input type="text" value="Antoine de Saint-Exupéry" disabled></div>
+											<div class="row"><label><b>Titre:</b></label> <input type="text" value="Le Petit Prince" disabled></div>
+											<div class="row"><label><b>Prix:</b></label> <input type="text" value="13,25$" disabled></div>
+											<div class="row"><p><strong>Rabais:</strong> <span class="rabais">10%</span></p></div>
+											<div class="row"><label><b>Description:</b></label> <textarea disabled>Le récit des aventures poétiques et symboliques d'un petit garçon venu d'une autre planète, et de sa rencontre avec un aviateur échoué dans le désert. Avec les dessins de la première édition.</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 6eme année (5-12 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+
+										</form>
+										</div>
+									</div>	
+									
+								</div>
+								</div>
+							</div>
+							
+
+							<div class="card">
+								<div class="card-header" id="tete2">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre2" aria-expanded="false" aria-controls="livre2">
+									The Very Hungry Caterpillar 
+									</button>
+								</h2>
+								</div>
+								<div id="livre2" class="collapse" aria-labelledby="tete2" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/the-very-hungry-caterpillar-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'The Very Hungry Caterpillar'">
+										<form>
+											<div>
+												<label for="image2" class="btn btn-primary">Choisir Image</label>
+												<input id="image2" class="image" type="file">
+											</div>
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9783806741360" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Eric Carle" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="The Very Hungry Caterpillar" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="7,99$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">10%</span></p></div>
+											<div class="row"><label><b>Description:</b></label> <textarea disabled>The all-time classic picture book, from generation to generation, sold somewhere in the world every 30 seconds! Have you shared it with a child or grandchild in your life?For the first time, Eric Carle’s The Very Hungry Caterpillar is now available in e-book format, perfect for storytime anywhere. As an added bonus, it includes read-aloud audio of Eric Carle reading his classic story. This fine audio production pairs perfectly with the classic story, and it makes for a fantastic new way to encounter this famous, famished caterpillar. </textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 2eme année (5-7 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							
+							<div class="card">
+								<div class="card-header" id="tete3">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre3" aria-expanded="false" aria-controls="livre3">
+									The Mushroom Fan Club
+									</button>
+								</h2>
+								</div>
+								<div id="livre3" class="collapse" aria-labelledby="tete3" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/mushroom-fun-club-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'The Mushroom Fan Club'">
+										<form>
+											<div>
+												<label for="image3" class="btn btn-primary">Choisir Image</label>
+												<input id="image3" class="image" type="file">
+											</div>
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781770463226" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Elise Gravel" disabled></div>
+											<div class="row"><label><b>Titre:</b></label> <input type="text" value="The Mushroom Fan Club" disabled></div>
+											<div class="row"><label><b>Prix:</b></label> <input type="text" value="9,99$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>Join Elise Gravel as she explores the science of some of nature's weirdest and wildest characters—mushrooms!Elise Gravel is back with a whimsical look at one of her family’s most beloved pastimes: mushroom hunting! Combining her love of getting out into nature with her talent for anthropomorphizing everything, Gravel takes us on a magical tour of the forest floor and examines a handful of her favorite alien specimens up close. While the beautiful coral mushroom looks like it belongs under the sea, the peculiar lactarius indigo may be better suited for outer space! From the fun-to-stomp puffballs to the prince of the stinkers—the stinkhorn mushroom—and the musically inclined chanterelles, Gravel shares her knowledge of this fascinating kingdom by bringing each species to life in full felt-tip marker glory.</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 2eme année (5-7 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							
+							<div class="card">
+								<div class="card-header" id="tete4">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre4" aria-expanded="false" aria-controls="livre4">
+									Zoélie l'Allumette, Tome 13 : 'Le Sacrifice Inattendu' 
+									</button>
+								</h2>
+								</div>
+								<div id="livre4" class="collapse" aria-labelledby="tete4" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/zoelie-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Zoélie l'Allumette, Tome 13 : Le Sacrifice Inattendu' ">
+										<form>
+											<div>
+												<label for="image4" class="btn btn-primary">Choisir Image</label>
+												<input id="image4" class="image" type="file">
+											</div>
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9782898103568" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Marie Potvin" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="Zoélie l'Allumette, Tome 13 : 'Le Sacrifice Inattendu'" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="12,95$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>En plongeant dans le grand livre pour me sauver, Malvina m’a transmis certains de ses traits en plus de sa substance ! Nous ne devons pas pour autant perdre une seule minute : il faut repartir immédiatement dans le futur avant que les anomalies temporelles s’aggravent. Nous avons déjà trop tardé.Mais dès notre retour au 21e siècle, de nouvelles complications surgissent. Qu’arrive-t-il avec le grand livre ? Pourquoi Baptiste oublie-t-il notre amitié? Et qu’est-ce que cette entité noire qui le suit partout ? Nous aurons à faire la lumière sur tout ça, coûte que coûte !</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="4eme année - 1er secondaire (9-12 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							
+							<div class="card">
+								<div class="card-header" id="tete5">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre5" aria-expanded="false" aria-controls="livre5">
+									Mon Encyclopédie Junior du Québec
+									</button>
+								</h2>
+								</div>
+								<div id="livre5" class="collapse" aria-labelledby="tete5" data-parent="#Leslivres">
+								<div class="card-body">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<img src="./images-livres/encyclopedie-quebec-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Mon Encyclopédie Junior du Québec'">
+											<form>
+												<div>
+													<label for="image5" class="btn btn-primary">Choisir Image</label>
+													<input id="image5" class="image" type="file">
+												</div>
+												<input type="submit" value="Sauvegarder">
+											</form>
+											</div>
+											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+												<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781773881720" disabled></div>
+												<div class="row"><label><b>Auteur:</b></label><input type="text" value="de COLLECTIF" disabled></div>
+												<div class="row"><label><b>Titre:</b></label><input type="text" value="Mon Encyclopédie Junior du Québec" disabled></div>
+												<div class="row"><label><b>Prix:</b></label><input type="text" value="24,95$" disabled></div>
+												<div class="row"><p><b>Rabais:</b> <span class="rabais">20%</span></p></div>
+												<div class="row"><label><b>Description:</b></label><textarea disabled>Encyclopédie junior du Québec - C4 Dans cet ouvrage, l'enfant trouvera des informations aussi surprenantes que passionnantes sur des thèmes abordant les richesses et les prouesses du Québec. Grâce à de magnifiques photos, des cartes précises et des textes bien documentés, l'encyclopédie permettra d'explorer 7 grands thèmes : les régions, la nature, les animaux, la culture, les nations autochtones, les sports et les transports. Il pourra ensuite tester ses connaissances grâce au quiz à la fin du livre.</textarea></div>
+												<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-12 ans+)" disabled></div>
+												<button type="button" class="btn btn-info modifier">Modifier</button>
+												<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+												<button type="button" class="btn btn-warning enlever">Enlever</button>
+											</div>
+										</div>
+								</div>
+								</div>
+							</div>
+							
+							<div class="card">
+								<div class="card-header" id="tete6">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre6" aria-expanded="false" aria-controls="livre6">
+									Percy Jackson, Tome 1 : 'Le Voleur de Foudre'
+									</button>
+								</h2>
+								</div>
+								<div id="livre6" class="collapse" aria-labelledby="tete6" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/percy-jackson-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Percy Jackson, Tome 1 : Le Voleur de Foudre'">
+										<form>
+											<div>
+												<label for="image6" class="btn btn-primary">Choisir Image</label>
+												<input id="image6" class="image" type="file">
+											</div>
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781423121701" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Rick Riordan" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="Percy Jackson, Tome 1 : 'Le Voleur de Foudre'" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="13,95$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>Percy Jackson est un adolescent perturbé qui découvre un jour le secret de sa naissance : son père n'est autre que le dieu de la mer, Poséidon. Placé dans un camp de vacances pour enfants sang-mêlé, il est injustement accusé d'avoir volé l'éclair de Zeus.</textarea></div>
 											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-12 ans+)" disabled></div>
 											<button type="button" class="btn btn-info modifier">Modifier</button>
 											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
 											<button type="button" class="btn btn-warning enlever">Enlever</button>
 										</div>
 									</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						   <div class="card">
-							<div class="card-header" id="tete6">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre6" aria-expanded="false" aria-controls="livre6">
-								  Percy Jackson, Tome 1 : 'Le Voleur de Foudre'
-								</button>
-							  </h2>
-							</div>
-							<div id="livre6" class="collapse" aria-labelledby="tete6" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/percy-jackson-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Percy Jackson, Tome 1 : Le Voleur de Foudre'">
-									  <form>
-										<div>
-											<label for="image6" class="btn btn-primary">Choisir Image</label>
-											<input id="image6" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781423121701" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Rick Riordan" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="Percy Jackson, Tome 1 : 'Le Voleur de Foudre'" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="13,95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>Percy Jackson est un adolescent perturbé qui découvre un jour le secret de sa naissance : son père n'est autre que le dieu de la mer, Poséidon. Placé dans un camp de vacances pour enfants sang-mêlé, il est injustement accusé d'avoir volé l'éclair de Zeus.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-12 ans+)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
 								</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						   <div class="card">
-							<div class="card-header" id="tete7">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre7" aria-expanded="false" aria-controls="livre7">
-								  National Geographic Kids : Mon grand livre de l'espace
-								</button>
-							  </h2>
-							</div>
-							<div id="livre7" class="collapse" aria-labelledby="tete7" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/national-geographics-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'National Geographic Kids : Mon grand livre de l'espace'">
-									  <form>
-										<div>
-											<label for="image7" class="btn btn-primary">Choisir Image</label>
-											<input id="image7" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781426337604" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Catherine D. Hughes" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="National Geographic Kids : 'Mon grand livre de l'espace'" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="12,69$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">25%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>Ces pages colorées initieront les jeunes enfants aux merveilles de l'espace avec les illustrations de David Aguilar et des textes simples parfaits pour les lecteurs débutants et la lecture à voix haute. Ce livre débute en explorant les concepts de base de l'espace pour ensuite aborder des notions plus complexes sur l'univers et ses mystères. Quelques exemples de chapitres :La Terre, la Lune et le SoleilD'autres planètes de notre système solaireLes planètes naines, les comètes et la ceinture d'astéroïdesL'Univers, la Voie lactée, les galaxies et les trous noirsLes humains sur la Lune, les vaisseaux spatiaux, la Station spatiale internationale, etc.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 3eme année (5-8 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
 								</div>
-							  </div>
 							</div>
-						  </div>
-						  
-						   <div class="card">
-							<div class="card-header" id="tete8">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre8" aria-expanded="false" aria-controls="livre8">
-								  Harry Potter T.1 : Harry Potter à l'école des sorciers
-								</button>
-							  </h2>
-							</div>
-							<div id="livre8" class="collapse" aria-labelledby="tete8" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/harry-potter-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Harry Potter T.1 : Harry Potter à l'école des sorciers'">
-									  <form>
-										<div>
-											<label for="image8" class="btn btn-primary">Choisir Image</label>
-											<input id="image8" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9780747532743" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="J.K. Rowling" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="Harry Potter Tome 1 : 'Harry Potter à l'école des sorciers'" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="16,95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>Amitié, surprises, dangers, humour, Harry découvre ses pouvoirs et la vie à Poudlard. Le premier tome des aventures du jeune héros vous ensorcelle aussitôt !Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener à Poudlard, une école de sorcellerie ! Voler en balai, jeter des sorts, combattre les trolls : Harry se révèle un sorcier doué. Mais un mystère entoure sa naissance et l'effroyable V., le mage dont personne n'ose prononcer le nom.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-11 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						   <div class="card">
-							<div class="card-header" id="tete9">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre9" aria-expanded="false" aria-controls="livre9">
-								  Les méchants T.1
-								</button>
-							  </h2>
-							</div>
-							<div id="livre9" class="collapse" aria-labelledby="tete9" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/les-mechants-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Les méchants T.1'">
-									  <form>
-										<div>
-											<label for="image9" class="btn btn-primary">Choisir Image</label>
-											<input id="image9" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781443154857" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Aaron Blabey" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="Les méchants, Tome 1" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="11,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">20%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>Ils ressemblent à de méchants garnements, ils parlent comme eux et ont aussi la même odeur qu'eux. Mais M. Loup, M. Piranha, M. Serpent et M. Requin vont changer tout cela bientôt! M. Loup a un plan audacieux pour la première mission honorable des méchants. Le quatuor veut libérer les deux cents chiens enfermés à la fourrière municipale à sécurité maximale. L'opération fourrière se déroulera-t-elle sans pépins? Les méchants deviendront-ils des gentils? Et M. Serpent, s.v.p. recrachez M. Piranha! Une nouvelle série hilarante pour les lecteurs débutants.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="1er année - 4eme année (6-10 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						   <div class="card">
-							<div class="card-header" id="tete10">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre10" aria-expanded="false" aria-controls="livre10">
-								  Le Sous-marin magique
-								</button>
-							  </h2>
-							</div>
-							<div id="livre10" class="collapse" aria-labelledby="tete10" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/sous-marin-magique-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Sous-marin magique'">
-									  <form>
-										<div>
-											<label for="image10" class="btn btn-primary">Choisir Image</label>
-											<input id="image10" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9782749947044" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Paul Mccartney" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="Le Sous-marin magique" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="19.95$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>Une nouvelle aventure de Papy et les canailles sublimée par de superbes illustrations de Kathryn Durst.Papy et les canailles sont de retours pour de nouvelles aventures !Cela fait bien longtemps que Lucy, Tom, Em et Bob n'ont pas vu leur grand-mère. Alors Papy a une idée : partir à l'aventure sur les traces de Mamy ! À bord du sous-marin magique, Papy et les enfants vont traverser l'océan et les déserts, guidés par les notes du bateau-accordéon de Mamy et des Beatles." Je voulais écrire un livre pour les grands-parents du monde entier afin qu'ils aient une histoire du soir pour leurs petits-enfants. " Paul McCartney.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="meternelle (5 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  
-						 <div class="card">
-							<div class="card-header" id="tete11">
-							  <h2 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre11" aria-expanded="false" aria-controls="livre11">
-								  Le Voleur de feuilles
-								</button>
-							  </h2>
-							</div>
-							<div id="livre11" class="collapse" aria-labelledby="tete11" data-parent="#Leslivres">
-							  <div class="card-body">
-								<div class="row">
-									<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									  <img src="./images-livres/voleur-des-feuilles-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Voleur de feuilles'">
-									  <form>
-										<div>
-											<label for="image11" class="btn btn-primary">Choisir Image</label>
-											<input id="image11" class="image" type="file">
-										</div>
-										<input type="submit" value="Sauvegarder">
-									  </form>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-										<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781443190053" disabled></div>
-										<div class="row"><label><b>Auteur:</b></label><input type="text" value="Alice Hemming | Nicola Slater" disabled></div>
-										<div class="row"><label><b>Titre:</b></label><input type="text" value="Le Voleur de feuilles" disabled></div>
-										<div class="row"><label><b>Prix:</b></label><input type="text" value="11,99$" disabled></div>
-										<div class="row"><p><b>Rabais:</b> <span class="rabais">25%</span></p></div>
-										<div class="row"><label><b>Description:</b></label><textarea disabled>Éric, un petit écureuil, adore l’automne. Mais alors qu’il profite de toutes les activités que cette saison offre, il se rend compte que l’une des feuilles de son arbre a… disparu! Elle est introuvable. Il pense comprendre ce qui se passe : un voleur de feuilles rôde dans les parages. Ses amis de la forêt seront-ils capables de l’aider à trouver le coupable? Un album sur le changement des saisons et la magie de la nature qui vous fera rire aux éclats.</textarea></div>
-										<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle (5 ans)" disabled></div>
-										<button type="button" class="btn btn-info modifier">Modifier</button>
-										<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
-										<button type="button" class="btn btn-warning enlever">Enlever</button>
-									</div>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						</div>
-					<div id="nouveauLivre" class="row">
-						 <button  type="button" class="btn btn-info ajouter">Ajouter un nouveau livre</button>
-					</div> 
-				</div>
-
-				<div id="valider" class="tab-pane fade">
-					<h3>Valider les comptes de l'ecole</h3>
-						<div class="accordion" id="lesEcoles">
-
+							
 							<div class="card">
-								<div class="card-header" id="tete1">
-									<h2 class="mb-0">
-									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole1" aria-expanded="true" aria-controls="	Ecole1">
-										École primaire Académie Saint-Clément
+								<div class="card-header" id="tete7">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre7" aria-expanded="false" aria-controls="livre7">
+									National Geographic Kids : Mon grand livre de l'espace
 									</button>
-									</h2>
+								</h2>
 								</div>
-
-								<div id="Ecole1" class="collapse" aria-labelledby="tete1" data-parent="#LesEcoles">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-												<img src="./images/ecole-stClement.jpg" class="img-thumbnail img-responsive" alt="ecole Saint-Clément">
-												<form>
-												<div>
-													<label for="image1" class="btn btn-primary">Choisir Image</label>
-													<input id="image1" class="image" type="file">
-												</div>
-												<input type="submit" value="Sauvegarder">
-												</form>
+								<div id="livre7" class="collapse" aria-labelledby="tete7" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/national-geographics-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'National Geographic Kids : Mon grand livre de l'espace'">
+										<form>
+											<div>
+												<label for="image7" class="btn btn-primary">Choisir Image</label>
+												<input id="image7" class="image" type="file">
 											</div>
-											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-												<form>
-													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="AC" disabled></div>
-													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Académie Saint-Clément" disabled></div>
-													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="hajer.baghouli3@csmb.qc.ca" disabled></div>
-													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 739-5004" disabled></div>
-													<div class="row"><label><b>Adresse:</b></label><input type="text" value="1345 ch. Régent Mont-Royal, QC H3P 2K8" disabled></div>
-													<button type="button" class="btn btn-info modifier">Modifier</button>
-													<button type="button" class="btn btn-info valider">Valider</button>
-													<button type="button" class="btn btn-warning enlever">Enlever</button>
-												</form>
-											</div>
-										</div>	
-									
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781426337604" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Catherine D. Hughes" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="National Geographic Kids : 'Mon grand livre de l'espace'" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="12,69$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">25%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>Ces pages colorées initieront les jeunes enfants aux merveilles de l'espace avec les illustrations de David Aguilar et des textes simples parfaits pour les lecteurs débutants et la lecture à voix haute. Ce livre débute en explorant les concepts de base de l'espace pour ensuite aborder des notions plus complexes sur l'univers et ses mystères. Quelques exemples de chapitres :La Terre, la Lune et le SoleilD'autres planètes de notre système solaireLes planètes naines, les comètes et la ceinture d'astéroïdesL'Univers, la Voie lactée, les galaxies et les trous noirsLes humains sur la Lune, les vaisseaux spatiaux, la Station spatiale internationale, etc.</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle - 3eme année (5-8 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
 									</div>
 								</div>
-
+								</div>
 							</div>
-
+							
 							<div class="card">
-								<div class="card-header" id="tete2">
-									<h2 class="mb-0">
-									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole2" aria-expanded="true" aria-controls="Ecole2">
-										École primaire Beau-Séjour | Zone grise
+								<div class="card-header" id="tete8">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre8" aria-expanded="false" aria-controls="livre8">
+									Harry Potter T.1 : Harry Potter à l'école des sorciers
 									</button>
-									</h2>
+								</h2>
 								</div>
-
-								<div id="Ecole2" class="collapse" aria-labelledby="tete2" data-parent="#LesEcoles">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-												<img src="./images/ecole-beauSejour.jpg" class="img-thumbnail img-responsive" alt="ecole Beau-Séjour | Zone grise">
-												<form>
-													<div>
-														<label for="image1" class="btn btn-primary">Choisir Image</label>
-														<input id="image1" class="image" type="file">
-													</div>
-													<input type="submit" value="Sauvegarder">
-												</form>
+								<div id="livre8" class="collapse" aria-labelledby="tete8" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/harry-potter-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Harry Potter T.1 : Harry Potter à l'école des sorciers'">
+										<form>
+											<div>
+												<label for="image8" class="btn btn-primary">Choisir Image</label>
+												<input id="image8" class="image" type="file">
 											</div>
-											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-												<form>
-													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="BS" disabled></div>
-													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Beau-Séjour | Zone grise" disabled></div>
-													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="Direction.EcoleBeau-Sejour@csmb.qc.ca" disabled></div>
-													<div class="row"><label><b>Telephone:</b></label> <input type="text" value=" 514 334-7350" disabled></div>
-													<div class="row"><label><b>Adresse:</b></label><input type="text" value="3600, rue Beauséjour Saint-Laurent (Québec) H4K 1W7" disabled></div>
-													<button type="button" class="btn btn-info modifier">Modifier</button>
-													<button type="button" class="btn btn-info valider">Valider</button>
-													<button type="button" class="btn btn-warning enlever">Enlever</button>
-												</form>
-											</div>
-										</div>	
-									
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9780747532743" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="J.K. Rowling" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="Harry Potter Tome 1 : 'Harry Potter à l'école des sorciers'" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="16,95$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>Amitié, surprises, dangers, humour, Harry découvre ses pouvoirs et la vie à Poudlard. Le premier tome des aventures du jeune héros vous ensorcelle aussitôt !Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée. Un géant vient le chercher pour l'emmener à Poudlard, une école de sorcellerie ! Voler en balai, jeter des sorts, combattre les trolls : Harry se révèle un sorcier doué. Mais un mystère entoure sa naissance et l'effroyable V., le mage dont personne n'ose prononcer le nom.</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="3eme année - 6eme année (8-11 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
 									</div>
 								</div>
-
+								</div>
 							</div>
-
+							
 							<div class="card">
-								<div class="card-header" id="tete3">
-									<h2 class="mb-0">
-									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole3" aria-expanded="true" aria-controls="Ecole3">
-										École primaire Bois-Franc-Aquarelle
+								<div class="card-header" id="tete9">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre9" aria-expanded="false" aria-controls="livre9">
+									Les méchants T.1
 									</button>
-									</h2>
+								</h2>
 								</div>
-
-								<div id="Ecole3" class="collapse" aria-labelledby="tete3" data-parent="#LesEcoles">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-												<img src="./images/ecole-bfAquarelle.jpg" class="img-thumbnail img-responsive" alt="ecole Bois-Franc-Aquarelle">
-												<form>
-													<div>
-														<label for="image1" class="btn btn-primary">Choisir Image</label>
-														<input id="image1" class="image" type="file">
-													</div>
-													<input type="submit" value="Sauvegarder">
-												</form>
+								<div id="livre9" class="collapse" aria-labelledby="tete9" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/les-mechants-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Les méchants T.1'">
+										<form>
+											<div>
+												<label for="image9" class="btn btn-primary">Choisir Image</label>
+												<input id="image9" class="image" type="file">
 											</div>
-											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-												<form>
-													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="BF" disabled></div>
-													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Bois-Franc-Aquarelle" disabled></div>
-													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolebois-franc-aquarelle@csmb.qc.ca" disabled></div>
-													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 332-5944" disabled></div>
-													<div class="row"><label><b>Adresse:</b></label><input type="text" value="2085 Rue de Londres, Saint-Laurent, QC H4L 3A5" disabled></div>
-													<button type="button" class="btn btn-info modifier">Modifier</button>
-													<button type="button" class="btn btn-info valider">Valider</button>
-													<button type="button" class="btn btn-warning enlever">Enlever</button>
-												</form>
-											</div>
-										</div>	
-									
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781443154857" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Aaron Blabey" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="Les méchants, Tome 1" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="11,99$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">20%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>Ils ressemblent à de méchants garnements, ils parlent comme eux et ont aussi la même odeur qu'eux. Mais M. Loup, M. Piranha, M. Serpent et M. Requin vont changer tout cela bientôt! M. Loup a un plan audacieux pour la première mission honorable des méchants. Le quatuor veut libérer les deux cents chiens enfermés à la fourrière municipale à sécurité maximale. L'opération fourrière se déroulera-t-elle sans pépins? Les méchants deviendront-ils des gentils? Et M. Serpent, s.v.p. recrachez M. Piranha! Une nouvelle série hilarante pour les lecteurs débutants.</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="1er année - 4eme année (6-10 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
 									</div>
 								</div>
+								</div>
 							</div>
-
+							
 							<div class="card">
-								<div class="card-header" id="tete4">
-									<h2 class="mb-0">
-									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole4" aria-expanded="true" aria-controls="Ecole4">
-										École primaire Cardinal-Léger
+								<div class="card-header" id="tete10">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre10" aria-expanded="false" aria-controls="livre10">
+									Le Sous-marin magique
 									</button>
-									</h2>
+								</h2>
 								</div>
-
-								<div id="Ecole4" class="collapse" aria-labelledby="tete4" data-parent="#LesEcoles">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-												<img src="./images/ecole-cardinalLeger.jpg" class="img-thumbnail img-responsive" alt="ecole Cardinal-Léger">
-												<form>
-												<div>
-													<label for="image1" class="btn btn-primary">Choisir Image</label>
-													<input id="image1" class="image" type="file">
-												</div>
-												<input type="submit" value="Sauvegarder">
-												</form>
+								<div id="livre10" class="collapse" aria-labelledby="tete10" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/sous-marin-magique-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Sous-marin magique'">
+										<form>
+											<div>
+												<label for="image10" class="btn btn-primary">Choisir Image</label>
+												<input id="image10" class="image" type="file">
 											</div>
-											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-												<form>
-													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="CL" disabled></div>
-													<div class="row"><label><b>Nom:</b></label> <input type="text" value="Cardinal-Léger" disabled></div>
-													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolecardinal-leger@csmb.qc.ca" disabled></div>
-													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 744-0763" disabled></div>
-													<div class="row"><label><b>Adresse:</b></label><input type="text" value="2000 Rue Decelles, Saint-Laurent, QC H4M 1B3" disabled></div>
-													<button type="button" class="btn btn-info modifier">Modifier</button>
-													<button type="button" class="btn btn-info valider">Valider</button>
-													<button type="button" class="btn btn-warning enlever">Enlever</button>
-												</form>
-											</div>
-										</div>	
-										
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9782749947044" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Paul Mccartney" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="Le Sous-marin magique" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="19.95$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">15%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>Une nouvelle aventure de Papy et les canailles sublimée par de superbes illustrations de Kathryn Durst.Papy et les canailles sont de retours pour de nouvelles aventures !Cela fait bien longtemps que Lucy, Tom, Em et Bob n'ont pas vu leur grand-mère. Alors Papy a une idée : partir à l'aventure sur les traces de Mamy ! À bord du sous-marin magique, Papy et les enfants vont traverser l'océan et les déserts, guidés par les notes du bateau-accordéon de Mamy et des Beatles." Je voulais écrire un livre pour les grands-parents du monde entier afin qu'ils aient une histoire du soir pour leurs petits-enfants. " Paul McCartney.</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="meternelle (5 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
 									</div>
 								</div>
+								</div>
 							</div>
-
+							
 							<div class="card">
-								<div class="card-header" id="tete5">
-									<h2 class="mb-0">
-									<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole5" aria-expanded="true" aria-controls="Ecole5">
-										École primaire de l’Odyssée
+								<div class="card-header" id="tete11">
+								<h2 class="mb-0">
+									<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#livre11" aria-expanded="false" aria-controls="livre11">
+									Le Voleur de feuilles
 									</button>
-									</h2>
+								</h2>
 								</div>
-
-								<div id="Ecole5" class="collapse" aria-labelledby="tete5" data-parent="#LesEcoles">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-												<img src="./images/ecole-lOdysse.jpg" class="img-thumbnail img-responsive" alt="ecole de l’Odyssée">
-												<form>
-												<div>
-													<label for="image1" class="btn btn-primary">Choisir Image</label>
-													<input id="image1" class="image" type="file">
-												</div>
-												<input type="submit" value="Sauvegarder">
-												</form>
+								<div id="livre11" class="collapse" aria-labelledby="tete11" data-parent="#Leslivres">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+										<img src="./images-livres/voleur-des-feuilles-couverture.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Voleur de feuilles'">
+										<form>
+											<div>
+												<label for="image11" class="btn btn-primary">Choisir Image</label>
+												<input id="image11" class="image" type="file">
 											</div>
-											<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-												<form>
-													<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="OD" disabled></div>
-													<div class="row"><label><b>Nom:</b></label> <input type="text" value="l’Odyssée" disabled></div>
-													<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolede-lodyssee@csmb.qc.ca" disabled></div>
-													<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 748-4607" disabled></div>
-													<div class="row"><label><b>Adresse:</b></label><input type="text" value="4348 Rue Alain, Pierrefonds, QC H9H 2T7" disabled></div>
-													<button type="button" class="btn btn-info modifier">Modifier</button>
-													<button type="button" class="btn btn-info valider">Valider</button>
-													<button type="button" class="btn btn-warning enlever">Enlever</button>
-												</form>
-											</div>
-										</div>	
-									
+											<input type="submit" value="Sauvegarder">
+										</form>
+										</div>
+										<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+											<div class="row"><label><b>Code produit:</b></label><input type="text" value="9781443190053" disabled></div>
+											<div class="row"><label><b>Auteur:</b></label><input type="text" value="Alice Hemming | Nicola Slater" disabled></div>
+											<div class="row"><label><b>Titre:</b></label><input type="text" value="Le Voleur de feuilles" disabled></div>
+											<div class="row"><label><b>Prix:</b></label><input type="text" value="11,99$" disabled></div>
+											<div class="row"><p><b>Rabais:</b> <span class="rabais">25%</span></p></div>
+											<div class="row"><label><b>Description:</b></label><textarea disabled>Éric, un petit écureuil, adore l’automne. Mais alors qu’il profite de toutes les activités que cette saison offre, il se rend compte que l’une des feuilles de son arbre a… disparu! Elle est introuvable. Il pense comprendre ce qui se passe : un voleur de feuilles rôde dans les parages. Ses amis de la forêt seront-ils capables de l’aider à trouver le coupable? Un album sur le changement des saisons et la magie de la nature qui vous fera rire aux éclats.</textarea></div>
+											<div class="row"><label><b>Niveau scolaire:</b></label><input type="text" value="maternelle (5 ans)" disabled></div>
+											<button type="button" class="btn btn-info modifier">Modifier</button>
+											<button type="button" class="btn btn-info sauvegarder">Sauvegarder les modifications</button>
+											<button type="button" class="btn btn-warning enlever">Enlever</button>
+										</div>
 									</div>
 								</div>
+								</div>
 							</div>
-						</div>
-
-						<div id="nouvelleEcole" class="row">
-							<button  type="button" class="btn btn-info ajouter">Ajouter une nouvelle école</button>
+							</div>
+						<div id="nouveauLivre" class="row">
+							<button  type="button" class="btn btn-info ajouter">Ajouter un nouveau livre</button>
 						</div> 
+					</div>
 
-				</div>			    
-				  
-				<div id="ajouter" class="tab-pane fade">
-					<h3>Ajouter rabais</h3>
+					<div id="valider" class="tab-pane fade">
+						<h3>Valider les comptes de l'ecole</h3>
+							<div class="accordion" id="lesEcoles">
 
-						<div class="row">
-						   <div class="dropdown">
-							<h4>Le Petit Prince - rabais courant: <span>10%</span></h4>    
-							<button class="btn btn-default dropdown-toggle" type="button" id="rabais1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="rabais1">
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-							    </ul>
+								<div class="card">
+									<div class="card-header" id="tete1">
+										<h2 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole1" aria-expanded="true" aria-controls="	Ecole1">
+											École primaire Académie Saint-Clément
+										</button>
+										</h2>
+									</div>
+
+									<div id="Ecole1" class="collapse" aria-labelledby="tete1" data-parent="#LesEcoles">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+													<img src="./images/ecole-stClement.jpg" class="img-thumbnail img-responsive" alt="ecole Saint-Clément">
+													<form>
+													<div>
+														<label for="image1" class="btn btn-primary">Choisir Image</label>
+														<input id="image1" class="image" type="file">
+													</div>
+													<input type="submit" value="Sauvegarder">
+													</form>
+												</div>
+												<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+													<form>
+														<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="AC" disabled></div>
+														<div class="row"><label><b>Nom:</b></label> <input type="text" value="Académie Saint-Clément" disabled></div>
+														<div class="row"><label><b>Courriel:</b></label> <input type="text" value="hajer.baghouli3@csmb.qc.ca" disabled></div>
+														<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 739-5004" disabled></div>
+														<div class="row"><label><b>Adresse:</b></label><input type="text" value="1345 ch. Régent Mont-Royal, QC H3P 2K8" disabled></div>
+														<button type="button" class="btn btn-info modifier">Modifier</button>
+														<button type="button" class="btn btn-info valider">Valider</button>
+														<button type="button" class="btn btn-warning enlever">Enlever</button>
+													</form>
+												</div>
+											</div>	
+										
+										</div>
+									</div>
+
+								</div>
+
+								<div class="card">
+									<div class="card-header" id="tete2">
+										<h2 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole2" aria-expanded="true" aria-controls="Ecole2">
+											École primaire Beau-Séjour | Zone grise
+										</button>
+										</h2>
+									</div>
+
+									<div id="Ecole2" class="collapse" aria-labelledby="tete2" data-parent="#LesEcoles">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+													<img src="./images/ecole-beauSejour.jpg" class="img-thumbnail img-responsive" alt="ecole Beau-Séjour | Zone grise">
+													<form>
+														<div>
+															<label for="image1" class="btn btn-primary">Choisir Image</label>
+															<input id="image1" class="image" type="file">
+														</div>
+														<input type="submit" value="Sauvegarder">
+													</form>
+												</div>
+												<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+													<form>
+														<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="BS" disabled></div>
+														<div class="row"><label><b>Nom:</b></label> <input type="text" value="Beau-Séjour | Zone grise" disabled></div>
+														<div class="row"><label><b>Courriel:</b></label> <input type="text" value="Direction.EcoleBeau-Sejour@csmb.qc.ca" disabled></div>
+														<div class="row"><label><b>Telephone:</b></label> <input type="text" value=" 514 334-7350" disabled></div>
+														<div class="row"><label><b>Adresse:</b></label><input type="text" value="3600, rue Beauséjour Saint-Laurent (Québec) H4K 1W7" disabled></div>
+														<button type="button" class="btn btn-info modifier">Modifier</button>
+														<button type="button" class="btn btn-info valider">Valider</button>
+														<button type="button" class="btn btn-warning enlever">Enlever</button>
+													</form>
+												</div>
+											</div>	
+										
+										</div>
+									</div>
+
+								</div>
+
+								<div class="card">
+									<div class="card-header" id="tete3">
+										<h2 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole3" aria-expanded="true" aria-controls="Ecole3">
+											École primaire Bois-Franc-Aquarelle
+										</button>
+										</h2>
+									</div>
+
+									<div id="Ecole3" class="collapse" aria-labelledby="tete3" data-parent="#LesEcoles">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+													<img src="./images/ecole-bfAquarelle.jpg" class="img-thumbnail img-responsive" alt="ecole Bois-Franc-Aquarelle">
+													<form>
+														<div>
+															<label for="image1" class="btn btn-primary">Choisir Image</label>
+															<input id="image1" class="image" type="file">
+														</div>
+														<input type="submit" value="Sauvegarder">
+													</form>
+												</div>
+												<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+													<form>
+														<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="BF" disabled></div>
+														<div class="row"><label><b>Nom:</b></label> <input type="text" value="Bois-Franc-Aquarelle" disabled></div>
+														<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolebois-franc-aquarelle@csmb.qc.ca" disabled></div>
+														<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 332-5944" disabled></div>
+														<div class="row"><label><b>Adresse:</b></label><input type="text" value="2085 Rue de Londres, Saint-Laurent, QC H4L 3A5" disabled></div>
+														<button type="button" class="btn btn-info modifier">Modifier</button>
+														<button type="button" class="btn btn-info valider">Valider</button>
+														<button type="button" class="btn btn-warning enlever">Enlever</button>
+													</form>
+												</div>
+											</div>	
+										
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header" id="tete4">
+										<h2 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole4" aria-expanded="true" aria-controls="Ecole4">
+											École primaire Cardinal-Léger
+										</button>
+										</h2>
+									</div>
+
+									<div id="Ecole4" class="collapse" aria-labelledby="tete4" data-parent="#LesEcoles">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+													<img src="./images/ecole-cardinalLeger.jpg" class="img-thumbnail img-responsive" alt="ecole Cardinal-Léger">
+													<form>
+													<div>
+														<label for="image1" class="btn btn-primary">Choisir Image</label>
+														<input id="image1" class="image" type="file">
+													</div>
+													<input type="submit" value="Sauvegarder">
+													</form>
+												</div>
+												<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+													<form>
+														<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="CL" disabled></div>
+														<div class="row"><label><b>Nom:</b></label> <input type="text" value="Cardinal-Léger" disabled></div>
+														<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolecardinal-leger@csmb.qc.ca" disabled></div>
+														<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 744-0763" disabled></div>
+														<div class="row"><label><b>Adresse:</b></label><input type="text" value="2000 Rue Decelles, Saint-Laurent, QC H4M 1B3" disabled></div>
+														<button type="button" class="btn btn-info modifier">Modifier</button>
+														<button type="button" class="btn btn-info valider">Valider</button>
+														<button type="button" class="btn btn-warning enlever">Enlever</button>
+													</form>
+												</div>
+											</div>	
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header" id="tete5">
+										<h2 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Ecole5" aria-expanded="true" aria-controls="Ecole5">
+											École primaire de l’Odyssée
+										</button>
+										</h2>
+									</div>
+
+									<div id="Ecole5" class="collapse" aria-labelledby="tete5" data-parent="#LesEcoles">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+													<img src="./images/ecole-lOdysse.jpg" class="img-thumbnail img-responsive" alt="ecole de l’Odyssée">
+													<form>
+													<div>
+														<label for="image1" class="btn btn-primary">Choisir Image</label>
+														<input id="image1" class="image" type="file">
+													</div>
+													<input type="submit" value="Sauvegarder">
+													</form>
+												</div>
+												<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+													<form>
+														<div class="row"><label><b>Code ecole:</b></label> <input type="text" value="OD" disabled></div>
+														<div class="row"><label><b>Nom:</b></label> <input type="text" value="l’Odyssée" disabled></div>
+														<div class="row"><label><b>Courriel:</b></label> <input type="text" value="direction.ecolede-lodyssee@csmb.qc.ca" disabled></div>
+														<div class="row"><label><b>Telephone:</b></label> <input type="text" value="(514) 748-4607" disabled></div>
+														<div class="row"><label><b>Adresse:</b></label><input type="text" value="4348 Rue Alain, Pierrefonds, QC H9H 2T7" disabled></div>
+														<button type="button" class="btn btn-info modifier">Modifier</button>
+														<button type="button" class="btn btn-info valider">Valider</button>
+														<button type="button" class="btn btn-warning enlever">Enlever</button>
+													</form>
+												</div>
+											</div>	
+										
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
+							<div id="nouvelleEcole" class="row">
+								<button  type="button" class="btn btn-info ajouter">Ajouter une nouvelle école</button>
+							</div> 
+
+					</div>			    
+					
+					<div id="ajouter" class="tab-pane fade">
+						<h3>Ajouter rabais</h3>
+
+							<div class="row">
 							<div class="dropdown">
-								<h4>The Very Hungry Caterpillar - rabais courant: <span>10%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais2" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais2">
+								<h4>Le Petit Prince - rabais courant: <span>10%</span></h4>    
+								<button class="btn btn-default dropdown-toggle" type="button" id="rabais1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais1">
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
@@ -777,235 +761,251 @@
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
 										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
 									</ul>
-							</div>		
-						</div>
-
-						<div class="row">
-							<div class="dropdown">
-								<h4>The Mushroom Fun Club - rabais courant: <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais3" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais3">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>Zoelie l'Alumette, Tome 13: 'Le sacrifice Inattendu' - rabais courant: <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais4" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais4">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>The Very Hungry Caterpillar - rabais courant: <span>10%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais2" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais2">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>		
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>Mon Encyclopedie Junior du Quebec - rabais courant: <span>20%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais5" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais5">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>The Mushroom Fun Club - rabais courant: <span>15%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais3" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais3">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>Percy Jackson, Tome 1: 'Le Voleur de Foudre' - rabais courant: <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais6" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais6">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>Zoelie l'Alumette, Tome 13: 'Le sacrifice Inattendu' - rabais courant: <span>15%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais4" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais4">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>National Geographic Kids: Mon grand livre de l'espace - rabais courant: <span>25%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais7" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais7">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>Mon Encyclopedie Junior du Quebec - rabais courant: <span>20%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais5" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais5">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>Harry Potter, Tome 1: 'Harry Potter a l'ecole des sorciers - rabais courant: <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais8" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais8">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>Percy Jackson, Tome 1: 'Le Voleur de Foudre' - rabais courant: <span>15%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais6" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais6">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>Les Mechants, Tome 1 - rabais courant: <span>20%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais9" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais9">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>National Geographic Kids: Mon grand livre de l'espace - rabais courant: <span>25%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais7" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais7">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>Le Sous-marin magique - rabais courant: <span>15%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais10" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais10">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>Harry Potter, Tome 1: 'Harry Potter a l'ecole des sorciers - rabais courant: <span>15%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais8" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais8">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="dropdown">
-								<h4>Le Voleur des feuilles - rabais courant: <span>25%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais11" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais11">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
+							<div class="row">
+								<div class="dropdown">
+									<h4>Les Mechants, Tome 1 - rabais courant: <span>20%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais9" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais9">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
 							</div>
-						</div>
+
+							<div class="row">
+								<div class="dropdown">
+									<h4>Le Sous-marin magique - rabais courant: <span>15%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais10" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais10">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="dropdown">
+									<h4>Le Voleur des feuilles - rabais courant: <span>25%</span></h4>    
+									<button class="btn btn-default dropdown-toggle" type="button" id="rabais11" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais11">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+										</ul>
+								</div>
+							</div>
+
+					</div>
+
 
 				</div>
-
-
 			</div>
 		</div>
-	</div>
 
-	<footer>
-		<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190" target="_blank">INF3190</a> à l’université de <a href="http://www.uqam.ca" target="_blank">l'UQAM</a></p>
-		<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
-	</footer>
-	  
-	<script>
-		$(document).ready(function(){
-			
-			$("#connexion").on("click", function(){
-				var courrielEntree = $("#courriel").val();
-				var motPass = $("#motpass").val();
+		<footer>
+			<p> Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190" target="_blank">INF3190</a> à l’université de <a href="http://www.uqam.ca" target="_blank">l'UQAM</a></p>
+			<p>Noms des développeurs: <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Salcedo Renzo (SALR02089408)</a> et <a href="https://gitlab.info.uqam.ca/kovalenko.elizaveta/inf3190-a21-tp" target="_blank">Elizaveta Kovelenko (KOVE14549906)</a><span>Automne 2021</span></p>
+		</footer>
+		
+		<script>
+			$(document).ready(function(){
 				
-				if (courrielEntree === "" || motPass === "") {
-					if(courrielEntree === "" && motPass === ""){
-						alert("Veillez entrer le courriel et le mot de pass");
-					}else if(motPass === ""){
-						alert("Veillez entrer le mot de pass");
-					}else{
-						alert("Veillez entrer le courriel");
-					}
-    				
-				}else{
-
-					if(courrielEntree === "admin@biblio.qc" &&  motPass === "Admin"){
-						$( ".login-container2" ).hide();
-						$( "#compte" ).show();
-					}else{
-						if(courrielEntree !== "admin@biblio.qc" && motPass !== "Admin"){
-							alert("Courriel entré et mot de pass entré sont invalides");
-						}else if(motPass !== "Admin"){
-							alert("Mot de pass entré est invalide");
+				$("#connexion").on("click", function(){
+					var courrielEntree = $("#courriel").val();
+					var motPass = $("#motpass").val();
+					
+					if (courrielEntree === "" || motPass === "") {
+						if(courrielEntree === "" && motPass === ""){
+							alert("Veillez entrer le courriel et le mot de pass");
+						}else if(motPass === ""){
+							alert("Veillez entrer le mot de pass");
 						}else{
-							alert("Courriel entré est invalide");
+							alert("Veillez entrer le courriel");
 						}
 						
-					}	
-				}
-				
-				
+					}else{
 
-			});
+						if(courrielEntree === "admin@biblio.qc" &&  motPass === "Admin"){
+							$( ".login-container2" ).hide();
+							$( "#compte" ).show();
+						}else{
+							if(courrielEntree !== "admin@biblio.qc" && motPass !== "Admin"){
+								alert("Courriel entré et mot de pass entré sont invalides");
+							}else if(motPass !== "Admin"){
+								alert("Mot de pass entré est invalide");
+							}else{
+								alert("Courriel entré est invalide");
+							}
+							
+						}	
+					}
+					
+					
 
-			$("#ajouter .dropdown-menu li a").on("click", function(){
-				var rabais = $(this).text(); 
-				var idRabais=$(this).parents(".dropdown-menu").siblings(".btn").attr("id");
-				var idLivre=idRabais.replace("rabais", "livre");
-    		$(this).parents(".dropdown-menu").siblings(".btn").html(rabais+'<span class="caret"></span>');
-				console.log("!!! "+ idLivre);
-			$(this).parents(".dropdown-menu").siblings("h4").children("span").text(rabais);
-			$("#"+idLivre).find(".rabais").text(rabais);
-			   rabais = ""; 
-  			});
+				});
 
-			$(".modifier").on("click", function(){
-				$(this).hide(); 
-				$(this).next(".sauvegarder, .valider").show(); 
-				$(this).siblings().find("input, textarea").prop("disabled", false); 
+				$("#ajouter .dropdown-menu li a").on("click", function(){
+					var rabais = $(this).text(); 
+					var idRabais=$(this).parents(".dropdown-menu").siblings(".btn").attr("id");
+					var idLivre=idRabais.replace("rabais", "livre");
+				$(this).parents(".dropdown-menu").siblings(".btn").html(rabais+'<span class="caret"></span>');
+					console.log("!!! "+ idLivre);
+				$(this).parents(".dropdown-menu").siblings("h4").children("span").text(rabais);
+				$("#"+idLivre).find(".rabais").text(rabais);
+				rabais = ""; 
+				});
+
+				$(".modifier").on("click", function(){
+					$(this).hide(); 
+					$(this).next(".sauvegarder, .valider").show(); 
+					$(this).siblings().find("input, textarea").prop("disabled", false); 
+				}); 
+
+				$(".sauvegarder, .valider").on("click", function(){
+					$(this).siblings().find("input, textarea").prop("disabled", true); 
+					$(this).hide();
+					$(this).prev(".modifier").show();
+				}); 
+
+				$("input, textarea").on("change", function() {
+				var nouvelleVal=$(this).val();
+				$(this).attr( "value", nouvelleVal);
+				});
+
 			}); 
 
-			$(".sauvegarder, .valider").on("click", function(){
-				$(this).siblings().find("input, textarea").prop("disabled", true); 
-				$(this).hide();
-				$(this).prev(".modifier").show();
-			}); 
-
-			$("input, textarea").on("change", function() {
-			var nouvelleVal=$(this).val();
-			$(this).attr( "value", nouvelleVal);
-			});
-
-		}); 
 
 
-
-	</script>  
+		</script>  
     
 </body>
 </html>
