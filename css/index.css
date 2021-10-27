@@ -350,6 +350,10 @@ dl.formulaire>dt {
     margin-bottom: 20px;
 }
 .form-group i {
+    position: relative;
+    float: right;
+    margin-top: -23px;
+    left: -10px;
     visibility: hidden;
 }
 .form-group small {
