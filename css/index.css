@@ -592,9 +592,10 @@ dl.formulaire>dt {
 
 .form-groupp i {
     position: absolute;
-    right: 410px;
-    margin-top: -24px;
     visibility: hidden;
+    margin-left: 435px;
+    margin-top: -23px;
+
 }
 .form-groupp small {
     position: relative;
