@@ -70,6 +70,11 @@ header li a:hover {
     text-decoration: none;
     color: white;    
 }
+/*debut index*/
+#chxliv{
+    padding: 20px 20px;
+}
+/*fin index*/
 /*debut navbar*/
 .navbar-inverse .navbar-nav>li>a{
     color: #ccc;
