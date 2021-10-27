@@ -74,13 +74,13 @@
 			<div class="card">
 				<div class="card-header" id="tete1">
 				<h2 class="mb-0">
-					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#Livre1" aria-expanded="true" aria-controls="Livre1">
+					<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#livre1" aria-expanded="true" aria-controls="livre1">
 					Le Petit Prince
 					</button>
 				</h2>
 				</div>
 
-				<div id="Livre1" class="collapse" aria-labelledby="tete1" data-parent="#Leslivres">
+				<div id="livre1" class="collapse" aria-labelledby="tete1" data-parent="#Leslivres">
 				<div class="card-body">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -432,7 +432,7 @@
 				});
 				//queryString
 				var urlParam = getParamParNom("livre", window.location.search);
-				
+				console.log(urlParam);
 				if(urlParam !== ""){
 					$("#"+urlParam).addClass('in');
 				}
