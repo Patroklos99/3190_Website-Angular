@@ -610,19 +610,23 @@ dl.formulaire>dt {
 }
 .form-groupp.echoue i.fa-exclamation-circle {
     color: #e74c35;
-    display: inline-block;
+    visibility: visible;
 }
 .form-groupp.echoue small {
     color: #e74c35;
-    display: inline-block;
+    visibility: visible;
 }
+
+
+
+
 .form-groupp.reussi input {
     border-color: #2ecc71;
     box-shadow: 0 0 2px #2ecc71;
 }
 .form-groupp.reussi i.fa-check-circle {
     color: #2ecc71;
-    display: inline-block;
+    visibility: visible;
 }
 .formRecherche.echoue i.fa-exclamation-circle {
     color: #e74c35;
@@ -645,8 +649,6 @@ dl.formulaire>dt {
 .upload{
     margin-top: 20px;
 }
-
-
 
 
 
