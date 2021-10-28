@@ -651,7 +651,7 @@ dl.formulaire>dt {
 .upload{
     margin-top: 20px;
 }
-fieldset{
+#fieldsetradio{
     margin:0;padding:0;border:solid
 }
 
