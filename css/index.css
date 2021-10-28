@@ -12,63 +12,12 @@ body {
 .big-banner h1, .big-banner h1+p{
 	color:#fff; 
 }
-.b-recherche{
-    height: 34px;
-}
-.bouton {
-    position:absolute;
-    top:60px;
-    right:10px;    
-}
-
-.Choix {
-	margin-top:30px; 
-}
-
 .entete{
     text-align: center; 
     background-color: #f0ad4e;
 }
-
-header li {
-    display: inline;
-    padding-left: 60px;
-}
-
-header li a{
-    color:rgb(93, 111, 134);
-    padding: 7px;
-    text-decoration: none;
-}
-
-header li a:hover {
-    color: blue;
-}
-
 .contenant{
     float: right;
-}
-
-.recherche_input {
-    background: #333;
-    display: block;
-    padding: 5px;
-    width: 175px;    
-    border: 1;
-    border-radius: 60px;
-    color: white;
-}
-
-.recherche_avancee {
-    background: rgb(93, 111, 134);
-    float: right;
-    padding: 1px;
-    margin-left: 80%;
-    width: 155px;  
-    border: 1;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;    
 }
 /*debut index*/
 #chxliv{
@@ -149,7 +98,10 @@ footer p a:hover{
     margin-bottom: 0;
 }
 /*fin contact*/
-/*debut rechrche detaille*/
+/*debut rechercheDetaille.html*/
+#fieldsetradio{
+    margin:0;padding:0;border:solid
+}
 .page-titre h1{
     font-style: italic;
     text-align: center;
@@ -158,7 +110,33 @@ footer p a:hover{
 header.page-titre{
 	padding-top: 48px;
 }
-/*fin recherche detaille*/
+.formRecherche i {
+    display:none; 
+}
+.formRecherche small {
+    bottom: 20px;
+    text-align: left;
+    display: none;  
+}
+.formRecherche.echoue i.fa-exclamation-circle {
+    color: #e74c35;
+    display: inline-block; 
+}
+.formRecherche.reussi i.fa-exclamation-circle,.formRecherche.reussi small {
+    display: none; 
+}
+.formRecherche.echoue small {
+    color: #e74c35;
+    display: inline-block;
+}
+.formRecherche.reussi i.fa-check-circle {
+    color: #2ecc71;
+    display: inline-block;
+}
+#bCheck1Label{
+    margin-top: 18px;
+}
+/*fin rechercheDetaille.html*/
 /*debut le club*/
 #video, #video+.row{
     text-align:center; 
@@ -182,8 +160,8 @@ h4, h5{
 address{
     font-weight:600; 
 }
-/*fin le club*/
-/*debut bibliotheque*/
+/*fin le club///////////////////////////////////////////*/
+/*debut bibliotheque////////////////////////////////////*/
 .card-body p{
 	text-align: left; 
 }
@@ -211,8 +189,8 @@ address{
 header{
 	margin-top: 50px;
 }
-/*fin bibliotheque*/
-/*index_carousel*/
+/*fin bibliotheque////////////////////////////////////////////*/
+/*index_carousel//////////////////////////////////////////////*/
 #carouselImagesLivres .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     margin: 0 auto;
 }
@@ -238,8 +216,8 @@ header{
 	text-shadow:none; 
 	
 } 
-/*fin index_carousel*/
-/*debut nouveaute*/
+/*fin index_carousel////////////////////////////////*/
+/*debut nouveaute///////////////////////////////////*/
 #nouveautés #carouselImagesLivres .col-md-4{
     text-align:center; 
 }
@@ -252,61 +230,9 @@ header{
 #nouveautés #carouselImagesLivres img{
     max-height: 200px;
 }
-/*fin nouveaute*/
+/*fin nouveaute/////////////////////////////////////*/
 
-.detaillee {
-    position: relative;
-    text-align: center;
-    top: 40px;
-}
-.contenido{
-    background-color: #f1f1f1;
-    position: relative;
-    top: 50px;
-    margin:0px;
-    padding:0;
-    text-align:center
-}
-
-div.contenant-contenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-div.contenant-contenu>ul {
-    padding:0;
-    margin:0;
-    list-style-type:none;
-    width:100%
-}
-div.contenant-contenu>ul>li {
-    margin:0;
-    padding:0;
-}
-dl.formulaire {
-    width: 350px;
-    margin:0 auto;
-    padding:0;
-    text-align:left;
-    clear:both
-}
-dl.formulaire input[type=text],
-dl.formulaire input[type=email],
-dl.formulaire input[type=password] {
- width:100%
-}
-dl.formulaire>dt {
-    top:100px;
-    clear:left;
-    margin: 0px;
-    padding:0px;
-    white-space:nowrap;
-    font-family:"Georgia", serif;
-    font-size:14px;
-    font-style:italic;
-    font-weight:normal
-   }
-
+/*debut inscription.html///////////////////////////////*/
 .form-sign{
     padding: 40px;
     margin-left: 30%;
@@ -336,6 +262,7 @@ dl.formulaire>dt {
     color: #e74c35;
     visibility: visible;
 }
+
 .form-group-test{
     margin-bottom: 20px;
 }
@@ -350,7 +277,6 @@ dl.formulaire>dt {
 }
 .form2 .form-group{
     margin-bottom: 12px;
-
 }
 .separe{
     margin-bottom: 20px;
@@ -371,6 +297,10 @@ dl.formulaire>dt {
     text-align: left;
     visibility: hidden;    
 }
+/*fin inscription.html////////////////////////////////////////*/
+
+/*Debut inscription-ecole.html et autres fichier .html qui possdent 
+un formulaire semblable//////////////////////////////////////////*/
 .titre-form{
     width: auto;
     position: relative;
@@ -378,16 +308,14 @@ dl.formulaire>dt {
     border-bottom: .12rem solid #c6cacc;
     
 }
-.hii{
+.champs{
     position: relative;
     float:right;
     top: -28px;
     font-size: 0.8em;
     font-style:italic
 }
-
 .final{
-    
     border-bottom: .12rem solid #c6cacc;
     padding: 0 0 .8em;
 }
@@ -414,7 +342,8 @@ dl.formulaire>dt {
     margin-top: 20px; 
     font-size: 120%
 }
-
+/*Fin inscription-ecole.html////////////////////////////////*/
+/*Debut connexion.html/////////////////////////////////////*/
 .login-container{
     margin: auto;
     margin-top: 50px;
@@ -456,7 +385,7 @@ dl.formulaire>dt {
     text-decoration: underline;
     text-transform: uppercase;
 }
-.ho{
+.champsConnexion{
     position: relative;
     float:right;
     top: -28px;
@@ -465,6 +394,9 @@ dl.formulaire>dt {
     font-style:italic;
     color: #fff;
 }
+/*Fin connexion.html//////////////////////////////////////////*/
+
+/*Debut connexion-admin.html///////////////////////////////////*/
 .login-container2{
     margin: auto;
     margin-top: 50px;
@@ -473,6 +405,9 @@ dl.formulaire>dt {
 .form2{
     padding: 10%;
 }
+/*Fin connexion-admin.html*/
+
+/*Debut usager.html et ecole.html///////////////////////////////*/
 .usagerr{
     position: relative;
     margin: auto;
@@ -490,7 +425,6 @@ dl.formulaire>dt {
     width: 350px;
     padding: 20px;
     border: 0.5px solid grey;
-    
 }
 .menu-texte{
     position: relative;
@@ -513,12 +447,9 @@ dl.formulaire>dt {
     padding: 10px;
     border-top: 1px solid rgb(224, 221, 221);
     width: 200px;
-    
 }
 .menu-usager li {
     list-style-type: none;
-    
-    
 }
 .menu-usager i {
     position: relative;
@@ -541,33 +472,12 @@ dl.formulaire>dt {
     margin-top: -412px;
     width: 320px;
 }
-.form-check{
-    margin-bottom: 10px;
+.upload{
+    margin-top: 20px;
 }
-.case{
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-.form-group.reussii i.fa-check-circle {
-    color: #2ecc71;
-    display: inline-block;
-}
-.form-group.echouee i.fa-exclamation-circle {
-    color: #e74c35;
-    display: inline-block;
-}
-.form-group.echouee small {
-    color: #e74c35;
-    display: inline-block; 
-}
-.formRecherche i {
-    display:none; 
-}
-.formRecherche small {
-    bottom: 20px;
-    text-align: left;
-    display: none;  
-}
+/*Fin usager.html et ecole.html/////////////////////////////////*/
+
+/*Debut profile.html et profile-ecole.html//////////////////////////*/
 .form-sign-profil {
     padding: 20px;
     margin: 0 auto;
@@ -589,13 +499,11 @@ dl.formulaire>dt {
     margin-left: 170px;
     font-size: 120%;
 }
-
 .form-groupp i {
     position: absolute;
     visibility: hidden;
     margin-left: 435px;
     margin-top: -23px;
-
 }
 .form-groupp small {
     position: relative;
@@ -619,9 +527,6 @@ dl.formulaire>dt {
     visibility: visible;
 }
 
-
-
-
 .form-groupp.reussi input {
     border-color: #2ecc71;
     box-shadow: 0 0 2px #2ecc71;
@@ -630,30 +535,31 @@ dl.formulaire>dt {
     color: #2ecc71;
     visibility: visible;
 }
-.formRecherche.echoue i.fa-exclamation-circle {
-    color: #e74c35;
-    display: inline-block; 
+/*Fin profile.html et profile-ecole.html/////////////////////////////*/
+
+/*miscellaneous/////////////////////////////*/
+.form-check{
+    margin-bottom: 10px;
 }
-.formRecherche.reussi i.fa-exclamation-circle,.formRecherche.reussi small {
-    display: none; 
+.case{
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
-.formRecherche.echoue small {
-    color: #e74c35;
-    display: inline-block;
+.b-recherche{
+    height: 34px;
 }
-.formRecherche.reussi i.fa-check-circle {
-    color: #2ecc71;
-    display: inline-block;
+.bouton {
+    position:absolute;
+    top:60px;
+    right:10px;    
 }
-#bCheck1Label{
-    margin-top: 18px;
+
+.Choix {
+	margin-top:30px; 
 }
-.upload{
-    margin-top: 20px;
-}
-#fieldsetradio{
-    margin:0;padding:0;border:solid
-}
+
+
+
 
 
 
