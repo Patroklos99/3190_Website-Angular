@@ -1,24 +1,25 @@
-# inf3190-a21-tp
-TP 1 du cours INF3190 <br>
-groupe: 20 <br>
-session automne 2021 <br>
+# TP 1 Cours INF3190
+groupe: 20
+session automne 2021
 
-Bonjour nous sommes l'equipe de deux personnes : <br>
-Renzo Salcedo, code permanant : SALR2089408<br>
-et <br>
-Elizaveta Kovalenko, code permanant : KOVE14549906 <br>
+## Particularités de l'equipe
+- 2 Membres.
 
-Les mots de passes et les emails pour les connexions aux comptes administrateur, usager(ecole/personne): <br>
+## Equipiers
+- Renzo Salcedo, code permanant : SALR2089408
+- Elizaveta Kovalenko, code permanant : KOVE14549906
 
+## Informations pertinantes 
+- Les mots de passes et les emails pour les connexions aux comptes administrateur, usager(ecole/personne):
 
-Connexion Administrateur : 
+> Connexion Administrateur : 
 courriel : admin@biblio.qc 
 mot de pass: Admin 
 
-Connexion Usager: 
+> Connexion Usager: 
 courriel : usager@gmail.com 
 mot de pass: usager 
 
-Connexion Ecole: 
+> Connexion Ecole: 
 courriel: ecole@ecole.qc
 mot de pass: ecole 
