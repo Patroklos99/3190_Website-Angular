@@ -1,0 +1,7 @@
+[
+    {"codeEcole" : "AC", "nom" : "Académie Saint-Clément", "courriel" : "hajer.baghouli3@csmb.qc.ca", "telephone" : "(514) 739-5004", "adresse" : "1345 ch. Régent Mont-Royal, QC H3P 2K8"},
+    {"codeEcole" : "BS", "nom" : "Beau-Séjour | Zone grise", "courriel" : "Direction.EcoleBeau-Sejour@csmb.qc.ca", "telephone" : " 514 334-7350", "adresse" : "3600, rue Beauséjour Saint-Laurent (Québec) H4K 1W7"},
+    {"codeEcole" : "BF", "nom" : "Bois-Franc-Aquarelle", "courriel" : "direction.ecolebois-franc-aquarelle@csmb.qc.ca", "telephone" : "(514) 332-5944", "adresse" : "2085 Rue de Londres, Saint-Laurent, QC H4L 3A5"},
+    {"codeEcole" : "CL", "nom" : "Cardinal-Léger", "courriel" : "direction.ecolecardinal-leger@csmb.qc.ca", "telephone" : "(514) 744-0763", "adresse" : "2000 Rue Decelles, Saint-Laurent, QC H4M 1B3"},
+    {"codeEcole" : "OD", "nom" : "l’Odyssée", "courriel" : "direction.ecolede-lodyssee@csmb.qc.ca", "telephone" : "(514) 748-4607", "adresse" : "4348 Rue Alain, Pierrefonds, QC H9H 2T7"}
+]

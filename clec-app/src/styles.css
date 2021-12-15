@@ -1,0 +1,561 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+body {
+    background-color: #FFFFFF;
+}
+.big-banner {
+    height: 400px;
+    padding-top: 150px;
+	background: linear-gradient( rgba(255, 255, 255, 0.61), rgba(0, 0, 0, 0.65) ), url('../images/nuevo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.big-banner h1, .big-banner h1+p{
+	color:#fff; 
+}
+.entete{
+    text-align: center; 
+    background-color: #f0ad4e;
+}
+.contenant{
+    float: right;
+}
+/*debut index*/
+#chxliv{
+    padding: 20px 20px;
+    font-size: 19px;
+}
+/*fin index*/
+/*debut navbar*/
+.navbar-inverse .navbar-nav>li>a{
+    color: #ccc;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+}
+/*fin navbar*/
+/*debut footer*/
+footer{
+    height: 100px; 
+    background-color: #494f57;
+    padding: 30px;
+    margin-top: 40px;
+}
+footer p{
+    color:aliceblue;
+}
+footer p span{
+    float:right; 
+}
+footer p a {
+    color: #ffbc00;
+}
+footer p a:hover{
+    color: rgb(251, 255, 0);
+    text-decoration: underline;
+}
+/*fin footer*/
+/*debut admin connexion*/
+#admin .card-body .col-lg-8{
+	text-align:left; 
+}
+
+#compte{
+	display:none;
+}
+#compte h3{
+	text-align:center; 
+	font-size: 32px;
+    font-weight: 600;
+}
+#admin .card-body textarea{
+    width:100%; 
+}
+#nouveauLivre{
+    text-align:center; 
+}
+#admin .card-body .sauvegarder, #admin .card-body .valider {
+    display: none; 
+}
+#admin .image {
+    visibility:hidden; 
+    height: 10px; 
+}
+#admin .card-body img +form {
+    margin-top: 13px; 
+} 
+#lesEcoles{
+    text-align:center; 
+}
+#nouvelleEcole{
+    text-align:center; 
+}
+/*fin admin connexion*/
+/*debut contacts*/
+#contacts .personnel{
+    padding-top:25px; 
+}
+#contacts .navbar{
+    margin-bottom: 0;
+}
+/*fin contact*/
+/*debut rechercheDetaille.html*/
+#fieldsetradio{
+    margin:0;padding:0;border:solid
+}
+.page-titre h1{
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+}
+header.page-titre{
+	padding-top: 48px;
+}
+.formRecherche i {
+    display:none; 
+}
+.formRecherche small {
+    bottom: 20px;
+    text-align: left;
+    display: none;  
+}
+.formRecherche.echoue i.fa-exclamation-circle {
+    color: #e74c35;
+    display: inline-block; 
+}
+.formRecherche.reussi i.fa-exclamation-circle,.formRecherche.reussi small {
+    display: none; 
+}
+.formRecherche.echoue small {
+    color: #e74c35;
+    display: inline-block;
+}
+.formRecherche.reussi i.fa-check-circle {
+    color: #2ecc71;
+    display: inline-block;
+}
+#bCheck1Label{
+    margin-top: 18px;
+}
+/*fin rechercheDetaille.html*/
+/*debut le club*/
+#video, #video+.row{
+    text-align:center; 
+}
+#carte{
+    height: 300px;
+    width: 50%;
+    margin:0 auto;
+}
+h2{
+    font-weight:600; 
+}
+h3{
+    font-style:italic;
+}
+h4, h5{
+    font-weight:600; 
+    padding-top: 30px;
+    font-size:20px; 
+}
+address{
+    font-weight:600; 
+}
+/*fin le club///////////////////////////////////////////*/
+/*debut bibliotheque////////////////////////////////////*/
+.card-body p{
+	text-align: left; 
+}
+.glyphicon-shopping-cart{
+    position:relative;
+    top: 10px;
+    margin: 8px;
+    color: #fff;
+}
+#Leslivres{
+	text-align: center; 
+}
+#pannier{
+    position: relative;
+    top:9px;
+    right: 1px;
+	color: #fff;
+}
+.navbar{
+	position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+header{
+	margin-top: 50px;
+}
+/*fin bibliotheque////////////////////////////////////////////*/
+/*index_carousel//////////////////////////////////////////////*/
+#carouselImagesLivres .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    margin: 0 auto;
+}
+#carouselImagesLivres .carousel-caption{
+	color: #000; 
+	text-shadow: none; 
+	position: initial; 
+}
+#carouselImagesLivres .carousel-indicators li{
+	border-color: #000; 
+	background-color: #000; 
+    opacity:0.6; 
+}
+#carouselImagesLivres .carousel-indicators li:hover, #carouselImagesLivres .carousel-indicators li.active{
+    opacity:0.8; 
+}
+#carouselImagesLivres .carousel-indicators {
+    bottom: 0;
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none; 
+	color: #000;
+	text-shadow:none; 
+	
+} 
+/*fin index_carousel////////////////////////////////*/
+/*debut nouveaute///////////////////////////////////*/
+#nouveautés #carouselImagesLivres .col-md-4{
+    text-align:center; 
+}
+#nouveautés #carouselImagesLivres .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 0%;
+}
+#nouveautés #carouselImagesLivres .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 0%;
+}
+#nouveautés #carouselImagesLivres img{
+    max-height: 200px;
+}
+/*fin nouveaute/////////////////////////////////////*/
+
+/*debut inscription.html///////////////////////////////*/
+.form-sign{
+    padding: 40px;
+    margin-left: 30%;
+    width: 40%;
+    background-color: #f1f1f1;
+}
+.form-sign input:not(.form-check-input){
+    display: inline-block;
+}
+.form-group.reussi input {
+    border-color: #2ecc71;
+    box-shadow: 0 0 2px #2ecc71;
+}
+.form-group.echoue input{
+    border-color: #e74c35;
+    box-shadow: 0 0 2px #e74c35;
+}
+.form-group.reussi i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-group.echoue i.fa-exclamation-circle {
+    color: #e74c35;
+    visibility: visible;
+}
+.form-group.echoue small {
+    color: #e74c35;
+    visibility: visible;
+}
+
+.form-group-test{
+    margin-bottom: 20px;
+}
+.form-group-1{
+    margin: 15px 0;
+}
+.form-group{
+    margin-bottom: 5px;
+}
+.form-group-usager{
+    margin-bottom: 12px;
+}
+.form2 .form-group{
+    margin-bottom: 12px;
+}
+.separe{
+    margin-bottom: 20px;
+}
+.form-group i {
+    position: relative;
+    float: right;
+    margin-top: -23px;
+    left: -10px;
+    visibility: hidden;
+}
+.form-group small {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    visibility: hidden;    
+}
+/*fin inscription.html////////////////////////////////////////*/
+
+/*Debut inscription-ecole.html et autres fichier .html qui possdent 
+un formulaire semblable//////////////////////////////////////////*/
+.titre-form{
+    width: auto;
+    position: relative;
+    top: -20px;
+    border-bottom: .12rem solid #c6cacc;
+    
+}
+.champs{
+    position: relative;
+    float:right;
+    top: -28px;
+    font-size: 0.8em;
+    font-style:italic
+}
+.final{
+    border-bottom: .12rem solid #c6cacc;
+    padding: 0 0 .8em;
+}
+.button-creer{
+    margin-top: 10px;
+    padding: .75em 1.5em;
+    border-radius: 1px;
+    background-color: #494f57;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: .5px;
+    float: left;
+}
+.button-creer:hover, .button-creer:focus{
+    color:#ffbc00; 
+}
+.but-retour{
+    float:right;
+    width: 210px; 
+    margin-top: 20px; 
+    font-size: 120%
+}
+/*Fin inscription-ecole.html////////////////////////////////*/
+/*Debut connexion.html/////////////////////////////////////*/
+.login-container{
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+.Usager{
+    margin-top: -5px;
+    text-align: left;
+    color: rgb(245, 245, 245);
+    width: 80%;
+    margin-left: 54px;
+}
+.login-form-1{
+    padding: 5%;
+    -webkit-box-shadow: 0px 5px 8px 0px #000000; 
+    box-shadow: 0px 5px 8px 0px #000000;
+    background-color: #17a2b8; 
+}
+.login-form-1 h3{
+    text-align: left;
+    color: rgb(245, 245, 245);
+    border-bottom: .12rem solid #c6cacc;
+    width: 80%;
+    margin-left: 54px;
+}
+.login-container form{
+    padding: 10%;
+}
+
+.login-form-1 .btnSubmit, #connexion{
+    font-weight: 600;
+    color: royalblue;
+    background-color: #fff;
+}
+
+.login-form-1 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.champsConnexion{
+    position: relative;
+    float:right;
+    top: -28px;
+    margin-right: 60px;
+    font-size: 0.8em;
+    font-style:italic;
+    color: #fff;
+}
+/*Fin connexion.html//////////////////////////////////////////*/
+
+/*Debut connexion-admin.html///////////////////////////////////*/
+.login-container2{
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+.form2{
+    padding: 10%;
+}
+/*Fin connexion-admin.html*/
+
+/*Debut usager.html et ecole.html///////////////////////////////*/
+.usagerr{
+    position: relative;
+    margin: auto;
+    top: -200px;
+    width: 500px;
+}
+.usaggerr form-control{
+    padding: 50px;
+    align-items: right;
+    
+}
+.usagerr input{
+    margin-top: -8px;
+    float: right;
+    width: 350px;
+    padding: 20px;
+    border: 0.5px solid grey;
+}
+.menu-texte{
+    position: relative;
+    margin-top: -380px;
+    padding: 10px;
+    text-align: center;
+    width: 70%;
+    text-align: left; 
+    margin-left: 300px;
+    border-bottom: 1px solid rgb(224, 221, 221);
+    
+}
+.menu-usager{
+    position: relative;
+    margin-top: 280px;
+    margin-left: 20px;
+    width: 280px;
+}
+.menu-usager li {
+    padding: 10px;
+    border-top: 1px solid rgb(224, 221, 221);
+    width: 200px;
+}
+.menu-usager li {
+    list-style-type: none;
+}
+.menu-usager i {
+    position: relative;
+    float: left;
+    top: 3px;
+    left: -10px;
+    size: 1;
+    color: #f57c00;
+}
+.listechangements li{
+    float: left;
+    text-decoration: underline;
+    list-style-type: none;
+
+}
+.listechangements{
+    float: right;
+    clear:right;
+    position: relative;
+    margin-top: -412px;
+    width: 320px;
+}
+.upload{
+    margin-top: 20px;
+}
+/*Fin usager.html et ecole.html/////////////////////////////////*/
+
+/*Debut profile.html et profile-ecole.html//////////////////////////*/
+.form-sign-profil {
+    padding: 20px;
+    margin: 0 auto;
+    width: 500px;
+    appearance: none;
+    border-radius: none;
+}
+.form-sign-profil input {
+    border:1px solid #000;
+}
+.buttons-profil {
+    display: flex;
+    justify-content: space-between;
+}
+.but-retourr{
+    position: absolute;
+    width: 110px; 
+    margin-top: 18px; 
+    margin-left: 170px;
+    font-size: 120%;
+}
+.form-groupp i {
+    position: absolute;
+    visibility: hidden;
+    margin-left: 435px;
+    margin-top: -23px;
+}
+.form-groupp small {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    visibility: hidden;    
+}
+.form-groupp.echoue input{
+    border-color: #e74c35;
+    box-shadow: 0 0 2px #e74c35;
+}
+.form-groupp.echoue i.fa-exclamation-circle {
+    color: #e74c35;
+    visibility: visible;
+}
+.form-groupp.echoue small {
+    color: #e74c35;
+    visibility: visible;
+}
+
+.form-groupp.reussi input {
+    border-color: #2ecc71;
+    box-shadow: 0 0 2px #2ecc71;
+}
+.form-groupp.reussi i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+/*Fin profile.html et profile-ecole.html/////////////////////////////*/
+
+/*miscellaneous/////////////////////////////*/
+.form-check{
+    margin-bottom: 10px;
+}
+.case{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.b-recherche{
+    height: 34px;
+}
+.bouton {
+    position:absolute;
+    top:60px;
+    right:10px;    
+}
+
+.Choix {
+	margin-top:30px; 
+}
