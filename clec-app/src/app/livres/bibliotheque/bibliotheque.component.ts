@@ -20,9 +20,15 @@ export class BibliothequeComponent implements OnInit {
     this.httpClient.get<any>("assets/data/livres.json").subscribe((data)=>this.livres = data)
   }
   voire(i: number){
-    console.log(i+" !!!")
+    
     var myElement = document.getElementById('livre'+i) as HTMLElement;
-    myElement.classList.add("in");
+    console.log(i+" !!!")
+    if(myElement.classList.contains('in')){
+      myElement.classList.remove("in");
+    }else{
+      myElement.classList.add("in");
+    }
+    
   }
 
 }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
-
+import {RouterModule, Routes} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PiedComponent } from './pied/pied.component';
@@ -13,6 +13,17 @@ import { SearchComponent } from './search/search.component';
 import { PanierComponent } from './panier/panier.component';
 import { EcolesComponent } from './ecoles/ecoles.component';
 import { AdminComponent } from './admin/admin.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ClubComponent } from './club/club.component';
+import { NouveautesComponent } from './nouveautes/nouveautes.component';
+
+const appRoutes: Routes =[
+  {path: '', component: AccueilComponent}, 
+  {path: 'bibliotheque', component: BibliothequeComponent},
+  {path: 'contacts', component: ContactsComponent},
+  {path: 'club', component: ClubComponent}, 
+  {path: 'nouveautes', component: NouveautesComponent}
+];
 
 @NgModule({
   declarations: [
@@ -26,13 +37,17 @@ import { AdminComponent } from './admin/admin.component';
     PanierComponent,
     EcolesComponent,
     AdminComponent,
+    ContactsComponent,
+    ClubComponent,
+    NouveautesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
