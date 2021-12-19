@@ -21,13 +21,11 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
 
 
-    function1();
+    verifierEntrees();
 }
-); 
+)
 
-
-function function1() {
-    alert("hellooooo!!!")
+function verifierEntrees() {
     const prenomVal= prenom.value.trim();
     const nomVal = nom.value.trim();
     const telephoneVal = telephone.value.trim();
@@ -118,8 +116,6 @@ function function1() {
     
     if(!cCode(codeVal) && !(codeVal === "")){
         msgErreur(code, 'Votre code nest pas valide, reessayez.')
-    }else if(codeVal === ""){
-        msgErreur(code, 'Votre code ne peut pas être vide.')
     }
     else {
         msgReussi(code)
@@ -147,7 +143,7 @@ function cEmail(email){
 }
 
 function cCode(code){
-    return /^([A-Z]{4}\d{8}[A-Z]{2})$/.test(code); 
+    
     
 }
 
@@ -159,3 +155,8 @@ function cAdresse(adresse){
     return /^(\d+) ?([A-Za-z](?= ))? (.*?) ([^ ]+?) ?((?<= )APT)? ?((?<= )\d*)?$/g.test(adresse);
 
 }
+
+
+//////////
+
+
