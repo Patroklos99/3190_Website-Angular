@@ -16,13 +16,15 @@ import { AdminComponent } from './admin/admin.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ClubComponent } from './club/club.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
+import { InscriptionComponent } from './inscription/inscription.component';
 
 const appRoutes: Routes =[
   {path: '', component: AccueilComponent}, 
   {path: 'bibliotheque', component: BibliothequeComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'club', component: ClubComponent}, 
-  {path: 'nouveautes', component: NouveautesComponent}
+  {path: 'nouveautes', component: NouveautesComponent},
+  {path: 'inscription', component: InscriptionComponent},
 ];
 
 @NgModule({
@@ -40,6 +42,7 @@ const appRoutes: Routes =[
     ContactsComponent,
     ClubComponent,
     NouveautesComponent,
+    InscriptionComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+body {
+    background-color: #FFFFFF;
+}
+.big-banner {
+    height: 400px;
+    padding-top: 150px;
+	/*background: linear-gradient( rgba(255, 255, 255, 0.61), rgba(0, 0, 0, 0.65) ), url('../images/nuevo.jpg');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.big-banner h1, .big-banner h1+p{
+	color:#fff; 
+}
+.entete{
+    text-align: center; 
+    background-color: #f0ad4e;
+}
+.contenant{
+    float: right;
+}
+/*debut index*/
+#chxliv{
+    padding: 20px 20px;
+    font-size: 19px;
+}
+/*fin index*/
+/*debut navbar*/
+.navbar-inverse .navbar-nav>li>a{
+    color: #ccc;
+}
+.navbar-inverse .navbar-brand{
+    color: #fff;
+}
+/*fin navbar*/
+/*debut footer*/
+footer{
+    height: 100px; 
+    background-color: #494f57;
+    padding: 30px;
+    margin-top: 40px;
+}
+footer p{
+    color:aliceblue;
+}
+footer p span{
+    float:right; 
+}
+footer p a {
+    color: #ffbc00;
+}
+footer p a:hover{
+    color: rgb(251, 255, 0);
+    text-decoration: underline;
+}
+/*fin footer*/
+/*debut admin connexion*/
