@@ -5,7 +5,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { BibliothequeComponent } from './livres/bibliotheque/bibliotheque.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { InscriptionComponent } from './inscription/inscription.component';
- 
+import { ConnexionComponent } from './connexion/connexion.component';
+import { SearchComponent } from './search/search.component';
+
 
 
 const routes: Routes = [
@@ -15,6 +17,9 @@ const routes: Routes = [
   {path: 'contacts', component: ContactsComponent},
   {path: 'nouveautes', component: NouveautesComponent},
   {path: 'inscription', component: InscriptionComponent},
+  {path: 'connexion', component: ConnexionComponent},
+  {path: 'search', component: SearchComponent},
+
 
 ];
 
