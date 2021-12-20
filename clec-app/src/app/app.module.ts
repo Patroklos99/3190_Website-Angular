@@ -18,6 +18,8 @@ import { ClubComponent } from './club/club.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { ProfileUsagerComponent } from './profile-usager/profile-usager.component';
+import { ProfileEcoleComponent } from './profile-ecole/profile-ecole.component';
 
 const appRoutes: Routes =[
   {path: '', component: AccueilComponent}, 
@@ -29,8 +31,8 @@ const appRoutes: Routes =[
   {path: 'connexion', component: ConnexionComponent},
   {path: 'search', component: SearchComponent},
   {path: 'accueil', component: AccueilComponent},
-
-
+  {path: 'profile-usager', component: ProfileUsagerComponent},
+  {path: 'profile-ecole', component: ProfileEcoleComponent},
 
 
 ];
@@ -52,6 +54,8 @@ const appRoutes: Routes =[
     NouveautesComponent,
     InscriptionComponent,
     ConnexionComponent,
+    ProfileUsagerComponent,
+    ProfileEcoleComponent,
   ],
   imports: [
     BrowserModule,
