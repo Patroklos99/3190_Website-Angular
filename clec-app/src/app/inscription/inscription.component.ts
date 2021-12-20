@@ -30,7 +30,7 @@ export class InscriptionComponent implements OnInit {
         const pass = this.document.getElementById('pass');
         const pass2 = this.document.getElementById('pass2');
         const code = this.document.getElementById('code');
-        this.doit(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
+        function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
   }
 
   doit(prenom, nom, telephone, adresse, courriel, pass, pass2, code){
