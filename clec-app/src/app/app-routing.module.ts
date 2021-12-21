@@ -12,7 +12,12 @@ import { ProfileEcoleComponent } from './profile-ecole/profile-ecole.component';
 import { ModifInfoUsagerComponent } from './modif-info-usager/modif-info-usager.component';
 import { ModifPassUsagerComponent } from './modif-pass-usager/modif-pass-usager.component';
 import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usager.component';
+<<<<<<< HEAD
 import { AdminComponent } from './admin/admin.component';
+=======
+import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
+import { ModifPassEcoleComponent } from './modif-pass-ecole/modif-pass-ecole.component';
+>>>>>>> 9aeb818 (ajout template modif-email-ecole)
 
 
 
@@ -30,7 +35,9 @@ const routes: Routes = [
   {path: 'profile-ecole', component: ProfileEcoleComponent},
   {path: 'modif-info-usager', component: ModifInfoUsagerComponent},
   {path: 'modif-pass-usager', component: ModifPassUsagerComponent},
-  {path: 'modif-email-usagere', component: ModifEmailUsagerComponent},
+  {path: 'modif-email-usager', component: ModifEmailUsagerComponent},
+  {path: 'modif-pass-ecole', component: ModifPassEcoleComponent},
+  {path: 'modif-email-ecole', component: ModifEmailEcoleComponent},
 
 ];
 

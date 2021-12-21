@@ -22,9 +22,15 @@ import { ProfileEcoleComponent } from './profile-ecole/profile-ecole.component';
 import { ModifInfoUsagerComponent } from './modif-info-usager/modif-info-usager.component';
 import { ModifPassUsagerComponent } from './modif-pass-usager/modif-pass-usager.component';
 import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usager.component';
+<<<<<<< HEAD
 import { DropdownDirective } from './dropdown.directive';
 import { FormsModule } from '@angular/forms';
 //import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+=======
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
+import { ModifPassEcoleComponent } from './modif-pass-ecole/modif-pass-ecole.component';
+>>>>>>> 9aeb818 (ajout template modif-email-ecole)
 
 const appRoutes: Routes =[
   {path: '', component: AccueilComponent}, 
@@ -42,6 +48,8 @@ const appRoutes: Routes =[
   {path: 'modif-info-usager', component: ModifInfoUsagerComponent},
   {path: 'modif-pass-usager', component: ModifPassUsagerComponent},
   {path: 'modif-email-usager', component: ModifEmailUsagerComponent},
+  {path: 'modif-pass-ecole', component: ModifPassEcoleComponent},
+  {path: 'modif-email-ecole', component: ModifEmailEcoleComponent},
 
 ];
 
@@ -67,7 +75,12 @@ const appRoutes: Routes =[
     ModifInfoUsagerComponent,
     ModifPassUsagerComponent,
     ModifEmailUsagerComponent,
+<<<<<<< HEAD
     DropdownDirective
+=======
+    ModifEmailEcoleComponent,
+    ModifPassEcoleComponent,
+>>>>>>> 9aeb818 (ajout template modif-email-ecole)
   ],
   imports: [
     BrowserModule,
