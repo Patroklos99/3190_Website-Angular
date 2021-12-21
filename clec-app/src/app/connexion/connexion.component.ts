@@ -33,7 +33,8 @@ export class ConnexionComponent implements OnInit {
       
   
       if(courrielVal === 'ecole@ecole.qc' && passwordVal === 'ecole'){
-        window.location.href="ecole.html";
+        this.router.navigate(['/profile-ecole']); 
+        throw new Error("Something went badly wrong!");  
       
       }
   
