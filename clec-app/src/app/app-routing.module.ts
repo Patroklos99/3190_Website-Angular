@@ -16,8 +16,13 @@ import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usag
 import { AdminComponent } from './admin/admin.component';
 =======
 import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
+<<<<<<< HEAD
 import { ModifPassEcoleComponent } from './modif-pass-ecole/modif-pass-ecole.component';
 >>>>>>> 9aeb818 (ajout template modif-email-ecole)
+=======
+import { ModifInfoEcoleComponent } from './modif-info-ecole/modif-info-ecole.component';
+
+>>>>>>> b84e347 (modif template inversé)
 
 
 
@@ -36,8 +41,8 @@ const routes: Routes = [
   {path: 'modif-info-usager', component: ModifInfoUsagerComponent},
   {path: 'modif-pass-usager', component: ModifPassUsagerComponent},
   {path: 'modif-email-usager', component: ModifEmailUsagerComponent},
-  {path: 'modif-pass-ecole', component: ModifPassEcoleComponent},
   {path: 'modif-email-ecole', component: ModifEmailEcoleComponent},
+  {path: 'modif-info-ecole', component: ModifInfoEcoleComponent},
 
 ];
 
