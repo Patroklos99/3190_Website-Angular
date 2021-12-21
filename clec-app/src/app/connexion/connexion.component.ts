@@ -27,8 +27,8 @@ export class ConnexionComponent implements OnInit {
       const passwordVal= password.value.trim();
   
       if(courrielVal === 'usager@gmail.com' && passwordVal === 'usager'){
-        alert("hiii")
-        window.location.href="clec-app/src/app/profile-usager/profile-usager.component.html";     
+        this.router.navigate(['/profile-usager']); 
+        throw new Error("Something went badly wrong!");    
       }
       
   

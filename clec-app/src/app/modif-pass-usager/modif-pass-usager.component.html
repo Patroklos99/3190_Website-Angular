@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile-Password</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body id="biblio">
+
+        <aside class="menu-usager">
+        <nav><ul><li class="my-account-nav__item "><a href="usager.html" qaid="AccountProfileLink" title="Profile" class="">
+            Profil
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Address book" class=" ">
+            Mes commandes
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Payment details" class=" ">
+            Paiements
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Order history" class=" ">
+            Historique
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Option" class=" ">
+            Option
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> </ul></nav>
+        </aside>
+        
+        <div class="menu-texte">
+            <h1>Actualiser le mot de passe</h1>
+          </div>
+
+          <div class="form-sign-profil"><form class="form" id="form">
+                
+            <div class="form-groupp">
+            <label for="pass">Nouveau mot de passe *</label>
+            <input type="text" class="form-control" id="pass" placeholder="">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Msg d'erreur</small>
+            </div>
+            <div class="form-groupp">
+                <label for="pass2">Confirmer le nouveau mot de passe *</label>
+                <input type="text" class="form-control" id="pass2" placeholder="">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Msg d'erreur</small>
+                </div>
+
+                <div class="buttons-profil">
+                    <div class="helloooo">
+                    <button type="submit" class="btn button-creer">Actualiser</button>
+                    </div>
+                    <div class="but-retourr">
+                      <a href="index.html">Annuler</a>
+                    </div>
+                  </div>
+            </form>
+          </div>
+
+
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br>
+    <p>.</p><br>
+
+    
+    <script>
+      const form = document.getElementById('form');
+      const pass = document.getElementById('pass');
+		  const pass2 = document.getElementById('pass2');
+
+      form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      verifierEntrees();
+}
+)
+
+function verifierEntrees() {
+      const passVal = pass.value.trim();
+      const pass2Val = pass2.value.trim();
+    
+    if(passVal === '') {
+        msgErreur(pass, 'Mot de passe ne peut pas être vide.')
+        
+    } else if(passVal.length < 8 || passVal.length >12) {
+        msgErreur(pass, 'Votre Mot de passe doit avoir entre 8 et 12 characteres, reessayez.')
+    }
+    else if(!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/g.test(passVal))) {
+        msgErreur(pass, 'Votre Mot de passe doit avoir au moins un caractere special, un chiffre et une majuscule.')
+    } 
+    else {
+        msgReussi(pass)
+    }
+    
+    if(pass2Val === '') {
+        msgErreur(pass2, 'Mot de passe ne peut pas être vide.')
+        
+    } else if(pass2Val.length < 8 || pass2Val.length >12) {
+        msgErreur(pass2, 'Votre Mot de passe doit avoir entre 8 et 12 characteres, reessayez.')
+    }
+    else if(!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/g.test(pass2Val))) {
+        msgErreur(pass2, 'Votre Mot de passe doit avoir au moins un caractere special, un chiffre et une majuscule.')
+    } else if(!(pass2Val === passVal)) {
+        msgErreur(pass2, 'Vos mot de passe doivent être identiques, reessayez.')
+    }
+    else {
+        msgReussi(pass2)
+    }
+
+
+}
+
+    function msgErreur(input, message){
+        const formGroup = input.parentElement;
+        const small = formGroup.querySelector('small');
+
+        small.innerText = message;
+
+        formGroup.className = 'form-groupp echoue';
+    }
+
+      function msgReussi(input) {
+        const formGroup = input.parentElement;
+        formGroup.className = 'form-groupp reussi';
+    }
+
+</script>
+
+    </body>
+    </html>
+    
