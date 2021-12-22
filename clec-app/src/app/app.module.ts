@@ -6,11 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PiedComponent } from './pied/pied.component';
 import { TeteComponent } from './tete/tete.component';
-import { LivresComponent } from './livres/livres.component';
+
 import { BibliothequeComponent } from './livres/bibliotheque/bibliotheque.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { SearchComponent } from './search/search.component';
-import { PanierComponent } from './panier/panier.component';
+
 import { EcolesComponent } from './ecoles/ecoles.component';
 import { AdminComponent } from './admin/admin.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -18,6 +18,8 @@ import { ClubComponent } from './club/club.component';
 import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { bdService } from './bd.service';
+
 
 const appRoutes: Routes =[
   {path: '', component: AccueilComponent}, 
@@ -30,9 +32,6 @@ const appRoutes: Routes =[
   {path: 'search', component: SearchComponent},
   {path: 'accueil', component: AccueilComponent},
 
-
-
-
 ];
 
 @NgModule({
@@ -40,11 +39,11 @@ const appRoutes: Routes =[
     AppComponent,
     TeteComponent,
     PiedComponent,
-    LivresComponent,
+    //LivresComponent,
     BibliothequeComponent,
     AccueilComponent,
     SearchComponent,
-    PanierComponent,
+    //PanierComponent,
     EcolesComponent,
     AdminComponent,
     ContactsComponent,
@@ -59,7 +58,7 @@ const appRoutes: Routes =[
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers:[bdService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

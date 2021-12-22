@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import * as $ from '../node_modules/jquery/dist/jquery.js';
-//import * from './node_modules/jquery/dist/jquery.js';
 declare var $: any;
 @Component({
   selector: 'app-nouveautes',
