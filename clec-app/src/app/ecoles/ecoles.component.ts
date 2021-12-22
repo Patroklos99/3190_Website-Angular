@@ -1,15 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-ecoles',
-  templateUrl: './ecoles.component.html',
-  styleUrls: ['./ecoles.component.css']
-})
-export class EcolesComponent implements OnInit {
+export class EcolesComponent{
 
-  constructor() { }
+    public codeEcole: string; 
+    public nom: string; 
+    public courriel: string; 
+    public telephone: number;
+    public adresse: string; 
+    public imagePath: string;
 
-  ngOnInit(): void {
+  constructor(codeEcole: string, nom: string, courriel: string, telephone: number, adresse: string, imagePath: string){
+    this.codeEcole = codeEcole;
+    this.nom = nom; 
+    this.courriel = courriel; 
+    this.telephone = telephone; 
+    this.adresse = adresse;  
+    this.imagePath = imagePath; 
   }
 
 }
+
+
+/*@Component({
+  selector: 'app-ecoles',
+  templateUrl: './ecoles.component.html',
+  styleUrls: ['./ecoles.component.css']
+})*/
+

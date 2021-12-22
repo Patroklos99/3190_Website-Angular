@@ -9,13 +9,13 @@ function getParamParNom(nom, url = window.location.href) {
 
 
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+/*form.addEventListener('submit', (e) => {
+   // e.preventDefault();
 
 
-    function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
+   // function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
 }
-); 
+);*/
 
 
 function function1() {

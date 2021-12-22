@@ -22,6 +22,8 @@ import { ProfileEcoleComponent } from './profile-ecole/profile-ecole.component';
 import { ModifInfoUsagerComponent } from './modif-info-usager/modif-info-usager.component';
 import { ModifPassUsagerComponent } from './modif-pass-usager/modif-pass-usager.component';
 import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usager.component';
+import { DropdownDirective } from './dropdown.directive';
+import { FormsModule } from '@angular/forms';
 //import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const appRoutes: Routes =[
@@ -53,7 +55,7 @@ const appRoutes: Routes =[
     AccueilComponent,
     SearchComponent,
     //PanierComponent,
-    EcolesComponent,
+    //EcolesComponent,
     AdminComponent,
     ContactsComponent,
     ClubComponent,
@@ -65,12 +67,14 @@ const appRoutes: Routes =[
     ModifInfoUsagerComponent,
     ModifPassUsagerComponent,
     ModifEmailUsagerComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
+    FormsModule
     //FontAwesomeModule,
   ],
 

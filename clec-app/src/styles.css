@@ -3,6 +3,12 @@
 body {
     background-color: #FFFFFF;
 }
+.ferme{
+    display:none;
+}
+.ouvert{
+    display: block;
+}
 .big-banner {
     height: 400px;
     padding-top: 150px;
@@ -41,6 +47,9 @@ footer{
     background-color: #494f57;
     padding: 30px;
     margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 footer p{
     color:aliceblue;

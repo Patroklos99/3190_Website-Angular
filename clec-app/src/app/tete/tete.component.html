@@ -31,13 +31,13 @@
       <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
       </ul>
     </li>
-    <li class="nav-item dropdown">
-      <a routerLink="/connexion" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
+    <li class="nav-item dropdown" appDropDown>
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in"></span>
       Connexion</a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <li><a class="dropdown-item" href="connexion.html">Mon compte</a></li>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+      <li><a class="dropdown-item" routerLink="/connexion">Mon compte</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="connexion-admin.html">Administrateur</a></li>
+      <li><a class="dropdown-item" routerLink="/connexion-admin">Administrateur</a></li>
       </ul>
     </li>
       </ul>
