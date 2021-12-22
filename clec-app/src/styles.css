@@ -6,8 +6,9 @@ body {
 .ferme{
     display:none;
 }
-.ouvert{
+div[id*="compt"].ouvert{
     display: block;
+    clear:both;
 }
 .big-banner {
     height: 400px;
@@ -47,7 +48,6 @@ footer{
     background-color: #494f57;
     padding: 30px;
     margin-top: 40px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -70,8 +70,9 @@ footer p a:hover{
 	text-align:left; 
 }
 
-#compte{
+div[id*="compte"]:not(.ouvert){
 	display:none;
+    clear:both;
 }
 #compte h3{
 	text-align:center; 
@@ -229,8 +230,11 @@ header{
 } 
 /*fin index_carousel////////////////////////////////*/
 /*debut nouveaute///////////////////////////////////*/
+#nouveautés{
+    height: 50vh; 
+}
 #nouveautés #carouselImagesLivres .col-md-4{
-    text-align:center; 
+    text-align:center;  
 }
 #nouveautés #carouselImagesLivres .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
     left: 0%;

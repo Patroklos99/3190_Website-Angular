@@ -35,9 +35,9 @@
 		<div class="container" id="compte" #compte>
 			<div class="row">
 					<ul class="nav nav-tabs">
-					<li class="active"><a data-toggle="tab" href="#gerer">Gérer l’inventaire des livres/Modifier images marketing</a></li>
-					<li><a data-toggle="tab" href="#valider">Valider les comptes de l'ecole</a></li>
-					<li><a data-toggle="tab" href="#ajouter">Ajouter rabais</a></li>
+					<li class="active"><a data-toggle="tab" class="gerer" (click)="voiretab($event)">Gérer l’inventaire des livres/Modifier images marketing</a></li>
+					<li><a data-toggle="tab" class="valider" (click)="voiretab($event)">Valider les comptes de l'ecole</a></li>
+					<li><a data-toggle="tab" class="ajouter" (click)="voiretab($event)">Ajouter rabais</a></li>
 					</ul>
 
 					<div class="tab-content">
@@ -132,181 +132,22 @@
 					<div id="ajouter" class="tab-pane fade">
 						<h3>Ajouter rabais</h3>
 
-							<div class="row">
-							<div class="dropdown">
-								<h4>Le Petit Prince - rabais courant: <span>10%</span></h4>    
-								<button class="btn btn-default dropdown-toggle" type="button" id="rabais1" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="rabais1">
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-									</ul>
-								</div>
-							</div>
+						<div class="row" *ngFor="let livre of livres; let i = index">
+                            <div class="dropdown">
+                                <h4>{{livre.titre}} - rabais courant: <span>{{livre.rabais}}</span></h4>    
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="rabais7" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="rabais7">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+                                    </ul>
+                                </div>
+                        </div>
 
-							<div class="row">
-								<div class="dropdown">
-									<h4>The Very Hungry Caterpillar - rabais courant: <span>10%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais2" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais2">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>		
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>The Mushroom Fun Club - rabais courant: <span>15%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais3" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais3">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>Zoelie l'Alumette, Tome 13: 'Le sacrifice Inattendu' - rabais courant: <span>15%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais4" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais4">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>Mon Encyclopedie Junior du Quebec - rabais courant: <span>20%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais5" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais5">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>Percy Jackson, Tome 1: 'Le Voleur de Foudre' - rabais courant: <span>15%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais6" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais6">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>National Geographic Kids: Mon grand livre de l'espace - rabais courant: <span>25%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais7" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais7">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>Harry Potter, Tome 1: 'Harry Potter a l'ecole des sorciers - rabais courant: <span>15%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais8" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais8">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>Les Mechants, Tome 1 - rabais courant: <span>20%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais9" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais9">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>Le Sous-marin magique - rabais courant: <span>15%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais10" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais10">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="dropdown">
-									<h4>Le Voleur des feuilles - rabais courant: <span>25%</span></h4>    
-									<button class="btn btn-default dropdown-toggle" type="button" id="rabais11" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="rabais11">
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
-										</ul>
-								</div>
-							</div>
 
 					</div>
 
