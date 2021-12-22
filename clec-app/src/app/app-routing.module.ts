@@ -13,7 +13,8 @@ import { ModifInfoUsagerComponent } from './modif-info-usager/modif-info-usager.
 import { ModifPassUsagerComponent } from './modif-pass-usager/modif-pass-usager.component';
 import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usager.component';
 import { AdminComponent } from './admin/admin.component';
-
+import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
+import { ModifInfoEcoleComponent } from './modif-info-ecole/modif-info-ecole.component';
 
 
 const routes: Routes = [
@@ -30,7 +31,9 @@ const routes: Routes = [
   {path: 'profile-ecole', component: ProfileEcoleComponent},
   {path: 'modif-info-usager', component: ModifInfoUsagerComponent},
   {path: 'modif-pass-usager', component: ModifPassUsagerComponent},
-  {path: 'modif-email-usagere', component: ModifEmailUsagerComponent},
+  {path: 'modif-email-usager', component: ModifEmailUsagerComponent},
+  {path: 'modif-email-ecole', component: ModifEmailEcoleComponent},
+  {path: 'modif-info-ecole', component: ModifInfoEcoleComponent},
 
 ];
 

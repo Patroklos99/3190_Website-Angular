@@ -1,1 +1,107 @@
-<p>profile-ecole works!</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile-Ecole</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body id="biblio">
+
+        <aside class="menu-usager">
+        <nav><ul><li class="my-account-nav__item "><a href="" qaid="AccountProfileLink" title="Profile" class="">
+            Profil
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Address book" class=" ">
+            Mes commandes
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Payment details" class=" ">
+            Paiements
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Order history" class=" ">
+            Historique
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> <li class="my-account-nav__item "><a href="#" title="Option" class=" ">
+            Option
+            <i class="far fa-arrow-alt-circle-right fa-lg"></i>
+            </a></li> </ul></nav>
+        </aside>
+        
+        <div class="menu-texte">
+            <h1>Profil</h1>
+          </div>
+      <div class="usagerr">
+      <form class="form-usager">
+        <div class="form-group-test row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">École:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Ste Carmen de la Miséricorde" disabled>
+            </div>
+          </div>
+        <div class="form-group-test row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Adresse:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="453 rue Du Rosignol" disabled>
+            </div>
+          </div>
+          <div class="form-group-test row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Courriel:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="C-Misericorde@educ.fr" disabled>
+            </div>
+          </div>
+        <div class="form-group-test row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Code:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="CM" disabled>
+          </div>
+        </div>
+      </form>  
+
+      <hr>
+      
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Pays:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="France" disabled>
+        </div>
+      </div>
+      <div class="upload">
+        <button type="submit" class="btn button-creer" onclick="document.getElementById('fichier').click()">Televerser photo</button>
+        <input type='file' id="fichier" style="display:none">
+      </div>
+
+    </div>
+
+    <div class="listechangements">
+        <ul>
+            <li><a routerLink="/modif-info-ecole">Actualiser vos informations</a></li>
+            <li><a routerLink="/modif-pass-ecole">Changer votre mot de passe</a></li>
+            <li><a routerLink="/modif-email-ecole">Changer votre adresse email</a></li>
+        </ul>
+
+        <!--<div class="form-group row">
+        <div class="col-sm-8">
+          <button type="submit" class="btn btn-primary">TODO </button>
+        </div>
+      </div>-->
+        
+    </div>
+
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br><br>
+    <p>.</p><br>
+    <p>.</p><br>
+    
+
+    </body>
+    </html>
+    
