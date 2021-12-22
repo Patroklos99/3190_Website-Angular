@@ -23,12 +23,12 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
       <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
-      <li class="nav-item dropdown">
-      <a routerLink="/inscription" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+      <li class="nav-item dropdown" appDropDown>
+      <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
       S'inscrire</a>
       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <li><a class="dropdown-item" href="Inscription.html">Compte personnel</a></li>
-      <li><a class="dropdown-item" href="Inscription-ecole.html">Compte ecole</a></li>
+      <li><a class="dropdown-item" routerLink="/inscription">Compte personnel</a></li>
+      <li><a class="dropdown-item" routerLink="/inscription-ecole">Compte ecole</a></li>
       </ul>
     </li>
     <li class="nav-item dropdown" appDropDown>

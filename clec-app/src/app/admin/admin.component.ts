@@ -49,10 +49,11 @@ export class AdminComponent implements OnInit {
     //var myElement = document.getElementById('event') as HTMLElement;
 
     console.log("Tab click "+event.target.className+" - "+$("#"+event.target.className).attr("id"))
-    //$("#"+event.target.className).addClass("active");
+   //$("#"+event.target.className).addClass("active");
    // $("#"+event.target.className).siblings(".active").removeClass("active");
    $("#"+event.target.className).css({"display" : "unset"});
-   $("#"+event.target.className).siblings(".active").hide();
+   //$("#"+event.target.className).siblings(".active").hide();
+   $("#"+event.target.className).siblings(".active").css({"display" : "none"});
     $("#compte .nav-tabs ."+event.target.className).parent().addClass("active");
     $("#compte .nav-tabs ."+event.target.className).parent().siblings(".active").removeClass("active");
 

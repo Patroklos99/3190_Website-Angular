@@ -24,9 +24,10 @@ import { ModifPassUsagerComponent } from './modif-pass-usager/modif-pass-usager.
 import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usager.component';
 import { DropdownDirective } from './dropdown.directive';
 import { FormsModule } from '@angular/forms';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
 import { ModifInfoEcoleComponent } from './modif-info-ecole/modif-info-ecole.component';
+import { InscriptionEcoleComponent } from './inscription-ecole/inscription-ecole.component';
 
 const appRoutes: Routes =[
   {path: '', component: AccueilComponent}, 
@@ -74,6 +75,7 @@ const appRoutes: Routes =[
     DropdownDirective,
     ModifEmailEcoleComponent,
     ModifInfoEcoleComponent,
+    InscriptionEcoleComponent,
   ],
   imports: [
     BrowserModule,

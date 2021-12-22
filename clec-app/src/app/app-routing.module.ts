@@ -15,6 +15,7 @@ import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usag
 import { AdminComponent } from './admin/admin.component';
 import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
 import { ModifInfoEcoleComponent } from './modif-info-ecole/modif-info-ecole.component';
+import {InscriptionEcoleComponent} from './inscription-ecole/inscription-ecole.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'contacts', component: ContactsComponent},
   {path: 'nouveautes', component: NouveautesComponent},
   {path: 'inscription', component: InscriptionComponent},
+  {path: 'inscription-ecole', component: InscriptionEcoleComponent},
   {path: 'connexion', component: ConnexionComponent},
   {path: 'connexion-admin', component: AdminComponent},
   {path: 'search', component: SearchComponent},
