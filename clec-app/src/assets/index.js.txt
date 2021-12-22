@@ -1,41 +1,31 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject, InjectionToken, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms'
+function getParamParNom(nom, url = window.location.href) {
+    nom = nom.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + nom + '(=([^&#]*)|&|#|$)'),
+        resultat = regex.exec(url);
+    if (!resultat) return null;
+    if (!resultat[2]) return '';
+    return decodeURIComponent(resultat[2].replace(/\+/g, ' '));
+}
 
-declare var function1:any;
+const form = document.getElementById('form');
+const prenom = document.getElementById('prenom');
+const nom = document.getElementById('nom');
+const telephone = document.getElementById('telephone'); 
+const adresse = document.getElementById('adresse');
+const courriel = document.getElementById('courriel');
+const pass = document.getElementById('pass');
+const pass2 = document.getElementById('pass2');
+const code = document.getElementById('code');
 
-@Component({
-  selector: 'app-inscription',
-  templateUrl: './inscription.component.html',
-  styleUrls: ['./inscription.component.css']
-})
-export class InscriptionComponent implements OnInit {
-  constructor(@Inject(DOCUMENT) private document: Document) {
-  }
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
 
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+    verifierEntrees();
+}
+)
 
-  
-  handleClick(){ 
-      
-      const form = this.document.getElementById('form');
-        const prenom = this.document.getElementById('prenom');
-        const nom = this.document.getElementById('nom');
-        const telephone = this.document.getElementById('telephone'); 
-        const adresse = this.document.getElementById('adresse');
-        const courriel = this.document.getElementById('courriel');
-        const pass = this.document.getElementById('pass');
-        const pass2 = this.document.getElementById('pass2');
-        const code = this.document.getElementById('code');
-        function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
-  }
-
-  doit(prenom, nom, telephone, adresse, courriel, pass, pass2, code){
-
-    
+function verifierEntrees() {
     const prenomVal= prenom.value.trim();
     const nomVal = nom.value.trim();
     const telephoneVal = telephone.value.trim();
@@ -126,16 +116,13 @@ export class InscriptionComponent implements OnInit {
     
     if(!cCode(codeVal) && !(codeVal === "")){
         msgErreur(code, 'Votre code nest pas valide, reessayez.')
-    }else if(codeVal === ""){
-        msgErreur(code, 'Votre code ne peut pas être vide.')
-        throw new Error("Something went badly wrong!");
     }
     else {
         msgReussi(code)
     }
 
 
-
+}
 
 function msgErreur(input, message){
     const formGroup = input.parentElement;
@@ -156,7 +143,7 @@ function cEmail(email){
 }
 
 function cCode(code){
-    return /^([A-Z]{4}\d{8}[A-Z]{2})$/.test(code); 
+    
     
 }
 
@@ -168,8 +155,8 @@ function cAdresse(adresse){
     return /^(\d+) ?([A-Za-z](?= ))? (.*?) ([^ ]+?) ?((?<= )APT)? ?((?<= )\d*)?$/g.test(adresse);
 
 }
-  
-  
-}
-}
+
+
+//////////
+
 

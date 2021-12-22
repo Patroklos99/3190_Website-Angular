@@ -7,7 +7,20 @@ function getParamParNom(nom, url = window.location.href) {
     return decodeURIComponent(resultat[2].replace(/\+/g, ' '));
 }
 
-const form = document.getElementById('form');
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+
+    function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
+}
+); 
+
+
+function function1() {
+
+    const form = document.getElementById('form');
 const prenom = document.getElementById('prenom');
 const nom = document.getElementById('nom');
 const telephone = document.getElementById('telephone'); 
@@ -16,16 +29,6 @@ const courriel = document.getElementById('courriel');
 const pass = document.getElementById('pass');
 const pass2 = document.getElementById('pass2');
 const code = document.getElementById('code');
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-
-    verifierEntrees();
-}
-); 
-
-function verifierEntrees() {
     const prenomVal= prenom.value.trim();
     const nomVal = nom.value.trim();
     const telephoneVal = telephone.value.trim();
@@ -118,6 +121,8 @@ function verifierEntrees() {
         msgErreur(code, 'Votre code nest pas valide, reessayez.')
     }else if(codeVal === ""){
         msgErreur(code, 'Votre code ne peut pas être vide.')
+        throw new Error("Something went badly wrong!");
+
     }
     else {
         msgReussi(code)
@@ -144,11 +149,6 @@ function cEmail(email){
     return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g.test(email);
 }
 
-function cCode(code){
-    return /^([A-Z]{4}\d{8}[A-Z]{2})$/.test(code); 
-    
-}
-
 function cTelephone(telephone){
     return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im.test(telephone);
 } //(?=0(?!0)|[0-9])
@@ -156,4 +156,9 @@ function cTelephone(telephone){
 function cAdresse(adresse){
     return /^(\d+) ?([A-Za-z](?= ))? (.*?) ([^ ]+?) ?((?<= )APT)? ?((?<= )\d*)?$/g.test(adresse);
 
+}
+
+function cCode(code){
+    return /^([A-Z]{4}\d{8}[A-Z]{2})$/.test(code); 
+    
 }

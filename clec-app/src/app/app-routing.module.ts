@@ -7,6 +7,11 @@ import { NouveautesComponent } from './nouveautes/nouveautes.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { SearchComponent } from './search/search.component';
+import { ProfileUsagerComponent } from './profile-usager/profile-usager.component';
+import { ProfileEcoleComponent } from './profile-ecole/profile-ecole.component';
+import { ModifInfoUsagerComponent } from './modif-info-usager/modif-info-usager.component';
+import { ModifPassUsagerComponent } from './modif-pass-usager/modif-pass-usager.component';
+import { ModifEmailUsagerComponent } from './modif-email-usager/modif-email-usager.component';
 
 
 
@@ -19,7 +24,11 @@ const routes: Routes = [
   {path: 'inscription', component: InscriptionComponent},
   {path: 'connexion', component: ConnexionComponent},
   {path: 'search', component: SearchComponent},
-
+  {path: 'profile-usager', component: ProfileUsagerComponent},
+  {path: 'profile-ecole', component: ProfileEcoleComponent},
+  {path: 'modif-info-usager', component: ModifInfoUsagerComponent},
+  {path: 'modif-pass-usager', component: ModifPassUsagerComponent},
+  {path: 'modif-email-usagere', component: ModifEmailUsagerComponent},
 
 ];
 
