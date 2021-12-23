@@ -22,13 +22,13 @@ export class NouveautesComponent implements OnInit {
       elCur.prev().addClass("active");
       elCur.removeClass("active");
     }
-    console.log("left "+elCur.prev().length)
+    
    }else{
     if(elCur.next().length != 0){
       elCur.next().addClass("active");
       elCur.removeClass("active");
     }
-    console.log("right "+elCur.next().length)
+   
    }
 
    

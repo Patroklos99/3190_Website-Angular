@@ -58,7 +58,7 @@
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                            <img src="{{livre.image}}" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Petit Prince'">
+                                            <img src="{{livre.image}}" class="img-thumbnail img-responsive" alt="">
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
                                                 <p><b>Code produit:</b> <span>{{livre.codeProduit}}</span></p>
@@ -133,17 +133,17 @@
 						<h3>Ajouter rabais</h3>
 
 						<div class="row" *ngFor="let livre of livres; let i = index">
-                            <div class="dropdown">
-                                <h4>{{livre.titre}} - rabais courant: <span>{{livre.rabais}}</span></h4>    
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="rabais7" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
-                                    <ul class="dropdown-menu" role="menu" aria-labelledby="rabais7">
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">0%</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10%</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">15%</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">20%</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25%</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">30%</a></li>
-                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50%</a></li>
+                            <div class="dropdown" appDropDown>
+                                <h4>{{livre.titre}} - rabais courant: <span class="{{livre.codeProduit}}">{{livre.rabais}}</span>%</h4>    
+                                    <button class="btn btn-default dropdown-toggle" type="button"  id="{{ 'rabais' + i }}" data-toggle="dropdown">Choix rabais<span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" [attr.aria-labelledby]=" 'rabais' + i ">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" (click)="rabais($event, livre.codeProduit)">0</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" (click)="rabais($event, livre.codeProduit)">10</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" (click)="rabais($event, livre.codeProduit)">15</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" (click)="rabais($event, livre.codeProduit)">20</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" (click)="rabais($event, livre.codeProduit)">25</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" (click)="rabais($event, livre.codeProduit)">30</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" (click)="rabais($event, livre.codeProduit)">50</a></li>
                                     </ul>
                                 </div>
                         </div>

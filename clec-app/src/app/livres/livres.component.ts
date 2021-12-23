@@ -10,9 +10,9 @@ export class LivresComponent {
   public rabais: number;
   public description: string; 
   public niveauScolaire: string; 
-  public imagePath: string;
+  public image: string;
 
-  constructor(codeProduit: number, auteur: string, titre: string, prix: number, rabais: number, description: string, niveauScolaire: string, imagePath: string){
+  constructor(codeProduit: number, auteur: string, titre: string, prix: number, rabais: number, description: string, niveauScolaire: string, image: string){
       this.codeProduit = codeProduit;
       this.auteur = auteur;
       this.titre = titre; 
@@ -20,7 +20,7 @@ export class LivresComponent {
       this.rabais = rabais; 
       this.description = description; 
       this.niveauScolaire = niveauScolaire; 
-      this.imagePath = imagePath; 
+      this.image = image; 
   }
 
 

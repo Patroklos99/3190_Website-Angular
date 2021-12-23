@@ -28,6 +28,7 @@ import { FormsModule } from '@angular/forms';
 import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
 import { ModifInfoEcoleComponent } from './modif-info-ecole/modif-info-ecole.component';
 import { InscriptionEcoleComponent } from './inscription-ecole/inscription-ecole.component';
+import { PanierComponent } from './panier/panier.component';
 
 const appRoutes: Routes =[
   {path: '', component: AccueilComponent}, 
@@ -59,7 +60,7 @@ const appRoutes: Routes =[
     BibliothequeComponent,
     AccueilComponent,
     SearchComponent,
-    //PanierComponent,
+    PanierComponent,
     //EcolesComponent,
     AdminComponent,
     ContactsComponent,

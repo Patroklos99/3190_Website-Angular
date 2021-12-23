@@ -2,7 +2,7 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <span class="navbar-brand">Club de Lecture</span>
+        <a routerLink="/bibliotheque"><span class="navbar-brand">Club de Lecture</span></a>
       </div>
       <ul class="nav navbar-nav">
       <li><a routerLink="/accueil">Accueil</a></li>
@@ -22,7 +22,7 @@
       <a routerLink="/search" class="btn btn-default active" role="button" aria-pressed="true">Recherche Détaillée</a>
       </form>
       <ul class="nav navbar-nav navbar-right">
-      <li><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
+      <li routerLink="/panier" ><span id="pannier"></span><span class="glyphicon glyphicon-shopping-cart"></span></li>
       <li class="nav-item dropdown" appDropDown>
       <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
       S'inscrire</a>

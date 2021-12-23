@@ -1,25 +1,49 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
+import { LivresComponent } from '../livres/livres.component';
+import { bdService } from 'src/app/bd.service';
 declare var $: any; 
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  styleUrls: ['./admin.component.css'],
+  providers:[bdService]
 })
 export class AdminComponent implements OnInit {
+  codProd: number;
   livres: any;
   ecoles: any;
+  livre = new Array< LivresComponent>();
   @ViewChild('courrielInput', {static:true}) courrielInputRef!: ElementRef;
   @ViewChild('motDePassInput', {static:true}) motDePassRef!: ElementRef ;
   @ViewChild('container', {static:true}) containerRef!: ElementRef ;
   @ViewChild('compte', {static:true}) compteRef!: ElementRef ;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private bdService: bdService) { 
+    this.codProd = 0;
+    bdService.getLivres().subscribe(HttpResponse=>{
+      this.livre = HttpResponse.map(item=>
+        {
+          return new LivresComponent(
+            item.codeProduit,
+            item.auteur,
+            item.titre,
+            item.prix,
+            item.rabais,
+            item.description,
+            item.niveauScolaire,
+            item.image
+          )
+        }
+      )
+    } );
+  }
 
   ngOnInit(): void {
     this.httpClient.get<any>("assets/data/livres.json").subscribe((data)=>this.livres = data);
     this.httpClient.get<any>("assets/data/ecoles.json").subscribe((data)=>this.ecoles = data);
+    
   }
 
   voire(i: number){
@@ -45,28 +69,29 @@ export class AdminComponent implements OnInit {
   }
 
   voiretab(event: any){
-    
-    //var myElement = document.getElementById('event') as HTMLElement;
-
-    console.log("Tab click "+event.target.className+" - "+$("#"+event.target.className).attr("id"))
-   //$("#"+event.target.className).addClass("active");
-   // $("#"+event.target.className).siblings(".active").removeClass("active");
    $("#"+event.target.className).css({"display" : "unset"});
-   //$("#"+event.target.className).siblings(".active").hide();
-   $("#"+event.target.className).siblings(".active").css({"display" : "none"});
+   $("#"+event.target.className).siblings().css({"display" : "none"});
     $("#compte .nav-tabs ."+event.target.className).parent().addClass("active");
-    $("#compte .nav-tabs ."+event.target.className).parent().siblings(".active").removeClass("active");
+    $("#compte .nav-tabs ."+event.target.className).parent().siblings(".active").removeClass("active");  
+  }
 
+  rabais(event:any, code:string){
+  
+    this.codProd = +code;
 
+    let index = this.livre.map(function (obj:any) {return obj.codeProduit; }).indexOf(code);
+   
+   this.livre[index].rabais = event.target.innerText;
+
+    this.bdService.updateLivreRabais(this.livre[index],index);
     
-    
+    $("."+code).text(event.target.innerText);
   }
 
   connecte(event: any){
     let cour = this.courrielInputRef.nativeElement.value;
     let mot = this.motDePassRef.nativeElement.value;
-    console.log("1 "+this.courrielInputRef.nativeElement.value);
-    console.log("2 "+this.motDePassRef.nativeElement.value);
+  
     if (cour === "" || mot === "") {
       if(cour === "" && mot === ""){
         alert("Veillez entrer le courriel et le mot de pass");
@@ -81,8 +106,6 @@ export class AdminComponent implements OnInit {
       if(cour === 'admin@biblio.qc' && mot === "Admin"){
         this.containerRef.nativeElement.classList.add("ferme");
         this.compteRef.nativeElement.classList.add("ouvert");
-        //$( ".login-container2" ).hide();
-        //$( "#compte" ).show();
       }else{
         if(this.courrielInputRef.nativeElement.text !== "admin@biblio.qc" && this.motDePassRef.nativeElement.text !== "Admin"){
           alert("Courriel entré et mot de pass entré sont invalides");

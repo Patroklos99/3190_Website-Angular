@@ -1,1 +1,14 @@
-<p>panier works!</p>
+<header>
+    <div class="jumbotron entete">
+        <h1>Votre Panier:</h1>
+        <p>"Un bon livre est comme un bon ami"</p> 
+    </div>
+</header>
+<ul>
+    <li *ngFor="let p of lstLivres; let i = index">
+        <img src="{{p.image}}" alt="" class="img-responsive">
+        <figcaption>{{p.titre}}</figcaption>
+        <p>Prix: {{p.prix}}</p>
+        <p><button type="button" class="btn btn-warning enlever" (click)='enlever($event, p.codeProduit)'>Enlever</button></p>
+    </li>
+</ul>

@@ -16,11 +16,13 @@ import { AdminComponent } from './admin/admin.component';
 import { ModifEmailEcoleComponent } from './modif-email-ecole/modif-email-ecole.component';
 import { ModifInfoEcoleComponent } from './modif-info-ecole/modif-info-ecole.component';
 import {InscriptionEcoleComponent} from './inscription-ecole/inscription-ecole.component';
+import { PanierComponent } from './panier/panier.component';
 
 
 const routes: Routes = [
   {path: '', redirectTo:'/accueil', pathMatch: 'full'},
   {path: 'accueil', component: AccueilComponent},
+  {path: 'panier', component: PanierComponent},
   {path: 'bibliotheque', component: BibliothequeComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'nouveautes', component: NouveautesComponent},
