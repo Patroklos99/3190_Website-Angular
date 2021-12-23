@@ -42,18 +42,6 @@
         
         </div>
    
-    <ul><li *ngFor = 'let codpr of panire'>{{codpr.codeProduit}}</li></ul>
-    <hr>
-    <div class="row"><div class="col-md-6 col-xs-12"  *ngFor="let livreA of liversAjouter; let i = index">
-        <p><b>Code produit:</b> <span>{{livreA.codeProduit}}</span></p>
-        <p><b>Auteur:</b> <span>{{livreA.auteur}}</span></p>
-        <p><b>Titre:</b> <span>{{livreA.titre}}</span></p>
-        <p><b>Prix:</b> <span>{{livreA.prix}}</span></p>
-        <p><strong>Rabais:</strong> <span>{{livreA.rabais}}</span></p>
-        <p><b>Description:</b> <span>{{livreA.description}}</span></p>
-        <p><b>Niveau scolaire:</b> <span>{{livreA.niveauScolaire}}</span></p>
-        <button type="button" class="btn btn-info ajouter" (click)='addLivre($event)'>Ajouter a la Biblio</button>
-    </div>
-</div>
+    
 
 </div>
