@@ -6,8 +6,6 @@ import { LivresComponent } from './livres/livres.component';
 import { Observable} from 'rxjs';
 import {Panier} from './panier/panier.model';
 import { NodeJSReadonlyFileSystem } from '@angular/compiler-cli/src/ngtsc/file_system/src/node_js_file_system';
-//import * as fs from "fs";
-//import * as fs from './node_modules/file-system/file-system.js';
 
 @Injectable({ providedIn: 'root' }) 
 
@@ -37,7 +35,6 @@ export class bdService{
             )
           })
       });
-     // this.lstPanier = this.getPanier();
     }
     
     getLivres(): Observable<LivresComponent[]>{
@@ -73,7 +70,6 @@ export class bdService{
     addLivre(cpr:LivresComponent){
 
         this.lstLivres.push(cpr);
-        // console.log("!!!!! livres ajouter  "+JSON.stringify(this.lstLivres));
         this.livreChange.emit(this.lstLivres.slice());
         
         let url = 'https://localhost:4200/assets/data/livres.json';
@@ -106,8 +102,5 @@ export class bdService{
          }else{
             alert("Panier est vide!");
          } 
-
-    }
-
-   
+    }   
 }

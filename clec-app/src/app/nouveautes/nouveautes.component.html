@@ -6,117 +6,94 @@
 </header>
 <div class="container" id="nouveautés" >
     <div class="imagesLivres">
-    <div id="carouselImagesLivres" class="carousel slide" data-ride="carousel" data-interval="false">
-        <div class="carousel-inner">
-        <div class="item active">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-zafon.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le labyrinthe des esprits'">
-                    <div class="carousel-caption ">
-                    <h5>Le Labyrinthe des Esprits</h5>
-                    
+        <div id="carouselImagesLivres" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-zafon.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le labyrinthe des esprits'">
+                            <div class="carousel-caption ">
+                                <h5>Le Labyrinthe des Esprits</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-tout-differents.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Tous différents mais tous égaux'">
+                            <div class="carousel-caption ">
+                                <h5>Tous Différents mais tous Égaux</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-creatures-fantastiques.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Grand Livre des Créatures Fantastiques'">
+                            <div class="carousel-caption ">
+                                <h5>Le Grand Livre des Créatures Fantastiques</h5>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
 
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-tout-differents.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Tous différents mais tous égaux'">
-                    <div class="carousel-caption ">
-                    <h5>Tous Différents mais tous Égaux</h5>
-                    
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-HarryPotter.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série Harry Potter'">
+                            <div class="carousel-caption ">
+                                <h5>La série Harry Potter</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-tete-dans-les-livres.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La tête dans les livres'">
+                            <div class="carousel-caption ">
+                                <h5>La Tête dans les Livres</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-quebecois.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Livres québécois à offrir à Noel'">
+                            <div class="carousel-caption ">
+                                <h5>Livres Québécois à Offrir à Noel</h5>
+                            </div>
+                        </div>
                     </div>
-                
                 </div>
 
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-creatures-fantastiques.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Grand Livre des Créatures Fantastiques'">
-                    <div class="carousel-caption ">
-                    <h5>Le Grand Livre des Créatures Fantastiques</h5>
-                    
-                    </div>
-                
-                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-background1.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série des livre pour 'Les Plus Petits''">
+                            <div class="carousel-caption ">
+                                <h5>La série des livre pour 'Les Plus Petits'</h5> 
+                            </div>
+                        </div>
 
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-background2.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série des romans pour 'Les les Ados''">
+                            <div class="carousel-caption ">
+                                <h5>La série des romans pour 'Les les Ados'</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img src="./assets/images/livre-marketing-CJ.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le série des livres pour 'La Classe de Lecture''">
+                            <div class="carousel-caption ">
+                                <h5>Le série des livres pour 'La Classe de Lecture'</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
-
+            <a class="carousel-control left"  data-slide="prev" (click)="carous($event)">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control right"  data-slide="next" (click)="carous($event)">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
         </div>
-
-
-        <div class="item">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-HarryPotter.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série Harry Potter'">
-                    <div class="carousel-caption ">
-                    <h5>La série Harry Potter</h5>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-tete-dans-les-livres.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La tête dans les livres'">
-                    <div class="carousel-caption ">
-                    <h5>La Tête dans les Livres</h5>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-quebecois.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Livres québécois à offrir à Noel'">
-                    <div class="carousel-caption ">
-                    <h5>Livres Québécois à Offrir à Noel</h5>
-                    
-                    </div>
-                
-                </div>
-
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-background1.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série des livre pour 'Les Plus Petits''">
-                    <div class="carousel-caption ">
-                    <h5>La série des livre pour 'Les Plus Petits'</h5>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-background2.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'La série des romans pour 'Les les Ados''">
-                    <div class="carousel-caption ">
-                    <h5>La série des romans pour 'Les les Ados'</h5>
-                    
-                    </div>
-                
-                </div>
-
-                <div class="col-md-4">
-                    <img src="./assets/images/livre-marketing-CJ.jpg" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le série des livres pour 'La Classe de Lecture''">
-                    <div class="carousel-caption ">
-                    <h5>Le série des livres pour 'La Classe de Lecture'</h5>
-                    
-                    </div>
-                
-                </div>
-
-            </div>
-        </div>
-        
-        </div>
-        <a class="carousel-control left"  data-slide="prev" (click)="carous($event)">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control right"  data-slide="next" (click)="carous($event)">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-        </a>
-    </div>
-    
     </div>
 </div>
 

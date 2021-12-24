@@ -20,10 +20,3 @@ export class EcolesComponent{
 
 }
 
-
-/*@Component({
-  selector: 'app-ecoles',
-  templateUrl: './ecoles.component.html',
-  styleUrls: ['./ecoles.component.css']
-})*/
-

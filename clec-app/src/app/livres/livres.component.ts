@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 
-
 export class LivresComponent {
 
   public codeProduit: number; 
@@ -22,6 +21,4 @@ export class LivresComponent {
       this.niveauScolaire = niveauScolaire; 
       this.image = image; 
   }
-
-
 }

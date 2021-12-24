@@ -6,42 +6,37 @@
 </header>
 <div class="container">
     <div class="accordion" id="Leslivres">
-        
         <div class="card" *ngFor="let livre of livres; let i = index">
             <div class="card-header" id="{{ 'tete' + i }}">
-            <h2 [ngClass]="'mb' + i">
-                <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]=" '#livre' + i" aria-expanded="true" [attr.aria-controls]=" 'livre' + i "  (click)="voire(i)">
-                    {{livre.titre}} - {{i}}
-                </button>
-            </h2>
+                <h2 [ngClass]="'mb' + i">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]=" '#livre' + i" aria-expanded="true" [attr.aria-controls]=" 'livre' + i "  (click)="voire(i)">
+                        {{livre.titre}} - {{i}}
+                    </button>
+                </h2>
             </div>
 
             <div id="{{ 'livre' + i }}"  [ngClass]="{'collapse ' : true, 'in': !voire}" [attr.aria-labelledby]=" 'tete' + i " data-parent="#Leslivres">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <img src="{{livre.image}}" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Petit Prince'">
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                        <p><b>Code produit:</b> <span>{{livre.codeProduit}}</span></p>
-                        <p><b>Auteur:</b> {{livre.auteur}}</p>
-                        <p><b>Titre:</b> {{livre.titre}}</p>
-                        <p><b>Prix:</b> {{livre.prix}}</p>
-                        <p><strong>Rabais:</strong> {{livre.rabais}}</p>
-                        <p><b>Description:</b> {{livre.description}}</p>
-                        <p><b>Niveau scolaire:</b> {{livre.niveauScolaire}}</p>
-                        <button type="button" class="btn btn-info ajouter" (click)='ajouter($event)'>Ajouter</button>
-                        <button type="button" class="btn btn-warning enlever" (click)='enlever()'>Enlever</button>
-                        <button type="button" class="btn btn-warning enlever" (click)='toggle($event)'>Toggle</button>
-                    </div>
-                </div>	
-                
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <img src="{{livre.image}}" class="img-thumbnail img-responsive" alt="La couverture du livre 'Le Petit Prince'">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                            <p><b>Code produit:</b> <span>{{livre.codeProduit}}</span></p>
+                            <p><b>Auteur:</b> {{livre.auteur}}</p>
+                            <p><b>Titre:</b> {{livre.titre}}</p>
+                            <p><b>Prix:</b> {{livre.prix}}</p>
+                            <p><strong>Rabais:</strong> {{livre.rabais}}</p>
+                            <p><b>Description:</b> {{livre.description}}</p>
+                            <p><b>Niveau scolaire:</b> {{livre.niveauScolaire}}</p>
+                            <button type="button" class="btn btn-info ajouter" (click)='ajouter($event)'>Ajouter</button>
+                            <button type="button" class="btn btn-warning enlever" (click)='enlever()'>Enlever</button>
+                            <button type="button" class="btn btn-warning enlever" (click)='toggle($event)'>Toggle</button>
+                        </div>
+                    </div>	
+                </div>
             </div>
-            </div>
-        </div>
-        
-        </div>
-   
-    
-
+            
+        </div>   
+    </div>   
 </div>

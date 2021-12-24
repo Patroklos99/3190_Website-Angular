@@ -6,7 +6,6 @@ import { PanierComponent } from 'src/app/panier/panier.component';
 import { LivresComponent } from '../livres.component';
 import { Panier } from 'src/app/panier/panier.model';
 
-//import * as livres from '../livres.json';
 declare var $: any; 
 @Injectable({ providedIn: 'root' }) 
 @Component({
@@ -30,11 +29,9 @@ export class BibliothequeComponent implements OnInit {
   image: string;
   livreAjout: LivresComponent | undefined;
  
-  //public voire: Boolean = false;
   constructor(private httpClient: HttpClient, private bdService: bdService) {
     this.numero = 0;
     this.panire = [];
-    //this.livre = []; 
     this.codProd = 0;
     this.auteur = '';
     this.titre = '';
@@ -43,29 +40,6 @@ export class BibliothequeComponent implements OnInit {
     this.description = '';
     this.niveauScolaire = '';
     this.image = '';  
-    
-   /* bdService.getLivres().subscribe(HttpResponse=>{
-      this.livre = HttpResponse.map(item=>
-        {
-          return new LivresComponent(
-            item.codeProduit,
-            item.auteur,
-            item.titre,
-            item.prix,
-            item.rabais,
-            item.description,
-            item.niveauScolaire,
-            item.imagePath
-          )
-
-        }
-
-      )
-    }
-
-    );*/
-  
-    
   }
 
   ngOnInit(){
@@ -79,20 +53,12 @@ export class BibliothequeComponent implements OnInit {
 
       }
     );
-    
-   
-
     this.bdService.panierChange
     .subscribe(
       (panier: Panier[])=>{
         this.panire = panier;
       }
     );
-   /* this.bdService.livreChange
-    .subscribe((livre: LivresComponent[])=>{
-      this.livre = livre; 
-    })*/
-    //this.livreAjout = new Livre(this.codProd,this.auteur,this.titre,this.prix,this.rabais,this.description, this.niveauScolaire, this.image);
   }
   voire(i: number){
     
@@ -105,7 +71,6 @@ export class BibliothequeComponent implements OnInit {
     
   }
   ajouter(e:any){
-    //let codProd = ""; 
     this.numero++;
     $("#pannier").text(this.numero);
     console.log("e parent "+  e.target.parentNode.firstChild.lastChild.innerText);
@@ -129,7 +94,6 @@ export class BibliothequeComponent implements OnInit {
  }
  addLivre(e:any){
     this.codProd = +e.target.parentNode.firstChild.lastChild.innerText;
-    //console.log("AddLivres "+this.codProd);
     for(var i = 0; i< e.target.parentNode.children.length-1; i++){
       switch(i){
         case 0:
@@ -157,19 +121,12 @@ export class BibliothequeComponent implements OnInit {
      
     }
     this.livreAjout = new LivresComponent(this.codProd,this.auteur,this.titre,this.prix,this.rabais,this.description,this.niveauScolaire,this.image);
-   // console.log("-------------------------------------------")
-    //console.log(JSON.stringify(this.livreAjout));
-    //console.log(JSON.stringify(this.livre));
     let index = this.livre.map(function (obj) { return obj.codeProduit; }).indexOf(this.codProd);
    
     if(index == -1){
         this.bdService.addLivre(this.livreAjout);
     }else{
       alert("Ce livre est deja dans bibliotheque");
-    }
-   // this.bdService.addLivre(this.livreAjout); 
-    
+    }  
  }
- 
-
 }

@@ -21,7 +21,7 @@ export class ConnexionComponent implements OnInit {
     this.function1(form, courriel, password);
   }
 
-  function1(form, courriel, password){
+  function1(form:any, courriel:any, password:any){
     
       const courrielVal= courriel.value.trim();
       const passwordVal= password.value.trim();
