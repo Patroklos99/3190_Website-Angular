@@ -1,5 +1,5 @@
 import { NgModuleDecorator } from "@angular/core";
-
+//l'objet Livre 
 export class Livre {
     public codeProduit: number; 
     public auteur: string; 

@@ -60,6 +60,7 @@ export class BibliothequeComponent implements OnInit {
       }
     );
   }
+  //la fonction qui ouvre et ferme notre accordion dan sla page bibliotheque 
   voire(i: number){
     
     var myElement = document.getElementById('livre'+i) as HTMLElement;
@@ -70,6 +71,7 @@ export class BibliothequeComponent implements OnInit {
     }
     
   }
+  //la fonction qui ajoute un livre dans le panier quand la personne click sur le button ajouter 
   ajouter(e:any){
     this.numero++;
     $("#pannier").text(this.numero);
@@ -80,9 +82,11 @@ export class BibliothequeComponent implements OnInit {
     this.bdService.ajoutCodProd(nPanier);
     
   }
+
   toggle(e:any){
       this.bdService.togglePanier(e.target.parentNode.firstChild.lastChild.innerText);
   }
+  //la fonction qui enleve un livre du panier quand la personne click sur le button enlever 
  enlever(){
     if(this.numero > 0){
       this.numero--;
@@ -92,6 +96,7 @@ export class BibliothequeComponent implements OnInit {
       alert("Pannier est vide");
     }
  }
+ //la fonction qui ajoute un livre dans notre fichier JSON 
  addLivre(e:any){
     this.codProd = +e.target.parentNode.firstChild.lastChild.innerText;
     for(var i = 0; i< e.target.parentNode.children.length-1; i++){

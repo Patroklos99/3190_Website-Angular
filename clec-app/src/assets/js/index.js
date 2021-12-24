@@ -21,14 +21,14 @@ function getParamParNom(nom, url = window.location.href) {
 function function1() {
 
     const form = document.getElementById('form');
-const prenom = document.getElementById('prenom');
-const nom = document.getElementById('nom');
-const telephone = document.getElementById('telephone'); 
-const adresse = document.getElementById('adresse');
-const courriel = document.getElementById('courriel');
-const pass = document.getElementById('pass');
-const pass2 = document.getElementById('pass2');
-const code = document.getElementById('code');
+    const prenom = document.getElementById('prenom');
+    const nom = document.getElementById('nom');
+    const telephone = document.getElementById('telephone'); 
+    const adresse = document.getElementById('adresse');
+    const courriel = document.getElementById('courriel');
+    const pass = document.getElementById('pass');
+    const pass2 = document.getElementById('pass2');
+    const code = document.getElementById('code');
     const prenomVal= prenom.value.trim();
     const nomVal = nom.value.trim();
     const telephoneVal = telephone.value.trim();

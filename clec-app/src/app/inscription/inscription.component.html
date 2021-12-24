@@ -1,108 +1,92 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription Compte Personnel</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-</head>
+<!--la page qui contient le formulaire pour l'inscription au compte usager-->
+<div>
+	<header class="page-titre">
+		<h1>Créer un compte personnel</h1>
+	</header>
 
-<body>
-	<div>
+	<div class="form-sign">
+		<form class="form" id="form">
+			<fieldset>
+				<div class="titre-form">
+					<h4>Détails du compte</h4>
+					<div class="hii">
+						Tous les champs sont requis
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="prenom">Prénom</label>
+					<input type="text" class="form-control" id="prenom" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group">
+					<label for="nom">Nom&nbsp</label>
+					<input type="text" class="form-control" id="nom" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group">
+					<label for="telephone">Téléphone</label>
+					<input type="text" class="form-control" id="telephone" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group">
+					<label for="adresse">Adresse de livraison</label>
+					<input type="text" class="form-control" id="adresse" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group">
+					<label for="courriel">Courriel</label>
+					<input type="text" class="form-control" id="courriel" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group">
+					<label for="pass">Mot de passe</label>
+					<input type="password" class="form-control" id="pass" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group">
+					<label for="pass2">Confirmer le mot de passe</label>
+					<input type="password" class="form-control" id="pass2" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group">
+					<label for="code">Code</label>
+					<input type="text" class="form-control" id="code" placeholder="">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+					<small>Msg d'erreur</small>
+				</div>
+				<div class="form-group final" >
+					<h4>
+						Lisez avec plaisir
+					</h4>
+				</div>
 
-	  <header class="page-titre">
-		  <h1>Créer un compte personnel</h1>
-	  </header>
-
-	  <div class="form-sign"><form class="form" id="form">
-		  <fieldset>
-			  <div class="titre-form">
-				  <h4>Détails du compte</h4>
-				  <div class="hii">
-					  Tous les champs sont requis
-				  </div>
-			  </div>
-		<div class="form-group">
-		  <label for="prenom">Prénom</label>
-		  <input type="text" class="form-control" id="prenom" placeholder="">
-		  <i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		</div>
-		<div class="form-group">
-		  <label for="nom">Nom&nbsp</label>
-		  <input type="text" class="form-control" id="nom" placeholder="">
-		  <i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		</div>
-		  <div class="form-group">
-			<label for="telephone">Téléphone</label>
-			<input type="text" class="form-control" id="telephone" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="adresse">Adresse de livraison</label>
-			<input type="text" class="form-control" id="adresse" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="courriel">Courriel</label>
-			<input type="text" class="form-control" id="courriel" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="pass">Mot de passe</label>
-			<input type="password" class="form-control" id="pass" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="pass2">Confirmer le mot de passe</label>
-			<input type="password" class="form-control" id="pass2" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group">
-			<label for="code">Code</label>
-			<input type="text" class="form-control" id="code" placeholder="">
-			<i class="fas fa-check-circle"></i>
-		  <i class="fas fa-exclamation-circle"></i>
-		  <small>Msg d'erreur</small>
-		  </div>
-		  <div class="form-group final" >
-			  <h4>
-				  Lisez avec plaisir
-			  </h4>
-		  </div>
-
-		  <div>
-			  <div >
-				<button (click)="handleClick()" class="btn button-creer">Créer un compte</button>
-			  </div>
-			  <div class="but-retour">
-				  <a href="index.html">Retour</a>
-			  </div>
-		  </div>
-		  
-		</fieldset>
-	  </form>
+				<div>
+					<div >
+						<button (click)="handleClick()" class="btn button-creer">Créer un compte</button>
+					</div>
+					<div class="but-retour">
+						<a routerLink="/accueil">Retour</a>
+					</div>
+				</div>
+			
+			</fieldset>
+	    </form>
 	</div>
+</div>
 
-    </div>
-</body>
-</html>
+

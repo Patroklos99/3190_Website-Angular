@@ -33,7 +33,7 @@ export class InscriptionComponent implements OnInit {
         function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
   }
 
-  doit(prenom, nom, telephone, adresse, courriel, pass, pass2, code){
+  doit(prenom:any, nom:any, telephone:any, adresse:any, courriel:any, pass:any, pass2:any, code:any){
 
     
     const prenomVal= prenom.value.trim();
@@ -137,7 +137,7 @@ export class InscriptionComponent implements OnInit {
 
 
 
-function msgErreur(input, message){
+function msgErreur(input:any, message:any){
     const formGroup = input.parentElement;
     const small = formGroup.querySelector('small');
 
@@ -146,25 +146,25 @@ function msgErreur(input, message){
     formGroup.className = 'form-group echoue';
 }
 
-function msgReussi(input) {
+function msgReussi(input:any) {
     const formGroup = input.parentElement;
     formGroup.className = 'form-group reussi';
 }
 
-function cEmail(email){
+function cEmail(email:any){
     return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g.test(email);
 }
 
-function cCode(code){
+function cCode(code:any){
     return /^([A-Z]{4}\d{8}[A-Z]{2})$/.test(code); 
     
 }
 
-function cTelephone(telephone){
+function cTelephone(telephone:any){
     return /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im.test(telephone);
 } //(?=0(?!0)|[0-9])
 
-function cAdresse(adresse){
+function cAdresse(adresse:any){
     return /^(\d+) ?([A-Za-z](?= ))? (.*?) ([^ ]+?) ?((?<= )APT)? ?((?<= )\d*)?$/g.test(adresse);
 
 }
