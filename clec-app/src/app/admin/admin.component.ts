@@ -45,7 +45,7 @@ export class AdminComponent implements OnInit {
     this.httpClient.get<any>("assets/data/ecoles.json").subscribe((data)=>this.ecoles = data);
     
   }
-
+  //la fonction pour voir l'accordion des livres 
   voire(i: number){
     
     var myElement = document.getElementById('livre'+i) as HTMLElement;
@@ -56,7 +56,7 @@ export class AdminComponent implements OnInit {
     }
     
   }
-
+  //la fonction pour voir l'accordion des ecoles
   voireEc(i: number){
     
     var myElement = document.getElementById('ecole'+i) as HTMLElement;
@@ -67,14 +67,14 @@ export class AdminComponent implements OnInit {
     }
     
   }
-
+  //la fonction qui nous montre les tab differentes (3 choix: Gerer l'inventaire, gerer les ecoles et gerer les rabais)
   voiretab(event: any){
    $("#"+event.target.className).css({"display" : "unset"});
    $("#"+event.target.className).siblings().css({"display" : "none"});
     $("#compte .nav-tabs ."+event.target.className).parent().addClass("active");
     $("#compte .nav-tabs ."+event.target.className).parent().siblings(".active").removeClass("active");  
   }
-
+  //la fonction qui change les rabais pour nos livres 
   rabais(event:any, code:string){
   
     this.codProd = +code;
@@ -87,7 +87,7 @@ export class AdminComponent implements OnInit {
     
     $("."+code).text(event.target.innerText);
   }
-
+  //la fonction qui verifie les mot de pass et le courriel durant l'autentification au compte utilisateur : Admin 
   connecte(event: any){
     let cour = this.courrielInputRef.nativeElement.value;
     let mot = this.motDePassRef.nativeElement.value;

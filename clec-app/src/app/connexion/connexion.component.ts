@@ -12,7 +12,7 @@ declare var function1:any;
 export class ConnexionComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: Document, private router : Router) { }
-
+  //la fonction qui passe les donnees entrees a la fonction1 quand sur le click 
   handleClick(){
     const form = document.getElementById('form');
 		const courriel = document.getElementById('courriel');
@@ -20,7 +20,7 @@ export class ConnexionComponent implements OnInit {
 
     this.function1(form, courriel, password);
   }
-
+  //la fonction qui verifie l'autentification aux comptes Usager et Ecole
   function1(form:any, courriel:any, password:any){
     
       const courrielVal= courriel.value.trim();

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+//objet Ecole
 export class EcolesComponent{
 
     public codeEcole: string; 

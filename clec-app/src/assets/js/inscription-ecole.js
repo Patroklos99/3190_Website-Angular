@@ -1,20 +1,19 @@
-		const form = document.getElementById('formulaire');
-		const nom1 = document.getElementById('nom1');
-		const adresse = document.getElementById('adresse');
-		const courriel = document.getElementById('courriel');
-		const pass = document.getElementById('pass');
-		const pass2 = document.getElementById('pass2');
+const form = document.getElementById('formulaire');
+const nom1 = document.getElementById('nom1');
+const adresse = document.getElementById('adresse');
+const courriel = document.getElementById('courriel');
+const pass = document.getElementById('pass');
+const pass2 = document.getElementById('pass2');
 		
 
-
-formulaire.addEventListener('submit', (e) => {
-    e.preventDefault();
-    verifierEntrees();
-    
-}
-)
-
 function verifierEntrees() {
+    const formulaire = this.document.getElementById('formulaire');
+    const nom1 = this.document.getElementById('nom1');
+    const adresse = this.document.getElementById('adresse');
+    const courriel = this.document.getElementById('courriel'); 
+    const pass = this.document.getElementById('pass');
+    const pass2 = this.document.getElementById('pass2');
+    const code = this.document.getElementById('code');
     const nomVal= nom1.value.trim();
     const adresseVal = adresse.value.trim();
     const courrielVal = courriel.value.trim();

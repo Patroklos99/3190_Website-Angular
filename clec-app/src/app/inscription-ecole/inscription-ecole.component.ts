@@ -18,19 +18,19 @@ export class InscriptionEcoleComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
 
-  
+  //la fonction qui va faire passe les variables entrees en fesant le click sur 'enter' 
   handleClick(){ 
-      console.log("handleclick");
       const formulaire = this.document.getElementById('formulaire');
-        const nom1 = this.document.getElementById('nom1');
-        const adresse = this.document.getElementById('adresse');
-        const courriel = this.document.getElementById('courriel'); 
-        const pass = this.document.getElementById('pass');
-        const pass2 = this.document.getElementById('pass2');
-        const code = this.document.getElementById('code');
-        verifierEntrees(nom1, adresse, courriel, pass, pass2, code);
+      const nom1 = this.document.getElementById('nom1');
+      const adresse = this.document.getElementById('adresse');
+      const courriel = this.document.getElementById('courriel'); 
+      const pass = this.document.getElementById('pass');
+      const pass2 = this.document.getElementById('pass2');
+      const code = this.document.getElementById('code');
+      //appel de la fonction javascript du fichier inscription-ecole.js 
+      verifierEntrees(nom1, adresse, courriel, pass, pass2, code);
   }
-
+  //la fonction qui verifie que les variables entree correspondes auc criteres 
   doit(nom1:any, adresse:any, courriel:any, pass:any, pass2:any, code:any){
 
     const nomVal = nom1.value.trim();

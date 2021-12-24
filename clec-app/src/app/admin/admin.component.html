@@ -1,7 +1,7 @@
-
-		<header class="container page-titre">
-			<h1>Page Administrateur</h1>
-		</header>
+<!--Connexion a la page Administrateur-->
+<header class="container page-titre">
+	<h1>Page Administrateur</h1>
+</header>
 		<div class="container" >
 			<div class="row login-container2" #container>
 				<div class="login-form-1 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
@@ -156,37 +156,6 @@
 			</div>
 		</div>
 		
-		<script>
-			$(document).ready(function(){
-				$("#ajouter .dropdown-menu li a").on("click", function(){
-					var rabais = $(this).text(); 
-					var idRabais=$(this).parents(".dropdown-menu").siblings(".btn").attr("id");
-					var idLivre=idRabais.replace("rabais", "livre");
-				$(this).parents(".dropdown-menu").siblings(".btn").html(rabais+'<span class="caret"></span>');
-					console.log("!!! "+ idLivre);
-				$(this).parents(".dropdown-menu").siblings("h4").children("span").text(rabais);
-				$("#"+idLivre).find(".rabais").text(rabais);
-				rabais = ""; 
-				});
-
-				$(".modifier").on("click", function(){
-					$(this).hide(); 
-					$(this).next(".sauvegarder, .valider").show(); 
-					$(this).siblings().find("input, textarea").prop("disabled", false); 
-				}); 
-
-				$(".sauvegarder, .valider").on("click", function(){
-					$(this).siblings().find("input, textarea").prop("disabled", true); 
-					$(this).hide();
-					$(this).prev(".modifier").show();
-				}); 
-
-				$("input, textarea").on("change", function() {
-				var nouvelleVal=$(this).val();
-				$(this).attr( "value", nouvelleVal);
-				});
-
-			}); 
-		</script>  
+		
     
 

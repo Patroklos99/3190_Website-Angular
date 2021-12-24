@@ -18,24 +18,24 @@ export class InscriptionComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
 
-  
+  //la fonction qui va faire passe les variables entrees en fesant le click sur 'enter' 
   handleClick(){ 
       
       const form = this.document.getElementById('form');
-        const prenom = this.document.getElementById('prenom');
-        const nom = this.document.getElementById('nom');
-        const telephone = this.document.getElementById('telephone'); 
-        const adresse = this.document.getElementById('adresse');
-        const courriel = this.document.getElementById('courriel');
-        const pass = this.document.getElementById('pass');
-        const pass2 = this.document.getElementById('pass2');
-        const code = this.document.getElementById('code');
-        function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
+      const prenom = this.document.getElementById('prenom');
+      const nom = this.document.getElementById('nom');
+      const telephone = this.document.getElementById('telephone'); 
+      const adresse = this.document.getElementById('adresse');
+      const courriel = this.document.getElementById('courriel');
+      const pass = this.document.getElementById('pass');
+      const pass2 = this.document.getElementById('pass2');
+      const code = this.document.getElementById('code');
+      //appel de la fonction javascropt du ficher index.js
+      function1(prenom, nom, telephone, adresse, courriel, pass, pass2, code);
   }
-
+  //la fonction qui verifie que les variables entree correspondes auc criteres 
   doit(prenom:any, nom:any, telephone:any, adresse:any, courriel:any, pass:any, pass2:any, code:any){
 
-    
     const prenomVal= prenom.value.trim();
     const nomVal = nom.value.trim();
     const telephoneVal = telephone.value.trim();

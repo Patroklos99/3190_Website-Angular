@@ -24,7 +24,7 @@ export class AccueilComponent implements OnInit {
     this.httpClient.get<any>("assets/data/livres.json").subscribe((data)=>this.livres = data);
    
   }
-  
+  //la fonction qui fait fonctionner notre carousel 
   carous(event:any){
     var myElement = document.getElementsByClassName('item') as unknown as HTMLElement;
     let elCur = $(".carousel-inner .item.active");

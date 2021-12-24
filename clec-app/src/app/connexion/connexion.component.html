@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion Usager</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
-<body id="usager">
+<!--La page de connexion au compte utilisateur : usager et ecole-->
+<header class="container page-titre">
+  <h1>Page Usager</h1>
+</header>
 
-    <header class="container page-titre">
-      <h1>Page Usager</h1>
-    </header>
-
-      <div class="container">
-        <div class="row login-container">
-          <div class="login-form-1 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-              <h3>Connexion</h3>
-              <div class="ho">
-                Tous les champs sont requis
-            </div>
-            <div class="Usager"><h4>Usager</h4></div>
+<div class="container">
+  <div class="row login-container">
+      <div class="login-form-1 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+        <h3>Connexion</h3>
+          <div class="ho">
+            <p>Tous les champs sont requis</p>
+          </div>
+    <div class="Usager"><h4>Usager</h4></div>
       <form id="form">
           <div class="form-group-usager">
               <input type="text" id="courriel" class="form-control" placeholder="Courriel" value="" />
@@ -43,44 +29,5 @@
   </div>
 </div>	  
 
-    <script>
-
-    const form = document.getElementById('form');
-		const courriel = document.getElementById('courriel');
-		const password = document.getElementById('password');
-
-
-      form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      verifierEntrees();
-      
-
-    }
-    )
-
-    function verifierEntrees() {
-    const courrielVal= courriel.value.trim();
-	  const passwordVal= password.value.trim();
-
-    if(courrielVal === 'usager@gmail.com' && passwordVal === 'usager'){
-      window.location.href="usager.html";
-
-    }
     
 
-    if(courrielVal === 'ecole@ecole.qc' && passwordVal === 'ecole'){
-      window.location.href="ecole.html";
-    
-    }
-
-    if(passwordVal !== "usager" | passwordVal !== "ecole" | courrielVal !==
-    'ecole@ecole.qc' | courrielVal !== 'usager@gmail.com'){
-      alert("Mot de passe ou courriel entré invalide");
-							
-		}
-    }
-  
-    </script>
-    
-</body>
-</html>
