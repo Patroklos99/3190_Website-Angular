@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 declare var $: any;
+
 @Component({
   selector: 'app-nouveautes',
   templateUrl: './nouveautes.component.html',
@@ -9,11 +11,8 @@ export class NouveautesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-
-
-  }
-
+  ngOnInit(): void {}
+  
   carous(event:any){
     var myElement = document.getElementsByClassName('item') as unknown as HTMLElement;
     let elCur = $(".carousel-inner .item.active");
