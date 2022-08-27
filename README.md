@@ -1,4 +1,4 @@
-# inf3190-a21-tp
+# inf3190-a21-tp.
 Connexion Administrateur : 
 courriel : admin@biblio.qc 
 mot de pass: Admin 
@@ -9,7 +9,7 @@ mot de pass: usager
 
 Connexion Ecole: 
 courriel: ecole@ecole.qc
-mot de pass: ecole 
+mot de pass: ecole
 
 ![image](https://user-images.githubusercontent.com/96098657/187014488-6eedb946-9443-4454-8759-28607d8f4f12.png)
 ![image](https://user-images.githubusercontent.com/96098657/187014347-cb9e3cc1-9342-473d-955f-33b454fb741d.png)
